@@ -33,7 +33,7 @@ NS_ :
 
 BS_:
 
-BU_: JETSON VCU ACU RES DYN_F DYN_R FSG_DATA_LOGGER AK10_9
+BU_: JETSON VCU ACU RES DYN_F DYN_R FSG_DATA_LOGGER AK10_9 Aquisition_Board1 Aquisition_Board2 Aquisition_Board3 Aquisition_Board4 Aquisition_Board7
 
 
 BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
@@ -106,6 +106,25 @@ BO_ 2147494248 dir_actuator_feedback: 8 AK10_9
 
 BO_ 2147484776 dir_act_possition_loop: 8 JETSON
  SG_ POSITION : 7|32@0- (1000,0) [0|0] "º" Vector__XXX
+
+BO_ 1808 AQT1: 3 Aquisition_Board1
+ SG_ BRK_PRESS : 0|16@1+ (0.1,0) [0|0] "bar" Vector__XXX
+ SG_ RES : 16|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ BOTS : 17|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1824 AQT2: 2 Aquisition_Board2
+ SG_ WHEEL_ANGLE : 0|16@1- (0.1,0) [0|0] "º" Vector__XXX
+
+BO_ 1840 AQT3: 2 Aquisition_Board3
+ SG_ WHEEL_ANGLE : 0|16@1- (0.1,0) [0|0] "º" Vector__XXX
+
+BO_ 1856 AQT4: 3 Aquisition_Board4
+ SG_ ST_ANGLE : 0|16@1- (0.1,0) [0|0] "º" Vector__XXX
+ SG_ INERTIA : 16|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ EMER_BUTTON : 17|1@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1904 AQT7: 2 Aquisition_Board7
+ SG_ BRK_PRESS : 0|16@1+ (0.1,0) [0|0] "bar" Vector__XXX
 
 
 
