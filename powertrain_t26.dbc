@@ -33,7 +33,7 @@ NS_ :
 
 BS_:
 
-BU_: AMS VCU HOST ISABELLE DTI
+BU_: AMS VCU HOST ISABELLE DTI Aquisition_Board1 Aquisition_Board4
 
 
 VAL_TABLE_ _B9_Voltage_Channels 3 "3 Channels" 0 "0 Channels" ;
@@ -57,6 +57,7 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ NewSignal_0001 : 48|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ overall_maximum_voltage : 16|16@1+ (0.001,0) [0|0] " V" Vector__XXX
  SG_ overall_maximum_temperature : 32|16@1+ (0.01,0) [0|0] "degC" Vector__XXX
+ SG_ NewSignal_0007 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 131 Start_PreCharge: 1 VCU
  SG_ Precharge_Request : 0|1@0+ (1,0) [0|0] "ON/OFF" Vector__XXX
@@ -983,6 +984,14 @@ BO_ 130 Start_Balancing: 1 HOST
 
 BO_ 220 Start_Programmer: 1 HOST
  SG_ programming_request : 0|1@1+ (1,0) [0|1] "ON/OFF"  AMS
+
+BO_ 1808 APPS_ADC_Raw: 4 Aquisition_Board1
+ SG_ APPS1 : 0|16@1+ (0.1,0) [0|0] "bits" Vector__XXX
+ SG_ APPS2 : 16|16@1+ (0.1,0) [0|0] "bits" Vector__XXX
+
+BO_ 1856 DashBoard: 1 Aquisition_Board4
+ SG_ Ignition : 0|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Ready_To_Drive : 1|1@1+ (1,0) [0|0] "" Vector__XXX
 
 
 
