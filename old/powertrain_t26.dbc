@@ -980,7 +980,10 @@ BO_ 1796 Master_MSC_ID_3: 8 AMS
  SG_ overall_minimum_temperature : 48|16@1+ (0.01,0) [0|0] "degC" Vector__XXX
 
 BO_ 130 Start_Balancing: 1 HOST
- SG_ Balancing_Request : 0|1@1+ (1,0) [0|1] "ON/OFF" Vector__XXX
+ SG_ Balancing_Request : 0|1@1+ (1,0) [0|1] "ON/OFF"  AMS
+
+BO_ 220 Start_Programmer: 1 HOST
+ SG_ programming_request : 0|1@1+ (1,0) [0|1] "ON/OFF"  AMS
 
 BO_ 1808 APPS_ADC_Raw: 4 Aquisition_Board1
  SG_ APPS1 : 0|16@1+ (0.1,0) [0|0] "bits" Vector__XXX
@@ -1102,4 +1105,5 @@ VAL_ 339 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagno
 VAL_ 1793 master_firmware_version 0 "Unknown Firmware" 1 "alpha" 3 "beta" 5 "alpha-v1" 7 "beta-v1" 9 "alpha-v2" 13 "alpha-v3" 17 "alpha-v3.1" 11 "beta-v2" 15 "beta-v3" ;
 VAL_ 1793 master_state 0 "BALANCING" 1 "CHARGING" 2 "IDLE" 3 "ONMISSION" 4 "STARTUP" 5 "DISCHARGE_TEST" 6 "RESET_ISA" 7 "FAULT" ;
 VAL_ 1794 precharge_state 0 "START" 1 "OPEN_ALL" 2 "SWITCH_HVNEG" 3 "DELAY1" 4 "VERIFY1" 5 "SWITCH_PRECHARGE" 6 "DELAY2" 7 "VERIFY2" 8 "VERIFY_CURRENT" 9 "VERIFY_BUS_VOLT" 10 "SWITCH_HVPOS" 11 "DELAY3" 12 "VERIFY3" 13 "TURN_OFF_PRECHARGE" 14 "DELAY4" 15 "VERIFY4" 16 "END" 17 "WRONG" 18 "KILL" 19 "RX_CAN" ;
+VAL_ 220 programming_request 1 "JumpToBootloader" ;
 
