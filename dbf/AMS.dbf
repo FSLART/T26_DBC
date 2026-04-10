@@ -1,0 +1,737 @@
+//******************************BUSMASTER Messages and signals Database ******************************//
+
+[DATABASE_VERSION] 1.3
+
+[PROTOCOL] CAN
+
+[BUSMASTER_VERSION] [3.2.2]
+[NUMBER_OF_MESSAGES] 86
+
+[START_MSG] Start_PreCharge,131,1,1,0,S,VCU
+[START_SIGNALS] Precharge_Request,1,1,0,B,1,0,0,0,1,ON/OFF,,
+[END_MSG]
+
+[START_MSG] Slave_01_Voltage_ID_1,256,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_1,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_2,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_3,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_4,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_01_Voltage_ID_2,257,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_5,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_6,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_7,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_8,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_01_Voltage_ID_3,258,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_9,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_10,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_11,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_12,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_01_Temperature_ID_1,259,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_1,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_2,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_3,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_4,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_01_Temperature_ID_2,260,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_5,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_6,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_maximum,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_delta,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_01_MSC_ID_1,261,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_sum,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_avg,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_min,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_max,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_01_MSC_ID_2,262,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_delta,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_ic_voltage,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_open_wire,8,5,0,U,1,0,1,0,1,,,
+[VALUE_DESCRIPTION] "No fault detected",0
+[VALUE_DESCRIPTION] "Cell/open-wire/voltage diagnostic fault",1
+[START_SIGNALS] module_ic_temperature,16,6,0,U,65535,0,1,0,1,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_02_Voltage_ID_1,263,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_1,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_2,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_3,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_4,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_02_Voltage_ID_2,264,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_5,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_6,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_7,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_8,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_02_Voltage_ID_3,265,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_9,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_10,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_11,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_12,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_02_Temperature_ID_1,266,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_1,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_2,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_3,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_4,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_02_Temperature_ID_2,267,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_5,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_6,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_maximum,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_delta,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_02_MSC_ID_1,268,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_sum,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_avg,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_min,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_max,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_02_MSC_ID_2,269,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_delta,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_ic_voltage,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_open_wire,8,5,0,U,1,0,1,0,1,,,
+[VALUE_DESCRIPTION] "No fault detected",0
+[VALUE_DESCRIPTION] "Cell/open-wire/voltage diagnostic fault",1
+[START_SIGNALS] module_ic_temperature,16,6,0,U,65535,0,1,0,1,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_03_Voltage_ID_1,270,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_1,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_2,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_3,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_4,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_03_Voltage_ID_2,271,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_5,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_6,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_7,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_8,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_03_Voltage_ID_3,272,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_9,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_10,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_11,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_12,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_03_Temperature_ID_1,273,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_1,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_2,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_3,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_4,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_03_Temperature_ID_2,274,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_5,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_6,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_maximum,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_delta,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_03_MSC_ID_1,275,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_sum,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_avg,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_min,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_max,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_03_MSC_ID_2,276,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_delta,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_ic_voltage,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_open_wire,8,5,0,U,1,0,1,0,1,,,
+[VALUE_DESCRIPTION] "No fault detected",0
+[VALUE_DESCRIPTION] "Cell/open-wire/voltage diagnostic fault",1
+[START_SIGNALS] module_ic_temperature,16,6,0,U,65535,0,1,0,1,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_04_Voltage_ID_1,277,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_1,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_2,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_3,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_4,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_04_Voltage_ID_2,278,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_5,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_6,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_7,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_8,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_04_Voltage_ID_3,279,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_9,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_10,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_11,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_12,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_04_Temperature_ID_1,280,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_1,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_2,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_3,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_4,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_04_Temperature_ID_2,281,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_5,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_6,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_maximum,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_delta,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_04_MSC_ID_1,282,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_sum,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_avg,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_min,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_max,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_04_MSC_ID_2,283,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_delta,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_ic_voltage,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_open_wire,8,5,0,U,1,0,1,0,1,,,
+[VALUE_DESCRIPTION] "No fault detected",0
+[VALUE_DESCRIPTION] "Cell/open-wire/voltage diagnostic fault",1
+[START_SIGNALS] module_ic_temperature,16,6,0,U,65535,0,1,0,1,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_05_Voltage_ID_1,284,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_1,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_2,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_3,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_4,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_05_Voltage_ID_2,285,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_5,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_6,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_7,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_8,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_05_Voltage_ID_3,286,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_9,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_10,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_11,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_12,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_05_Temperature_ID_1,287,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_1,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_2,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_3,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_4,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_05_Temperature_ID_2,288,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_5,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_6,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_maximum,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_delta,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_05_MSC_ID_1,289,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_sum,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_avg,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_min,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_max,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_05_MSC_ID_2,290,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_delta,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_ic_voltage,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_open_wire,8,5,0,U,1,0,1,0,1,,,
+[VALUE_DESCRIPTION] "No fault detected",0
+[VALUE_DESCRIPTION] "Cell/open-wire/voltage diagnostic fault",1
+[START_SIGNALS] module_ic_temperature,16,6,0,U,65535,0,1,0,1,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_06_Voltage_ID_1,291,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_1,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_2,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_3,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_4,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_06_Voltage_ID_2,292,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_5,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_6,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_7,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_8,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_06_Voltage_ID_3,293,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_9,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_10,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_11,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_12,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_06_Temperature_ID_1,294,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_1,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_2,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_3,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_4,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_06_Temperature_ID_2,295,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_5,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_6,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_maximum,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_delta,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_06_MSC_ID_1,296,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_sum,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_avg,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_min,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_max,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_06_MSC_ID_2,297,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_delta,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_ic_voltage,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_open_wire,8,5,0,U,1,0,1,0,1,,,
+[VALUE_DESCRIPTION] "No fault detected",0
+[VALUE_DESCRIPTION] "Cell/open-wire/voltage diagnostic fault",1
+[START_SIGNALS] module_ic_temperature,16,6,0,U,65535,0,1,0,1,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_07_Voltage_ID_1,298,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_1,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_2,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_3,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_4,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_07_Voltage_ID_2,299,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_5,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_6,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_7,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_8,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_07_Voltage_ID_3,300,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_9,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_10,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_11,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_12,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_07_Temperature_ID_1,301,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_1,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_2,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_3,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_4,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_07_Temperature_ID_2,302,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_5,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_6,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_maximum,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_delta,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_07_MSC_ID_1,303,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_sum,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_avg,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_min,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_max,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_07_MSC_ID_2,304,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_delta,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_ic_voltage,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_open_wire,8,5,0,U,1,0,1,0,1,,,
+[VALUE_DESCRIPTION] "No fault detected",0
+[VALUE_DESCRIPTION] "Cell/open-wire/voltage diagnostic fault",1
+[START_SIGNALS] module_ic_temperature,16,6,0,U,65535,0,1,0,1,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_08_Voltage_ID_1,305,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_1,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_2,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_3,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_4,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_08_Voltage_ID_2,306,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_5,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_6,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_7,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_8,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_08_Voltage_ID_3,307,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_9,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_10,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_11,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_12,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_08_Temperature_ID_1,308,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_1,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_2,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_3,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_4,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_08_Temperature_ID_2,309,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_5,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_6,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_maximum,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_delta,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_08_MSC_ID_1,310,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_sum,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_avg,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_min,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_max,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_08_MSC_ID_2,311,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_delta,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_ic_voltage,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_open_wire,8,5,0,U,1,0,1,0,1,,,
+[VALUE_DESCRIPTION] "No fault detected",0
+[VALUE_DESCRIPTION] "Cell/open-wire/voltage diagnostic fault",1
+[START_SIGNALS] module_ic_temperature,16,6,0,U,65535,0,1,0,1,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_09_Voltage_ID_1,312,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_1,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_2,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_3,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_4,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_09_Voltage_ID_2,313,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_5,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_6,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_7,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_8,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_09_Voltage_ID_3,314,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_9,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_10,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_11,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_12,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_09_Temperature_ID_1,315,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_1,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_2,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_3,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_4,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_09_Temperature_ID_2,316,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_5,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_6,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_maximum,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_delta,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_09_MSC_ID_1,317,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_sum,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_avg,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_min,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_max,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_09_MSC_ID_2,318,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_delta,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_ic_voltage,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_open_wire,8,5,0,U,1,0,1,0,1,,,
+[VALUE_DESCRIPTION] "No fault detected",0
+[VALUE_DESCRIPTION] "Cell/open-wire/voltage diagnostic fault",1
+[START_SIGNALS] module_ic_temperature,16,6,0,U,65535,0,1,0,1,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_10_Voltage_ID_1,319,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_1,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_2,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_3,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_4,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_10_Voltage_ID_2,320,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_5,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_6,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_7,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_8,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_10_Voltage_ID_3,321,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_9,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_10,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_11,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_12,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_10_Temperature_ID_1,322,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_1,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_2,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_3,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_4,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_10_Temperature_ID_2,323,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_5,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_6,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_maximum,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_delta,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_10_MSC_ID_1,324,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_sum,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_avg,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_min,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_max,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_10_MSC_ID_2,325,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_delta,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_ic_voltage,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_open_wire,8,5,0,U,1,0,1,0,1,,,
+[VALUE_DESCRIPTION] "No fault detected",0
+[VALUE_DESCRIPTION] "Cell/open-wire/voltage diagnostic fault",1
+[START_SIGNALS] module_ic_temperature,16,6,0,U,65535,0,1,0,1,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_11_Voltage_ID_1,326,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_1,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_2,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_3,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_4,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_11_Voltage_ID_2,327,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_5,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_6,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_7,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_8,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_11_Voltage_ID_3,328,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_9,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_10,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_11,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_12,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_11_Temperature_ID_1,329,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_1,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_2,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_3,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_4,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_11_Temperature_ID_2,330,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_5,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_6,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_maximum,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_delta,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_11_MSC_ID_1,331,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_sum,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_avg,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_min,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_max,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_11_MSC_ID_2,332,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_delta,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_ic_voltage,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_open_wire,8,5,0,U,1,0,1,0,1,,,
+[VALUE_DESCRIPTION] "No fault detected",0
+[VALUE_DESCRIPTION] "Cell/open-wire/voltage diagnostic fault",1
+[START_SIGNALS] module_ic_temperature,16,6,0,U,65535,0,1,0,1,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_12_Voltage_ID_1,333,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_1,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_2,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_3,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_4,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_12_Voltage_ID_2,334,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_5,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_6,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_7,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_8,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_12_Voltage_ID_3,335,8,4,1,S,AMS
+[START_SIGNALS] cell_voltage_9,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_10,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_11,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] cell_voltage_12,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_12_Temperature_ID_1,336,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_1,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_2,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_3,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_4,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_12_Temperature_ID_2,337,8,4,1,S,AMS
+[START_SIGNALS] temperature_value_5,16,1,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_value_6,16,3,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_maximum,16,5,0,U,65535,0,1,0,0.01,ºC,,
+[START_SIGNALS] temperature_delta,16,7,0,U,65535,0,1,0,0.01,ºC,,
+[END_MSG]
+
+[START_MSG] Slave_12_MSC_ID_1,338,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_sum,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_avg,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_min,16,5,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_voltage_max,16,7,0,U,65535,0,1,0,0.001,V,,
+[END_MSG]
+
+[START_MSG] Slave_12_MSC_ID_2,339,8,4,1,S,AMS
+[START_SIGNALS] module_voltage_delta,16,1,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_ic_voltage,16,3,0,U,65535,0,1,0,0.001,V,,
+[START_SIGNALS] module_open_wire,8,5,0,U,1,0,1,0,1,,,
+[VALUE_DESCRIPTION] "No fault detected",0
+[VALUE_DESCRIPTION] "Cell/open-wire/voltage diagnostic fault",1
+[START_SIGNALS] module_ic_temperature,16,6,0,U,65535,0,1,0,1,ºC,,
+[END_MSG]
+
+[START_MSG] Master_MSC_ID_1,1793,8,3,1,S,AMS
+[START_SIGNALS] mcu_vref,8,1,0,U,255,0,1,2,0.01,V,,
+[START_SIGNALS] mcu_temperature,8,2,0,U,255,0,1,0,1,ºC,,
+[START_SIGNALS] ams_current_draw,16,3,0,U,65535,0,1,0,0.001,A,,
+[END_MSG]
+
+[START_SIG_LIST]
+[START_SIGNALS] NewSignal_0003,8,1,0,U,255,0,1,0,1,,,
+[END_SIG_LIST]
+
+[START_VALUE_TABLE]
+[END_VALUE_TABLE]
+
+[NODE] AMS,VCU
+
+[START_DESC]
+[START_DESC_NET]
+[END_DESC_NET]
+
+[START_DESC_NODE]
+[END_DESC_NODE]
+
+[START_DESC_MSG]
+[END_DESC_MSG]
+
+[START_DESC_SIG]
+262 S module_open_wire "";
+269 S module_open_wire "";
+276 S module_open_wire "";
+283 S module_open_wire "";
+290 S module_open_wire "";
+297 S module_open_wire "";
+304 S module_open_wire "";
+311 S module_open_wire "";
+318 S module_open_wire "";
+325 S module_open_wire "";
+332 S module_open_wire "";
+339 S module_open_wire "";
+[END_DESC_SIG]
+[END_DESC]
+
+[START_PARAM]
+[START_PARAM_NET]
+"BusType",STRING,"CAN"
+[END_PARAM_NET]
+
+[START_PARAM_NODE]
+[END_PARAM_NODE]
+
+[START_PARAM_MSG]
+[END_PARAM_MSG]
+
+[START_PARAM_SIG]
+[END_PARAM_SIG]
+
+[START_PARAM_NODE_RX_SIG]
+[END_PARAM_NODE_RX_SIG]
+
+[START_PARAM_NODE_TX_MSG]
+[END_PARAM_NODE_TX_MSG]
+[END_PARAM]
+
+[START_PARAM_VAL]
+[START_PARAM_NET_VAL]
+[END_PARAM_NET_VAL]
+
+[START_PARAM_NODE_VAL]
+[END_PARAM_NODE_VAL]
+
+[START_PARAM_MSG_VAL]
+[END_PARAM_MSG_VAL]
+
+[START_PARAM_SIG_VAL]
+[END_PARAM_SIG_VAL]
+
+[END_PARAM_VAL]
+
+
+[START_NOT_SUPPORTED]
+[END_NOT_SUPPORTED]
+
+[START_NOT_PROCESSED]
+	PZ_
+	ON_QRS_
+	ON_
+	INY_
+	PNG_QRS_
+	PNG_
+	SVYGRE
+	ON_QRS_QRS_
+	RI_QNGN_
+	RAIINE_QNGN_
+	FTGLCR_
+	FTGLCR_INY_
+	ON_QRS_FTGLCR_
+	ON_FTGLCR_
+	FVT_GLCR_ERS_
+	INY_GNOYR_
+	FVT_TEBHC_
+	FVT_INYGLCR_
+	FVTGLCR_INYGLCR_
+	OB_GK_OH_
+	ON_QRS_ERY_
+	ON_ERY_
+	ON_QRS_QRS_ERY_
+	OH_FT_ERY_
+	OH_RI_ERY_
+	OH_OB_ERY_
+	FT_ZHY_INY_
+OF_:
+
+[END_NOT_PROCESSED]
