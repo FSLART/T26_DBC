@@ -179,9 +179,9 @@ th { background-color:#e2eaf1; }
 
 <div id="autonomous_t26.dbc" class="tabcontent">
   <div class="summary">
-    <b>Resumo:</b> Nós: 13, Mensagens: 8, Sinais: 23
-    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
+    <b>Resumo:</b> Nós: 13, Mensagens: 11, Sinais: 35
+    <br>Mensagens Adicionadas: 3, Removidas: 0, Alteradas: 0
+    <br>Sinais Adicionados: 12, Removidos: 0, Alterados: 0
   </div>
 
   <h2>🟦 Nós</h2>
@@ -201,7 +201,7 @@ th { background-color:#e2eaf1; }
   
     <li>node('FSG_DATA_LOGGER', None)</li>
   
-    <li>node('AK10_9', 'Atuador direção')</li>
+    <li>node('AK10_9', 'Atuador direï¿½ï¿½o')</li>
   
     <li>node('Aquisition_Board1', None)</li>
   
@@ -216,7 +216,36 @@ th { background-color:#e2eaf1; }
   </ul>
 
   <h2>📨 Mensagens Adicionadas</h2>
-  <p>Nenhuma mensagem adicionada.</p>
+  
+  <table>
+  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
+  
+    <tr class="added">
+      <td>1536</td>
+      <td>VCU_IGN_R2D</td>
+      <td>8</td>
+      <td>None</td>
+      <td>ignition_manual, r2d_manual, ignition_auto, r2d_auto, shutdown_signal, vcu_state, R2D_button_raw, Ignition_switch_raw</td>
+    </tr>
+  
+    <tr class="added">
+      <td>129</td>
+      <td>VCU_HV</td>
+      <td>3</td>
+      <td>None</td>
+      <td>HV, Brake_pressure_Front, Brake_pressure_Rear</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1289</td>
+      <td>VCU_RPM</td>
+      <td>2</td>
+      <td>None</td>
+      <td>rpm_actual</td>
+    </tr>
+  
+  </table>
+  
 
   <h2>📨 Mensagens Removidas</h2>
   <p>Nenhuma mensagem removida.</p>
@@ -225,7 +254,36 @@ th { background-color:#e2eaf1; }
   <p>Nenhuma mensagem alterada.</p>
 
   <h2>🟩 Sinais Adicionados</h2>
-  <p>Nenhum sinal adicionado.</p>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="added"><td>129</td><td>Brake_pressure_Front</td></tr>
+  
+    <tr class="added"><td>1536</td><td>r2d_auto</td></tr>
+  
+    <tr class="added"><td>1536</td><td>shutdown_signal</td></tr>
+  
+    <tr class="added"><td>129</td><td>HV</td></tr>
+  
+    <tr class="added"><td>129</td><td>Brake_pressure_Rear</td></tr>
+  
+    <tr class="added"><td>1536</td><td>Ignition_switch_raw</td></tr>
+  
+    <tr class="added"><td>1536</td><td>vcu_state</td></tr>
+  
+    <tr class="added"><td>1536</td><td>R2D_button_raw</td></tr>
+  
+    <tr class="added"><td>1536</td><td>r2d_manual</td></tr>
+  
+    <tr class="added"><td>1536</td><td>ignition_auto</td></tr>
+  
+    <tr class="added"><td>1536</td><td>ignition_manual</td></tr>
+  
+    <tr class="added"><td>1289</td><td>rpm_actual</td></tr>
+  
+  </table>
+  
 
   <h2>🟥 Sinais Removidos</h2>
   <p>Nenhum sinal removido.</p>
