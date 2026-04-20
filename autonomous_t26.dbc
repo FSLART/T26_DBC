@@ -43,7 +43,7 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ NewSignal_0015 : 32|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ ACU_State : 0|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ assi_state : 8|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ Internal_temperature : 16|8@1+ (1,0) [0|0] "º" Vector__XXX
+ SG_ Internal_temperature : 16|8@1+ (1,0) [0|0] "ï¿½" Vector__XXX
  SG_ ignition_manual : 0|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ r2d_manual : 8|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ ignition_auto : 16|8@1+ (1,0) [0|0] "" Vector__XXX
@@ -61,7 +61,7 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ SUSP_L : 32|16@1+ (0.1,0) [0|0] "mm" Vector__XXX
  SG_ SPD_LEFT : 0|16@1+ (0.1,0) [0|0] "km/h" Vector__XXX
  SG_ SPD_RIGHT : 16|16@1+ (0.1,0) [0|0] "km/h" Vector__XXX
- SG_ ST_ANGLE : 0|16@1- (0.1,0) [0|0] "º" Vector__XXX
+ SG_ ST_ANGLE : 0|16@1- (0.1,0) [0|0] "ï¿½" Vector__XXX
  SG_ SUSP_R : 16|16@1+ (0.1,0) [0|0] "mm" Vector__XXX
  SG_ SUSP_L : 32|16@1+ (0.1,0) [0|0] "mm" Vector__XXX
  SG_ SIGNAL : 0|8@1+ (1,0) [0|0] ""  JETSON,ACU
@@ -75,8 +75,8 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ Emergency : 16|8@1+ (1,0) [0|0] ""  VCU
  SG_ Speed_actual : 0|8@1+ (0.5,0) [0|0] "Km/h"  VCU
  SG_ Speed_target : 8|8@1+ (0.5,0) [0|0] "Km/h" Vector__XXX
- SG_ Steering_angle_actual : 16|8@1- (0.5,0) [0|0] "º" Vector__XXX
- SG_ Steering_angle_target : 24|8@1- (0.5,0) [0|0] "º" Vector__XXX
+ SG_ Steering_angle_actual : 16|8@1- (0.5,0) [0|0] "ï¿½" Vector__XXX
+ SG_ Steering_angle_target : 24|8@1- (0.5,0) [0|0] "ï¿½" Vector__XXX
  SG_ RPM : 0|16@1- (1,0) [0|6000] "RPM"  JETSON
  SG_ Mission_Select : 0|8@1+ (1,0) [0|0] ""  ACU
  SG_ Mission_Select : 0|8@1+ (1,0) [0|0] ""  JETSON
@@ -94,18 +94,18 @@ BO_ 81 ACU: 8 ACU
  SG_ AS_STATE : 3|3@1+ (1,0) [0|0] "" Vector__XXX
  SG_ ACU_STATE : 9|4@1+ (1,0) [0|0] "" Vector__XXX
  SG_ ASSI_STATE : 13|4@1+ (1,0) [0|0] "" Vector__XXX
- SG_ ACU_CPU_TEMP : 17|8@1+ (1,0) [0|255] "º" Vector__XXX
+ SG_ ACU_CPU_TEMP : 17|8@1+ (1,0) [0|255] "ï¿½" Vector__XXX
  SG_ Mission_select : 6|3@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 2147494248 dir_actuator_feedback: 8 AK10_9
- SG_ Position : 7|16@0+ (10,0) [-32000|32000] "º" Vector__XXX
+ SG_ Position : 7|16@0+ (10,0) [-32000|32000] "ï¿½" Vector__XXX
  SG_ Speed : 23|16@0+ (210,0) [-32000|32000] "RPM" Vector__XXX
  SG_ Current : 39|16@0+ (100,0) [0|0] "A" Vector__XXX
- SG_ Temperature : 55|8@0+ (1,0) [-20|127] "º" Vector__XXX
+ SG_ Temperature : 55|8@0+ (1,0) [-20|127] "ï¿½" Vector__XXX
  SG_ Error_codes : 63|8@0+ (1,0) [0|7] "" Vector__XXX
 
 BO_ 2147484776 dir_act_possition_loop: 8 JETSON
- SG_ POSITION : 7|32@0- (1000,0) [0|0] "º" Vector__XXX
+ SG_ POSITION : 7|32@0- (1000,0) [0|0] "ï¿½" Vector__XXX
 
 BO_ 1808 AQT1: 3 Aquisition_Board1
  SG_ BRK_PRESS : 0|16@1+ (0.1,0) [0|0] "bar" Vector__XXX
@@ -113,22 +113,40 @@ BO_ 1808 AQT1: 3 Aquisition_Board1
  SG_ BOTS : 17|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 1824 AQT2: 2 Aquisition_Board2
- SG_ WHEEL_ANGLE : 0|16@1- (0.1,0) [0|0] "º" Vector__XXX
+ SG_ WHEEL_ANGLE : 0|16@1- (0.1,0) [0|0] "ï¿½" Vector__XXX
 
 BO_ 1840 AQT3: 2 Aquisition_Board3
- SG_ WHEEL_ANGLE : 0|16@1- (0.1,0) [0|0] "º" Vector__XXX
+ SG_ WHEEL_ANGLE : 0|16@1- (0.1,0) [0|0] "ï¿½" Vector__XXX
 
 BO_ 1856 AQT4: 3 Aquisition_Board4
- SG_ ST_ANGLE : 0|16@1- (0.1,0) [0|0] "º" Vector__XXX
+ SG_ ST_ANGLE : 0|16@1- (0.1,0) [0|0] "ï¿½" Vector__XXX
  SG_ INERTIA : 16|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ EMER_BUTTON : 17|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 1904 AQT7: 2 Aquisition_Board7
  SG_ BRK_PRESS : 0|16@1+ (0.1,0) [0|0] "bar" Vector__XXX
 
+BO_ 1536 VCU_IGN_R2D: 8 VCU
+ SG_ ignition_manual : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ r2d_manual : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ignition_auto : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ r2d_auto : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ shutdown_signal : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ vcu_state : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ R2D_button_raw : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Ignition_switch_raw : 56|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 129 VCU_HV: 3 VCU
+ SG_ HV : 0|8@1+ (1,0) [0|0] ""  ACU
+ SG_ Brake_pressure_Front : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Brake_pressure_Rear : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1289 VCU_RPM: 2 VCU
+ SG_ rpm_actual : 0|16@1- (1,0) [0|6000] "RPM"  JETSON
 
 
-CM_ BU_ AK10_9 "Atuador direção";
+
+CM_ BU_ AK10_9 "Atuador direï¿½ï¿½o";
 CM_ SG_ 3221225472 EBS_Pressure_Rear "(null)";
 CM_ SG_ 3221225472 EBS_Pressure_Front "Perdu gay";
 CM_ SG_ 3221225472 STATE "Regulations";
