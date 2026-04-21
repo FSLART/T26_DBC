@@ -179,9 +179,9 @@ th { background-color:#e2eaf1; }
 
 <div id="autonomous_t26.dbc" class="tabcontent">
   <div class="summary">
-    <b>Resumo:</b> Nós: 13, Mensagens: 11, Sinais: 35
-    <br>Mensagens Adicionadas: 3, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 12, Removidos: 0, Alterados: 0
+    <b>Resumo:</b> Nós: 13, Mensagens: 13, Sinais: 41
+    <br>Mensagens Adicionadas: 2, Removidas: 0, Alteradas: 2
+    <br>Sinais Adicionados: 9, Removidos: 3, Alterados: 2
   </div>
 
   <h2>🟦 Nós</h2>
@@ -221,27 +221,19 @@ th { background-color:#e2eaf1; }
   <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
   
     <tr class="added">
-      <td>1536</td>
-      <td>VCU_IGN_R2D</td>
+      <td>97</td>
+      <td>JETSON</td>
+      <td>4</td>
+      <td>None</td>
+      <td>AS_STATE, AS_MISSION, TEMPERATURE, CPU, GPU</td>
+    </tr>
+  
+    <tr class="added">
+      <td>401</td>
+      <td>RES</td>
       <td>8</td>
       <td>None</td>
-      <td>ignition_manual, r2d_manual, ignition_auto, r2d_auto, shutdown_signal, vcu_state, R2D_button_raw, Ignition_switch_raw</td>
-    </tr>
-  
-    <tr class="added">
-      <td>129</td>
-      <td>VCU_HV</td>
-      <td>3</td>
-      <td>None</td>
-      <td>HV, Brake_pressure_Front, Brake_pressure_Rear</td>
-    </tr>
-  
-    <tr class="added">
-      <td>1289</td>
-      <td>VCU_RPM</td>
-      <td>2</td>
-      <td>None</td>
-      <td>rpm_actual</td>
+      <td>SIGNAL</td>
     </tr>
   
   </table>
@@ -251,45 +243,170 @@ th { background-color:#e2eaf1; }
   <p>Nenhuma mensagem removida.</p>
 
   <h2>📨 Mensagens Alteradas</h2>
-  <p>Nenhuma mensagem alterada.</p>
+  
+    
+    <button type="button" class="collapsible">10600 : CubeMars_Feedback</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>name</td>
+        <td class="code">dir_actuator_feedback</td>
+        <td class="code">CubeMars_Feedback</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['Position', 'Speed', 'Current', 'Temperature', 'Error_codes']</td>
+        <td class="code">['Position', 'Speed_RPM', 'Current', 'Driver_Temp', 'Error_Code']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1128 : CubeMars_possition_loop</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>name</td>
+        <td class="code">dir_act_possition_loop</td>
+        <td class="code">CubeMars_possition_loop</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>length</td>
+        <td class="code">8</td>
+        <td class="code">4</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+  
 
   <h2>🟩 Sinais Adicionados</h2>
   
   <table>
   <tr><th>Message ID</th><th>Signal</th></tr>
   
-    <tr class="added"><td>129</td><td>Brake_pressure_Front</td></tr>
+    <tr class="added"><td>97</td><td>AS_MISSION</td></tr>
   
-    <tr class="added"><td>1536</td><td>r2d_auto</td></tr>
+    <tr class="added"><td>97</td><td>CPU</td></tr>
   
-    <tr class="added"><td>1536</td><td>shutdown_signal</td></tr>
+    <tr class="added"><td>10600</td><td>Driver_Temp</td></tr>
   
-    <tr class="added"><td>129</td><td>HV</td></tr>
+    <tr class="added"><td>10600</td><td>Error_Code</td></tr>
   
-    <tr class="added"><td>129</td><td>Brake_pressure_Rear</td></tr>
+    <tr class="added"><td>97</td><td>AS_STATE</td></tr>
   
-    <tr class="added"><td>1536</td><td>Ignition_switch_raw</td></tr>
+    <tr class="added"><td>401</td><td>SIGNAL</td></tr>
   
-    <tr class="added"><td>1536</td><td>vcu_state</td></tr>
+    <tr class="added"><td>97</td><td>GPU</td></tr>
   
-    <tr class="added"><td>1536</td><td>R2D_button_raw</td></tr>
+    <tr class="added"><td>10600</td><td>Speed_RPM</td></tr>
   
-    <tr class="added"><td>1536</td><td>r2d_manual</td></tr>
-  
-    <tr class="added"><td>1536</td><td>ignition_auto</td></tr>
-  
-    <tr class="added"><td>1536</td><td>ignition_manual</td></tr>
-  
-    <tr class="added"><td>1289</td><td>rpm_actual</td></tr>
+    <tr class="added"><td>97</td><td>TEMPERATURE</td></tr>
   
   </table>
   
 
   <h2>🟥 Sinais Removidos</h2>
-  <p>Nenhum sinal removido.</p>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="removed"><td>10600</td><td>Error_codes</td></tr>
+  
+    <tr class="removed"><td>10600</td><td>Temperature</td></tr>
+  
+    <tr class="removed"><td>10600</td><td>Speed</td></tr>
+  
+  </table>
+  
 
   <h2>🟨 Sinais Alterados</h2>
-  <p>Nenhuma alteração encontrada.</p>
+  
+    
+    <button type="button" class="collapsible">10600 : Position</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>minimum</td>
+        <td class="code">-32000</td>
+        <td class="code">-3200</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>maximum</td>
+        <td class="code">32000</td>
+        <td class="code">3200</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>scale</td>
+        <td class="code">10</td>
+        <td class="code">0.1</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>start</td>
+        <td class="code">7</td>
+        <td class="code">0</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>byte_order</td>
+        <td class="code">big_endian</td>
+        <td class="code">little_endian</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">10600 : Current</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>minimum</td>
+        <td class="code">None</td>
+        <td class="code">-60</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>maximum</td>
+        <td class="code">None</td>
+        <td class="code">60</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>scale</td>
+        <td class="code">100</td>
+        <td class="code">0.01</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>start</td>
+        <td class="code">39</td>
+        <td class="code">32</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>byte_order</td>
+        <td class="code">big_endian</td>
+        <td class="code">little_endian</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+  
 </div>
 
 
