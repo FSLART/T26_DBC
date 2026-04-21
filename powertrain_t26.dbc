@@ -101,7 +101,7 @@ BO_ 261 Slave_01_MSC_ID_1: 8 AMS
 BO_ 262 Slave_01_MSC_ID_2: 8 AMS
  SG_ module_voltage_delta : 0|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
  SG_ module_ic_voltage : 16|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
- SG_ module_open_wire : 32|8@1+ (1,0) [0|1] ""  VCU,HOST
+ SG_ module_open_wire : 32|8@1+ (1,0) [0|18] ""  VCU,HOST
  SG_ module_ic_temperature : 40|16@1+ (1,0) [0|0] "degC"  VCU,HOST
  SG_ module_overvoltage : 56|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ module_undervoltage : 57|1@1+ (1,0) [0|0] "" Vector__XXX
@@ -146,7 +146,7 @@ BO_ 268 Slave_02_MSC_ID_1: 8 AMS
 BO_ 269 Slave_02_MSC_ID_2: 8 AMS
  SG_ module_voltage_delta : 0|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
  SG_ module_ic_voltage : 16|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
- SG_ module_open_wire : 32|8@1+ (1,0) [0|1] ""  VCU,HOST
+ SG_ module_open_wire : 32|8@1+ (1,0) [0|18] ""  VCU,HOST
  SG_ module_ic_temperature : 40|16@1+ (1,0) [0|0] "degC"  VCU,HOST
  SG_ module_overvoltage : 56|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ module_undervoltage : 57|1@1+ (1,0) [0|0] "" Vector__XXX
@@ -191,7 +191,7 @@ BO_ 275 Slave_03_MSC_ID_1: 8 AMS
 BO_ 276 Slave_03_MSC_ID_2: 8 AMS
  SG_ module_voltage_delta : 0|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
  SG_ module_ic_voltage : 16|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
- SG_ module_open_wire : 32|8@1+ (1,0) [0|1] ""  VCU,HOST
+ SG_ module_open_wire : 32|8@1+ (1,0) [0|18] ""  VCU,HOST
  SG_ module_ic_temperature : 40|16@1+ (1,0) [0|0] "degC"  VCU,HOST
 
 BO_ 277 Slave_04_Voltage_ID_1: 8 AMS
@@ -233,7 +233,7 @@ BO_ 282 Slave_04_MSC_ID_1: 8 AMS
 BO_ 283 Slave_04_MSC_ID_2: 8 AMS
  SG_ module_voltage_delta : 0|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
  SG_ module_ic_voltage : 16|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
- SG_ module_open_wire : 32|8@1+ (1,0) [0|1] ""  VCU,HOST
+ SG_ module_open_wire : 32|8@1+ (1,0) [0|18] ""  VCU,HOST
  SG_ module_ic_temperature : 40|16@1+ (1,0) [0|0] "degC"  VCU,HOST
 
 BO_ 284 Slave_05_Voltage_ID_1: 8 AMS
@@ -275,7 +275,7 @@ BO_ 289 Slave_05_MSC_ID_1: 8 AMS
 BO_ 290 Slave_05_MSC_ID_2: 8 AMS
  SG_ module_voltage_delta : 0|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
  SG_ module_ic_voltage : 16|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
- SG_ module_open_wire : 32|8@1+ (1,0) [0|1] ""  VCU,HOST
+ SG_ module_open_wire : 32|8@1+ (1,0) [0|18] ""  VCU,HOST
  SG_ module_ic_temperature : 40|16@1+ (1,0) [0|0] "degC"  VCU,HOST
 
 BO_ 291 Slave_06_Voltage_ID_1: 8 AMS
@@ -317,7 +317,7 @@ BO_ 296 Slave_06_MSC_ID_1: 8 AMS
 BO_ 297 Slave_06_MSC_ID_2: 8 AMS
  SG_ module_voltage_delta : 0|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
  SG_ module_ic_voltage : 16|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
- SG_ module_open_wire : 32|8@1+ (1,0) [0|1] ""  VCU,HOST
+ SG_ module_open_wire : 32|8@1+ (1,0) [0|18] ""  VCU,HOST
  SG_ module_ic_temperature : 40|16@1+ (1,0) [0|0] "degC"  VCU,HOST
 
 BO_ 298 Slave_07_Voltage_ID_1: 8 AMS
@@ -359,7 +359,7 @@ BO_ 303 Slave_07_MSC_ID_1: 8 AMS
 BO_ 304 Slave_07_MSC_ID_2: 8 AMS
  SG_ module_voltage_delta : 0|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
  SG_ module_ic_voltage : 16|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
- SG_ module_open_wire : 32|8@1+ (1,0) [0|1] ""  VCU,HOST
+ SG_ module_open_wire : 32|8@1+ (1,0) [0|18] ""  VCU,HOST
  SG_ module_ic_temperature : 40|16@1+ (1,0) [0|0] "degC"  VCU,HOST
 
 BO_ 305 Slave_08_Voltage_ID_1: 8 AMS
@@ -401,7 +401,7 @@ BO_ 310 Slave_08_MSC_ID_1: 8 AMS
 BO_ 311 Slave_08_MSC_ID_2: 8 AMS
  SG_ module_voltage_delta : 0|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
  SG_ module_ic_voltage : 16|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
- SG_ module_open_wire : 32|8@1+ (1,0) [0|1] ""  VCU,HOST
+ SG_ module_open_wire : 32|8@1+ (1,0) [0|18] ""  VCU,HOST
  SG_ module_ic_temperature : 40|16@1+ (1,0) [0|0] "degC"  VCU,HOST
 
 BO_ 312 Slave_09_Voltage_ID_1: 8 AMS
@@ -443,7 +443,7 @@ BO_ 317 Slave_09_MSC_ID_1: 8 AMS
 BO_ 318 Slave_09_MSC_ID_2: 8 AMS
  SG_ module_voltage_delta : 0|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
  SG_ module_ic_voltage : 16|16@1+ (0.001,0) [0|0] "V"  VCU,HOST
- SG_ module_open_wire : 32|8@1+ (1,0) [0|1] ""  VCU,HOST
+ SG_ module_open_wire : 32|8@1+ (1,0) [0|18] ""  VCU,HOST
  SG_ module_ic_temperature : 40|16@1+ (1,0) [0|0] "degC"  VCU,HOST
 
 BO_ 319 Slave_10_Voltage_ID_1: 8 AMS
@@ -485,7 +485,7 @@ BO_ 436 Slave_10_MSC_ID_1: 8 AMS
 BO_ 325 Slave_10_MSC_ID_2: 8 AMS
  SG_ module_voltage_delta : 0|16@1+ (0.001,0) [0|0] "V"  HOST,VCU
  SG_ module_ic_voltage : 16|16@1+ (0.001,0) [0|0] "V"  HOST,VCU
- SG_ module_open_wire : 32|8@1+ (1,0) [0|1] ""  HOST,VCU
+ SG_ module_open_wire : 32|8@1+ (1,0) [0|18] ""  HOST,VCU
  SG_ module_ic_temperature : 40|16@1+ (1,0) [0|0] "degC"  HOST,VCU
 
 BO_ 326 Slave_11_Voltage_ID_1: 8 AMS
@@ -527,7 +527,7 @@ BO_ 331 Slave_11_MSC_ID_1: 8 AMS
 BO_ 332 Slave_11_MSC_ID_2: 8 AMS
  SG_ module_voltage_delta : 0|16@1+ (0.001,0) [0|0] "V"  HOST,VCU
  SG_ module_ic_voltage : 16|16@1+ (0.001,0) [0|0] "V"  HOST,VCU
- SG_ module_open_wire : 32|8@1+ (1,0) [0|1] ""  HOST,VCU
+ SG_ module_open_wire : 32|8@1+ (1,0) [0|18] ""  HOST,VCU
  SG_ module_ic_temperature : 40|16@1+ (1,0) [0|0] "degC"  HOST,VCU
 
 BO_ 333 Slave_12_Voltage_ID_1: 8 AMS
@@ -569,7 +569,7 @@ BO_ 338 Slave_12_MSC_ID_1: 8 AMS
 BO_ 339 Slave_12_MSC_ID_2: 8 AMS
  SG_ module_voltage_delta : 0|16@1+ (0.001,0) [0|0] "V"  HOST,VCU
  SG_ module_ic_voltage : 16|16@1+ (0.001,0) [0|0] "V"  HOST,VCU
- SG_ module_open_wire : 32|8@1+ (1,0) [0|1] ""  HOST,VCU
+ SG_ module_open_wire : 32|8@1+ (1,0) [0|18] ""  HOST,VCU
  SG_ module_ic_temperature : 40|16@1+ (1,0) [0|0] "degC"  HOST,VCU
 
 BO_ 1793 Master_MSC_ID_1: 8 AMS
@@ -1084,24 +1084,24 @@ CM_ SG_ 1220 AvailableMinDcCurrent "Available min DC current. This value affecte
 CM_ SG_ 1795 master_runtime "AMS Master Runtime in seconds";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "BusType" "CAN";
-VAL_ 262 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
+VAL_ 262 module_open_wire 0 "No open wire" 1 "Cell 1" 2 "Cell 2" 3 "Cell 3" 4 "Cell 4" 5 "Cell 5" 6 "Cell 6" 7 "Cell 7" 8 "Cell 8" 9 "Cell 9" 10 "Cell 10" 11 "Cell 11" 12 "Cell 12" 13 "GPIO 1" 14 "GPIO 2" 15 "GPIO 3" 16 "GPIO 4" 17 "GPIO 5" 18 "GPIO 6" ;
 VAL_ 262 module_overvoltage 0 "No Fault" 1 "Overvoltage Detected" ;
 VAL_ 262 module_undervoltage 0 "No Fault" 1 "Undervoltage Detected" ;
 VAL_ 262 module_under_over_identifier 0 "No Fault" 1 "Cell 1" 2 "Cell 2" 3 "Cell 3" 4 "Cell 4" 5 "Cell 5" 6 "Cell 6" 7 "Cell 7" 8 "Cell 8" 9 "Cell 9" 10 "Cell 10" 11 "Cell 11" 12 "Cell 12" 13 "Termistor 1" 14 "Termistor 2" 15 "Termistor 3" 16 "Termistor 4" 17 "Termistor 5" 18 "Termistor 6" ;
-VAL_ 269 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
+VAL_ 269 module_open_wire 0 "No open wire" 1 "Cell 1" 2 "Cell 2" 3 "Cell 3" 4 "Cell 4" 5 "Cell 5" 6 "Cell 6" 7 "Cell 7" 8 "Cell 8" 9 "Cell 9" 10 "Cell 10" 11 "Cell 11" 12 "Cell 12" 13 "GPIO 1" 14 "GPIO 2" 15 "GPIO 3" 16 "GPIO 4" 17 "GPIO 5" 18 "GPIO 6" ;
 VAL_ 269 module_overvoltage 0 "No Fault" 1 "Overvoltage Detected" ;
 VAL_ 269 module_undervoltage 0 "No Fault" 1 "Overvoltage Detected" ;
 VAL_ 269 module_under_over_identifier 0 "No Fault" 1 "Cell 1" 2 "Cell 2" 3 "Cell 3" 4 "Cell 4" 5 "Cell 5" 6 "Cell 6" 7 "Cell 7" 8 "Cell 8" 9 "Cell 9" 10 "Cell 10" 11 "Cell 11" 12 "Cell 12" 13 "Termistor 1" 14 "Termistor 2" 15 "Termistor 3" 16 "Termistor 4" 17 "Termistor 5" 18 "Termistor 6" ;
-VAL_ 276 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
-VAL_ 283 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
-VAL_ 290 module_open_wire 0 "No fault detected" 1 "Cell/open-wire /voltage diagnostic fault" ;
-VAL_ 297 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
-VAL_ 304 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
-VAL_ 311 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
-VAL_ 318 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
-VAL_ 325 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
-VAL_ 332 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
-VAL_ 339 module_open_wire 0 "No fault detected" 1 "Cell/open-wire/voltage diagnostic fault" ;
+VAL_ 276 module_open_wire 0 "No open wire" 1 "Cell 1" 2 "Cell 2" 3 "Cell 3" 4 "Cell 4" 5 "Cell 5" 6 "Cell 6" 7 "Cell 7" 8 "Cell 8" 9 "Cell 9" 10 "Cell 10" 11 "Cell 11" 12 "Cell 12" 13 "GPIO 1" 14 "GPIO 2" 15 "GPIO 3" 16 "GPIO 4" 17 "GPIO 5" 18 "GPIO 6" ;
+VAL_ 283 module_open_wire 0 "No open wire" 1 "Cell 1" 2 "Cell 2" 3 "Cell 3" 4 "Cell 4" 5 "Cell 5" 6 "Cell 6" 7 "Cell 7" 8 "Cell 8" 9 "Cell 9" 10 "Cell 10" 11 "Cell 11" 12 "Cell 12" 13 "GPIO 1" 14 "GPIO 2" 15 "GPIO 3" 16 "GPIO 4" 17 "GPIO 5" 18 "GPIO 6" ;
+VAL_ 290 module_open_wire 0 "No open wire" 1 "Cell 1" 2 "Cell 2" 3 "Cell 3" 4 "Cell 4" 5 "Cell 5" 6 "Cell 6" 7 "Cell 7" 8 "Cell 8" 9 "Cell 9" 10 "Cell 10" 11 "Cell 11" 12 "Cell 12" 13 "GPIO 1" 14 "GPIO 2" 15 "GPIO 3" 16 "GPIO 4" 17 "GPIO 5" 18 "GPIO 6" ;
+VAL_ 297 module_open_wire 0 "No open wire" 1 "Cell 1" 2 "Cell 2" 3 "Cell 3" 4 "Cell 4" 5 "Cell 5" 6 "Cell 6" 7 "Cell 7" 8 "Cell 8" 9 "Cell 9" 10 "Cell 10" 11 "Cell 11" 12 "Cell 12" 13 "GPIO 1" 14 "GPIO 2" 15 "GPIO 3" 16 "GPIO 4" 17 "GPIO 5" 18 "GPIO 6" ;
+VAL_ 304 module_open_wire 0 "No open wire" 1 "Cell 1" 2 "Cell 2" 3 "Cell 3" 4 "Cell 4" 5 "Cell 5" 6 "Cell 6" 7 "Cell 7" 8 "Cell 8" 9 "Cell 9" 10 "Cell 10" 11 "Cell 11" 12 "Cell 12" 13 "GPIO 1" 14 "GPIO 2" 15 "GPIO 3" 16 "GPIO 4" 17 "GPIO 5" 18 "GPIO 6" ;
+VAL_ 311 module_open_wire 0 "No open wire" 1 "Cell 1" 2 "Cell 2" 3 "Cell 3" 4 "Cell 4" 5 "Cell 5" 6 "Cell 6" 7 "Cell 7" 8 "Cell 8" 9 "Cell 9" 10 "Cell 10" 11 "Cell 11" 12 "Cell 12" 13 "GPIO 1" 14 "GPIO 2" 15 "GPIO 3" 16 "GPIO 4" 17 "GPIO 5" 18 "GPIO 6" ;
+VAL_ 318 module_open_wire 0 "No open wire" 1 "Cell 1" 2 "Cell 2" 3 "Cell 3" 4 "Cell 4" 5 "Cell 5" 6 "Cell 6" 7 "Cell 7" 8 "Cell 8" 9 "Cell 9" 10 "Cell 10" 11 "Cell 11" 12 "Cell 12" 13 "GPIO 1" 14 "GPIO 2" 15 "GPIO 3" 16 "GPIO 4" 17 "GPIO 5" 18 "GPIO 6" ;
+VAL_ 325 module_open_wire 0 "No open wire" 1 "Cell 1" 2 "Cell 2" 3 "Cell 3" 4 "Cell 4" 5 "Cell 5" 6 "Cell 6" 7 "Cell 7" 8 "Cell 8" 9 "Cell 9" 10 "Cell 10" 11 "Cell 11" 12 "Cell 12" 13 "GPIO 1" 14 "GPIO 2" 15 "GPIO 3" 16 "GPIO 4" 17 "GPIO 5" 18 "GPIO 6" ;
+VAL_ 332 module_open_wire 0 "No open wire" 1 "Cell 1" 2 "Cell 2" 3 "Cell 3" 4 "Cell 4" 5 "Cell 5" 6 "Cell 6" 7 "Cell 7" 8 "Cell 8" 9 "Cell 9" 10 "Cell 10" 11 "Cell 11" 12 "Cell 12" 13 "GPIO 1" 14 "GPIO 2" 15 "GPIO 3" 16 "GPIO 4" 17 "GPIO 5" 18 "GPIO 6" ;
+VAL_ 339 module_open_wire 0 "No open wire" 1 "Cell 1" 2 "Cell 2" 3 "Cell 3" 4 "Cell 4" 5 "Cell 5" 6 "Cell 6" 7 "Cell 7" 8 "Cell 8" 9 "Cell 9" 10 "Cell 10" 11 "Cell 11" 12 "Cell 12" 13 "GPIO 1" 14 "GPIO 2" 15 "GPIO 3" 16 "GPIO 4" 17 "GPIO 5" 18 "GPIO 6" ;
 VAL_ 1793 master_firmware_version 0 "Unknown Firmware" 1 "alpha" 3 "beta" 5 "alpha-v1" 7 "beta-v1" 9 "alpha-v2" 13 "alpha-v3" 17 "alpha-v3.1" 11 "beta-v2" 15 "beta-v3" ;
 VAL_ 1793 master_state 0 "BALANCING" 1 "CHARGING" 2 "IDLE" 3 "ONMISSION" 4 "STARTUP" 5 "DISCHARGE_TEST" 6 "RESET_ISA" 7 "FAULT" ;
 VAL_ 1794 precharge_state 0 "START" 1 "OPEN_ALL" 2 "SWITCH_HVNEG" 3 "DELAY1" 4 "VERIFY1" 5 "SWITCH_PRECHARGE" 6 "DELAY2" 7 "VERIFY2" 8 "VERIFY_CURRENT" 9 "VERIFY_BUS_VOLT" 10 "SWITCH_HVPOS" 11 "DELAY3" 12 "VERIFY3" 13 "TURN_OFF_PRECHARGE" 14 "DELAY4" 15 "VERIFY4" 16 "END" 17 "WRONG" 18 "KILL" 19 "RX_CAN" ;
