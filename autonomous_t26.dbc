@@ -59,11 +59,7 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ BRK_PRESS : 0|16@1+ (0.1,0) [0|0] "bar" Vector__XXX
  SG_ SUSP_R : 16|16@1+ (0.1,0) [0|0] "mm" Vector__XXX
  SG_ SUSP_L : 32|16@1+ (0.1,0) [0|0] "mm" Vector__XXX
- SG_ SPD_LEFT : 0|16@1+ (0.1,0) [0|0] "km/h" Vector__XXX
- SG_ SPD_RIGHT : 16|16@1+ (0.1,0) [0|0] "km/h" Vector__XXX
  SG_ ST_ANGLE : 0|16@1- (0.1,0) [0|0] "º" Vector__XXX
- SG_ SUSP_R : 16|16@1+ (0.1,0) [0|0] "mm" Vector__XXX
- SG_ SUSP_L : 32|16@1+ (0.1,0) [0|0] "mm" Vector__XXX
  SG_ SIGNAL : 0|8@1+ (1,0) [0|0] ""  JETSON,ACU
  SG_ HV : 0|8@1+ (1,0) [0|0] ""  ACU
  SG_ Brake_pressure_Front : 8|8@1+ (1,0) [0|0] "" Vector__XXX
@@ -73,13 +69,8 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ IGN : 0|8@1+ (1,0) [0|1] ""  VCU
  SG_ ASMS : 8|8@1+ (1,0) [0|1] ""  VCU
  SG_ Emergency : 16|8@1+ (1,0) [0|0] ""  VCU
- SG_ Speed_actual : 0|8@1+ (0.5,0) [0|0] "Km/h"  VCU
- SG_ Speed_target : 8|8@1+ (0.5,0) [0|0] "Km/h" Vector__XXX
- SG_ Steering_angle_actual : 16|8@1- (0.5,0) [0|0] "º" Vector__XXX
- SG_ Steering_angle_target : 24|8@1- (0.5,0) [0|0] "º" Vector__XXX
  SG_ RPM : 0|16@1- (1,0) [0|6000] "RPM"  JETSON
- SG_ Mission_Select : 0|8@1+ (1,0) [0|0] ""  ACU
- SG_ Mission_Select : 0|8@1+ (1,0) [0|0] ""  JETSON
+ SG_ Mission_Select : 0|8@1+ (1,0) [0|0] ""  ACU,JETSON
  SG_ Temp : 24|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ temporary : 24|8@1+ (1,0) [100|500] "V" Vector__XXX
  SG_ position : 0|8@1+ (1,0) [0|0] "" Vector__XXX
@@ -88,14 +79,15 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ dir : 0|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 81 ACU: 8 ACU
- SG_ IGN : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ ASMS : 1|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ EMERGENCY : 2|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ AS_STATE : 3|3@1+ (1,0) [0|0] "" Vector__XXX
- SG_ ACU_STATE : 9|4@1+ (1,0) [0|0] "" Vector__XXX
- SG_ ASSI_STATE : 13|4@1+ (1,0) [0|0] "" Vector__XXX
- SG_ ACU_CPU_TEMP : 17|8@1+ (1,0) [0|255] "º" Vector__XXX
- SG_ Mission_select : 6|3@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ IGN : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ASMS : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EMERGENCY : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AS_STATE : 19|3@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ACU_STATE : 4|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ASSI_STATE : 0|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ACU_CPU_TEMP : 8|8@1+ (1,0) [0|255] "º" Vector__XXX
+ SG_ Mission_select : 16|3@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ EMERGENCY_cause : 25|7@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 2147494248 dir_actuator_feedback: 8 AK10_9
  SG_ Position : 7|16@0+ (10,0) [-32000|32000] "º" Vector__XXX
@@ -126,6 +118,37 @@ BO_ 1856 AQT4: 3 Aquisition_Board4
 BO_ 1904 AQT7: 2 Aquisition_Board7
  SG_ BRK_PRESS : 0|16@1+ (0.1,0) [0|0] "bar" Vector__XXX
 
+BO_ 1280 DV_dynamics_1: 8 ACU
+ SG_ Speed_actual : 0|8@1+ (1,0) [0|255] "km/h" Vector__XXX
+ SG_ Speed_target : 8|8@1+ (1,0) [0|255] "km/h" Vector__XXX
+ SG_ Steering_angle_actual : 16|8@1- (0.5,0) [-64|63.5] "º" Vector__XXX
+ SG_ Steering_angle_target : 24|8@1- (0.5,0) [-64|63.5] "º" Vector__XXX
+ SG_ Brake_hydr_actual : 32|8@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ Brake_hydr_target : 40|8@1+ (1,0) [0|100] "%" Vector__XXX
+ SG_ Motor_moment_actual : 48|8@1- (1,0) [-128|127] "%" Vector__XXX
+ SG_ Motor_moment_target : 56|8@1- (1,0) [-128|127] "%" Vector__XXX
+
+BO_ 1281 DV_dynamics_2: 8 ACU
+ SG_ Acceleration_longitudinal : 0|16@1- (0.001953125,0) [0|0] "m/s2" Vector__XXX
+ SG_ Acceleration_lateral : 16|16@1- (0.001953125,0) [0|0] "m/s2" Vector__XXX
+ SG_ Yaw_rate : 32|16@1- (0.0078125,0) [0|0] "º/s" Vector__XXX
+
+BO_ 1282 DV_status: 8 ACU
+ SG_ AS_status : 0|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ ASB_EBS_state : 3|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ AMI_state : 5|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Steering_state : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ASB_redundancy_state : 9|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Lap_counter : 11|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Cones_count_actual : 15|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Cones_count_all : 23|17@1+ (1,0) [0|131071] "" Vector__XXX
+
+BO_ 1297 ASF_SIGNALS: 4 ACU
+ SG_ EBS_Pressure_Tank_Front : 0|8@1+ (10,0) [0|0] "bar" Vector__XXX
+ SG_ EBS_Pressure_Tank_Rear : 8|8@1+ (10,0) [0|0] "bar" Vector__XXX
+ SG_ Brake_Pressure_Front : 16|8@1+ (10,0) [0|0] "bar" Vector__XXX
+ SG_ Brake_Pressure_Rear : 24|8@1+ (10,0) [0|0] "bar" Vector__XXX
+
 
 
 CM_ BU_ AK10_9 "Atuador direção";
@@ -141,5 +164,10 @@ VAL_ 81 EMERGENCY 0 "OFF" 1 "ON" ;
 VAL_ 81 AS_STATE 1 "OFF" 2 "READY" 3 "DRIVING" 4 "EMERGENCY" 5 "FINISH" ;
 VAL_ 81 ACU_STATE 0 "INIT" 1 "MISSION_SELECT" 2 "JETSON_WAITING" 3 "INIT_SEQUENCE" 4 "READY" 5 "DRIVING" 6 "EBS_ERROR" 7 "EMERGENCY" 8 "FINISHED" 9 "MANUAL" ;
 VAL_ 81 ASSI_STATE 1 "OFF" 2 "READY" 3 "DRIVING" 4 "EMERGENCY" 5 "FINISH" ;
+VAL_ 81 EMERGENCY_cause 0 "None" 1 "SDC_OPEN" 2 "RES" 3 "Pressure_checks" 4 "VCU_timeout" 5 "Jetson_timeout" 6 "ACU_WDT_TRIGGERED" 7 "dir_actuator_timeout" 8 "CAN_Dynamics_Pressure_timeout" ;
 VAL_ 2147494248 Error_codes 0 "No Fault" 1 "Motor Over-temperature" 2 "Over-current" 3 "Over-voltage" 4 "Encode Fault" 5 "Mosfet Over-temperature" 6 "Motor Lock-up" ;
+VAL_ 1282 AS_status 1 "AS_status_off" 2 "AS_status_ready" 3 "AS_status_driving" 4 "AS_status_emergency" 5 "AS_status_finished" ;
+VAL_ 1282 ASB_EBS_state 1 "ASB_EBS_state_deactivated" 2 "ASB_EBS_state_initial_checkup_passed" 3 "ASB_EBS_state_activated" ;
+VAL_ 1282 AMI_state 1 "AMI_state_acceleration" 2 "AMI_state_skidpad" 3 "AMI_state_trackdrive" 4 "AMI_state_braketest" 5 "AMI_state_inspection" 6 "AMI_state_autocross" ;
+VAL_ 1282 ASB_redundancy_state 1 "ASB_redundancy_state_deactivated" 2 "ASB_redundancy_state_engaged" 3 "ASB_redundancy_state_initial_checkup_passed" ;
 
