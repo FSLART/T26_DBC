@@ -47,9 +47,9 @@ th { background-color:#e2eaf1; }
 
 <div id="powertrain_t26.dbc" class="tabcontent">
   <div class="summary">
-    <b>Resumo:</b> Nós: 7, Mensagens: 123, Sinais: 688
-    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 12
+    <b>Resumo:</b> Nós: 7, Mensagens: 124, Sinais: 697
+    <br>Mensagens Adicionadas: 1, Removidas: 0, Alteradas: 2
+    <br>Sinais Adicionados: 9, Removidos: 0, Alterados: 0
   </div>
 
   <h2>🟦 Nós</h2>
@@ -73,264 +73,88 @@ th { background-color:#e2eaf1; }
   </ul>
 
   <h2>📨 Mensagens Adicionadas</h2>
-  <p>Nenhuma mensagem adicionada.</p>
+  
+  <table>
+  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
+  
+    <tr class="added">
+      <td>1797</td>
+      <td>Master_SOC_Accumulator</td>
+      <td>8</td>
+      <td>None</td>
+      <td>SOC_Integer, SOC_Float</td>
+    </tr>
+  
+  </table>
+  
 
   <h2>📨 Mensagens Removidas</h2>
   <p>Nenhuma mensagem removida.</p>
 
   <h2>📨 Mensagens Alteradas</h2>
-  <p>Nenhuma mensagem alterada.</p>
+  
+    
+    <button type="button" class="collapsible">1793 : Master_MSC_ID_1</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['mcu_vref', 'mcu_temperature', 'ams_current_draw', 'master_firmware_version', 'adbms_pec_error', 'master_fan_pwm', 'master_state']</td>
+        <td class="code">['mcu_vref', 'mcu_temperature', 'ams_current_draw', 'master_firmware_version', 'adbms_pec_error', 'master_fan_pwm', 'master_state', 'fault_counter']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1795 : Master_MSC_ID_2</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['master_runtime']</td>
+        <td class="code">['master_runtime', 'fault1_code', 'fault1_index_type', 'fault1_index_value', 'fault2_code', 'fault2_index_type', 'fault2_index_value']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+  
 
   <h2>🟩 Sinais Adicionados</h2>
-  <p>Nenhum sinal adicionado.</p>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="added"><td>1795</td><td>fault2_code</td></tr>
+  
+    <tr class="added"><td>1795</td><td>fault1_index_value</td></tr>
+  
+    <tr class="added"><td>1795</td><td>fault1_index_type</td></tr>
+  
+    <tr class="added"><td>1795</td><td>fault2_index_type</td></tr>
+  
+    <tr class="added"><td>1797</td><td>SOC_Float</td></tr>
+  
+    <tr class="added"><td>1797</td><td>SOC_Integer</td></tr>
+  
+    <tr class="added"><td>1793</td><td>fault_counter</td></tr>
+  
+    <tr class="added"><td>1795</td><td>fault1_code</td></tr>
+  
+    <tr class="added"><td>1795</td><td>fault2_index_value</td></tr>
+  
+  </table>
+  
 
   <h2>🟥 Sinais Removidos</h2>
   <p>Nenhum sinal removido.</p>
 
   <h2>🟨 Sinais Alterados</h2>
-  
-    
-    <button type="button" class="collapsible">304 : module_open_wire</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>maximum</td>
-        <td class="code">1</td>
-        <td class="code">18</td>
-      </tr>
-      
-      <tr class="changed">
-        <td>choices</td>
-        <td class="code">OrderedDict([(0, 'No fault detected'), (1, 'Cell/open-wire/voltage diagnostic fault')])</td>
-        <td class="code">OrderedDict([(0, 'No open wire'), (1, 'Cell 1'), (2, 'Cell 2'), (3, 'Cell 3'), (4, 'Cell 4'), (5, 'Cell 5'), (6, 'Cell 6'), (7, 'Cell 7'), (8, 'Cell 8'), (9, 'Cell 9'), (10, 'Cell 10'), (11, 'Cell 11'), (12, 'Cell 12'), (13, 'GPIO 1'), (14, 'GPIO 2'), (15, 'GPIO 3'), (16, 'GPIO 4'), (17, 'GPIO 5'), (18, 'GPIO 6')])</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-    <button type="button" class="collapsible">269 : module_open_wire</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>maximum</td>
-        <td class="code">1</td>
-        <td class="code">18</td>
-      </tr>
-      
-      <tr class="changed">
-        <td>choices</td>
-        <td class="code">OrderedDict([(0, 'No fault detected'), (1, 'Cell/open-wire/voltage diagnostic fault')])</td>
-        <td class="code">OrderedDict([(0, 'No open wire'), (1, 'Cell 1'), (2, 'Cell 2'), (3, 'Cell 3'), (4, 'Cell 4'), (5, 'Cell 5'), (6, 'Cell 6'), (7, 'Cell 7'), (8, 'Cell 8'), (9, 'Cell 9'), (10, 'Cell 10'), (11, 'Cell 11'), (12, 'Cell 12'), (13, 'GPIO 1'), (14, 'GPIO 2'), (15, 'GPIO 3'), (16, 'GPIO 4'), (17, 'GPIO 5'), (18, 'GPIO 6')])</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-    <button type="button" class="collapsible">318 : module_open_wire</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>maximum</td>
-        <td class="code">1</td>
-        <td class="code">18</td>
-      </tr>
-      
-      <tr class="changed">
-        <td>choices</td>
-        <td class="code">OrderedDict([(0, 'No fault detected'), (1, 'Cell/open-wire/voltage diagnostic fault')])</td>
-        <td class="code">OrderedDict([(0, 'No open wire'), (1, 'Cell 1'), (2, 'Cell 2'), (3, 'Cell 3'), (4, 'Cell 4'), (5, 'Cell 5'), (6, 'Cell 6'), (7, 'Cell 7'), (8, 'Cell 8'), (9, 'Cell 9'), (10, 'Cell 10'), (11, 'Cell 11'), (12, 'Cell 12'), (13, 'GPIO 1'), (14, 'GPIO 2'), (15, 'GPIO 3'), (16, 'GPIO 4'), (17, 'GPIO 5'), (18, 'GPIO 6')])</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-    <button type="button" class="collapsible">332 : module_open_wire</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>maximum</td>
-        <td class="code">1</td>
-        <td class="code">18</td>
-      </tr>
-      
-      <tr class="changed">
-        <td>choices</td>
-        <td class="code">OrderedDict([(0, 'No fault detected'), (1, 'Cell/open-wire/voltage diagnostic fault')])</td>
-        <td class="code">OrderedDict([(0, 'No open wire'), (1, 'Cell 1'), (2, 'Cell 2'), (3, 'Cell 3'), (4, 'Cell 4'), (5, 'Cell 5'), (6, 'Cell 6'), (7, 'Cell 7'), (8, 'Cell 8'), (9, 'Cell 9'), (10, 'Cell 10'), (11, 'Cell 11'), (12, 'Cell 12'), (13, 'GPIO 1'), (14, 'GPIO 2'), (15, 'GPIO 3'), (16, 'GPIO 4'), (17, 'GPIO 5'), (18, 'GPIO 6')])</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-    <button type="button" class="collapsible">283 : module_open_wire</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>maximum</td>
-        <td class="code">1</td>
-        <td class="code">18</td>
-      </tr>
-      
-      <tr class="changed">
-        <td>choices</td>
-        <td class="code">OrderedDict([(0, 'No fault detected'), (1, 'Cell/open-wire/voltage diagnostic fault')])</td>
-        <td class="code">OrderedDict([(0, 'No open wire'), (1, 'Cell 1'), (2, 'Cell 2'), (3, 'Cell 3'), (4, 'Cell 4'), (5, 'Cell 5'), (6, 'Cell 6'), (7, 'Cell 7'), (8, 'Cell 8'), (9, 'Cell 9'), (10, 'Cell 10'), (11, 'Cell 11'), (12, 'Cell 12'), (13, 'GPIO 1'), (14, 'GPIO 2'), (15, 'GPIO 3'), (16, 'GPIO 4'), (17, 'GPIO 5'), (18, 'GPIO 6')])</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-    <button type="button" class="collapsible">297 : module_open_wire</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>maximum</td>
-        <td class="code">1</td>
-        <td class="code">18</td>
-      </tr>
-      
-      <tr class="changed">
-        <td>choices</td>
-        <td class="code">OrderedDict([(0, 'No fault detected'), (1, 'Cell/open-wire/voltage diagnostic fault')])</td>
-        <td class="code">OrderedDict([(0, 'No open wire'), (1, 'Cell 1'), (2, 'Cell 2'), (3, 'Cell 3'), (4, 'Cell 4'), (5, 'Cell 5'), (6, 'Cell 6'), (7, 'Cell 7'), (8, 'Cell 8'), (9, 'Cell 9'), (10, 'Cell 10'), (11, 'Cell 11'), (12, 'Cell 12'), (13, 'GPIO 1'), (14, 'GPIO 2'), (15, 'GPIO 3'), (16, 'GPIO 4'), (17, 'GPIO 5'), (18, 'GPIO 6')])</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-    <button type="button" class="collapsible">339 : module_open_wire</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>maximum</td>
-        <td class="code">1</td>
-        <td class="code">18</td>
-      </tr>
-      
-      <tr class="changed">
-        <td>choices</td>
-        <td class="code">OrderedDict([(0, 'No fault detected'), (1, 'Cell/open-wire/voltage diagnostic fault')])</td>
-        <td class="code">OrderedDict([(0, 'No open wire'), (1, 'Cell 1'), (2, 'Cell 2'), (3, 'Cell 3'), (4, 'Cell 4'), (5, 'Cell 5'), (6, 'Cell 6'), (7, 'Cell 7'), (8, 'Cell 8'), (9, 'Cell 9'), (10, 'Cell 10'), (11, 'Cell 11'), (12, 'Cell 12'), (13, 'GPIO 1'), (14, 'GPIO 2'), (15, 'GPIO 3'), (16, 'GPIO 4'), (17, 'GPIO 5'), (18, 'GPIO 6')])</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-    <button type="button" class="collapsible">262 : module_open_wire</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>maximum</td>
-        <td class="code">1</td>
-        <td class="code">18</td>
-      </tr>
-      
-      <tr class="changed">
-        <td>choices</td>
-        <td class="code">OrderedDict([(0, 'No fault detected'), (1, 'Cell/open-wire/voltage diagnostic fault')])</td>
-        <td class="code">OrderedDict([(0, 'No open wire'), (1, 'Cell 1'), (2, 'Cell 2'), (3, 'Cell 3'), (4, 'Cell 4'), (5, 'Cell 5'), (6, 'Cell 6'), (7, 'Cell 7'), (8, 'Cell 8'), (9, 'Cell 9'), (10, 'Cell 10'), (11, 'Cell 11'), (12, 'Cell 12'), (13, 'GPIO 1'), (14, 'GPIO 2'), (15, 'GPIO 3'), (16, 'GPIO 4'), (17, 'GPIO 5'), (18, 'GPIO 6')])</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-    <button type="button" class="collapsible">311 : module_open_wire</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>maximum</td>
-        <td class="code">1</td>
-        <td class="code">18</td>
-      </tr>
-      
-      <tr class="changed">
-        <td>choices</td>
-        <td class="code">OrderedDict([(0, 'No fault detected'), (1, 'Cell/open-wire/voltage diagnostic fault')])</td>
-        <td class="code">OrderedDict([(0, 'No open wire'), (1, 'Cell 1'), (2, 'Cell 2'), (3, 'Cell 3'), (4, 'Cell 4'), (5, 'Cell 5'), (6, 'Cell 6'), (7, 'Cell 7'), (8, 'Cell 8'), (9, 'Cell 9'), (10, 'Cell 10'), (11, 'Cell 11'), (12, 'Cell 12'), (13, 'GPIO 1'), (14, 'GPIO 2'), (15, 'GPIO 3'), (16, 'GPIO 4'), (17, 'GPIO 5'), (18, 'GPIO 6')])</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-    <button type="button" class="collapsible">325 : module_open_wire</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>maximum</td>
-        <td class="code">1</td>
-        <td class="code">18</td>
-      </tr>
-      
-      <tr class="changed">
-        <td>choices</td>
-        <td class="code">OrderedDict([(0, 'No fault detected'), (1, 'Cell/open-wire/voltage diagnostic fault')])</td>
-        <td class="code">OrderedDict([(0, 'No open wire'), (1, 'Cell 1'), (2, 'Cell 2'), (3, 'Cell 3'), (4, 'Cell 4'), (5, 'Cell 5'), (6, 'Cell 6'), (7, 'Cell 7'), (8, 'Cell 8'), (9, 'Cell 9'), (10, 'Cell 10'), (11, 'Cell 11'), (12, 'Cell 12'), (13, 'GPIO 1'), (14, 'GPIO 2'), (15, 'GPIO 3'), (16, 'GPIO 4'), (17, 'GPIO 5'), (18, 'GPIO 6')])</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-    <button type="button" class="collapsible">276 : module_open_wire</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>maximum</td>
-        <td class="code">1</td>
-        <td class="code">18</td>
-      </tr>
-      
-      <tr class="changed">
-        <td>choices</td>
-        <td class="code">OrderedDict([(0, 'No fault detected'), (1, 'Cell/open-wire/voltage diagnostic fault')])</td>
-        <td class="code">OrderedDict([(0, 'No open wire'), (1, 'Cell 1'), (2, 'Cell 2'), (3, 'Cell 3'), (4, 'Cell 4'), (5, 'Cell 5'), (6, 'Cell 6'), (7, 'Cell 7'), (8, 'Cell 8'), (9, 'Cell 9'), (10, 'Cell 10'), (11, 'Cell 11'), (12, 'Cell 12'), (13, 'GPIO 1'), (14, 'GPIO 2'), (15, 'GPIO 3'), (16, 'GPIO 4'), (17, 'GPIO 5'), (18, 'GPIO 6')])</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-    <button type="button" class="collapsible">290 : module_open_wire</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>maximum</td>
-        <td class="code">1</td>
-        <td class="code">18</td>
-      </tr>
-      
-      <tr class="changed">
-        <td>choices</td>
-        <td class="code">OrderedDict([(0, 'No fault detected'), (1, 'Cell/open-wire /voltage diagnostic fault')])</td>
-        <td class="code">OrderedDict([(0, 'No open wire'), (1, 'Cell 1'), (2, 'Cell 2'), (3, 'Cell 3'), (4, 'Cell 4'), (5, 'Cell 5'), (6, 'Cell 6'), (7, 'Cell 7'), (8, 'Cell 8'), (9, 'Cell 9'), (10, 'Cell 10'), (11, 'Cell 11'), (12, 'Cell 12'), (13, 'GPIO 1'), (14, 'GPIO 2'), (15, 'GPIO 3'), (16, 'GPIO 4'), (17, 'GPIO 5'), (18, 'GPIO 6')])</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-  
+  <p>Nenhuma alteração encontrada.</p>
 </div>
 
 <div id="data_t26.dbc" class="tabcontent">
@@ -422,8 +246,8 @@ th { background-color:#e2eaf1; }
 <div id="autonomous_t26.dbc" class="tabcontent">
   <div class="summary">
     <b>Resumo:</b> Nós: 13, Mensagens: 17, Sinais: 65
-    <br>Mensagens Adicionadas: 4, Removidas: 0, Alteradas: 1
-    <br>Sinais Adicionados: 24, Removidos: 0, Alterados: 8
+    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
+    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
   </div>
 
   <h2>🟦 Nós</h2>
@@ -458,242 +282,22 @@ th { background-color:#e2eaf1; }
   </ul>
 
   <h2>📨 Mensagens Adicionadas</h2>
-  
-  <table>
-  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
-  
-    <tr class="added">
-      <td>1280</td>
-      <td>DV_dynamics_1</td>
-      <td>8</td>
-      <td>None</td>
-      <td>Speed_actual, Speed_target, Steering_angle_actual, Steering_angle_target, Brake_hydr_actual, Brake_hydr_target, Motor_moment_actual, Motor_moment_target</td>
-    </tr>
-  
-    <tr class="added">
-      <td>1281</td>
-      <td>DV_dynamics_2</td>
-      <td>8</td>
-      <td>None</td>
-      <td>Acceleration_longitudinal, Acceleration_lateral, Yaw_rate</td>
-    </tr>
-  
-    <tr class="added">
-      <td>1282</td>
-      <td>DV_status</td>
-      <td>8</td>
-      <td>None</td>
-      <td>AS_status, ASB_EBS_state, AMI_state, Steering_state, ASB_redundancy_state, Lap_counter, Cones_count_actual, Cones_count_all</td>
-    </tr>
-  
-    <tr class="added">
-      <td>1297</td>
-      <td>ASF_SIGNALS</td>
-      <td>4</td>
-      <td>None</td>
-      <td>EBS_Pressure_Tank_Front, EBS_Pressure_Tank_Rear, Brake_Pressure_Front, Brake_Pressure_Rear</td>
-    </tr>
-  
-  </table>
-  
+  <p>Nenhuma mensagem adicionada.</p>
 
   <h2>📨 Mensagens Removidas</h2>
   <p>Nenhuma mensagem removida.</p>
 
   <h2>📨 Mensagens Alteradas</h2>
-  
-    
-    <button type="button" class="collapsible">81 : ACU</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>signals</td>
-        <td class="code">['IGN', 'ASMS', 'EMERGENCY', 'AS_STATE', 'Mission_select', 'ACU_STATE', 'ASSI_STATE', 'ACU_CPU_TEMP']</td>
-        <td class="code">['ASSI_STATE', 'ACU_STATE', 'ACU_CPU_TEMP', 'Mission_select', 'AS_STATE', 'EMERGENCY', 'ASMS', 'IGN', 'EMERGENCY_cause']</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-  
+  <p>Nenhuma mensagem alterada.</p>
 
   <h2>🟩 Sinais Adicionados</h2>
-  
-  <table>
-  <tr><th>Message ID</th><th>Signal</th></tr>
-  
-    <tr class="added"><td>1282</td><td>Cones_count_all</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Acceleration_longitudinal</td></tr>
-  
-    <tr class="added"><td>1282</td><td>ASB_EBS_state</td></tr>
-  
-    <tr class="added"><td>1282</td><td>Cones_count_actual</td></tr>
-  
-    <tr class="added"><td>1282</td><td>AMI_state</td></tr>
-  
-    <tr class="added"><td>1282</td><td>ASB_redundancy_state</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Brake_hydr_actual</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Motor_moment_actual</td></tr>
-  
-    <tr class="added"><td>1282</td><td>AS_status</td></tr>
-  
-    <tr class="added"><td>1297</td><td>Brake_Pressure_Rear</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Speed_actual</td></tr>
-  
-    <tr class="added"><td>1297</td><td>EBS_Pressure_Tank_Rear</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Motor_moment_target</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Steering_angle_actual</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Yaw_rate</td></tr>
-  
-    <tr class="added"><td>1297</td><td>EBS_Pressure_Tank_Front</td></tr>
-  
-    <tr class="added"><td>1297</td><td>Brake_Pressure_Front</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Speed_target</td></tr>
-  
-    <tr class="added"><td>1282</td><td>Lap_counter</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Brake_hydr_target</td></tr>
-  
-    <tr class="added"><td>1282</td><td>Steering_state</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Acceleration_lateral</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Steering_angle_target</td></tr>
-  
-    <tr class="added"><td>81</td><td>EMERGENCY_cause</td></tr>
-  
-  </table>
-  
+  <p>Nenhum sinal adicionado.</p>
 
   <h2>🟥 Sinais Removidos</h2>
   <p>Nenhum sinal removido.</p>
 
   <h2>🟨 Sinais Alterados</h2>
-  
-    
-    <button type="button" class="collapsible">81 : Mission_select</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>start</td>
-        <td class="code">6</td>
-        <td class="code">16</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-    <button type="button" class="collapsible">81 : ACU_STATE</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>start</td>
-        <td class="code">9</td>
-        <td class="code">4</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-    <button type="button" class="collapsible">81 : ASMS</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>start</td>
-        <td class="code">1</td>
-        <td class="code">23</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-    <button type="button" class="collapsible">81 : IGN</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>start</td>
-        <td class="code">0</td>
-        <td class="code">24</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-    <button type="button" class="collapsible">81 : ACU_CPU_TEMP</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>start</td>
-        <td class="code">17</td>
-        <td class="code">8</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-    <button type="button" class="collapsible">81 : AS_STATE</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>start</td>
-        <td class="code">3</td>
-        <td class="code">19</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-    <button type="button" class="collapsible">81 : EMERGENCY</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>start</td>
-        <td class="code">2</td>
-        <td class="code">22</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-    <button type="button" class="collapsible">81 : ASSI_STATE</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>start</td>
-        <td class="code">13</td>
-        <td class="code">0</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-  
+  <p>Nenhuma alteração encontrada.</p>
 </div>
 
 
