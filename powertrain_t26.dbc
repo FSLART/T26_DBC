@@ -1126,3 +1126,4 @@ VAL_ 1795 fault2_index_type 0 "SLAVE" 1 "CELL" 2 "CHANNEL" 3 "CONTACTORS" 4 "SLA
 VAL_ 220 programming_request 1 "JumpToBootloader" ;
 SIG_VALTYPE_ 1797 SOC_Float : 1;
 
+
