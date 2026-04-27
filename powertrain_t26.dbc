@@ -587,7 +587,7 @@ BO_ 1794 Master_PreCharge_ID_1: 8 AMS
  SG_ precharge_ctc_air_min_state : 1|1@1+ (1,0) [0|0] "ON/OFF"  HOST,VCU
  SG_ precharge_ctc_charge_state : 2|1@1+ (1,0) [0|0] "ON/OFF"  HOST,VCU
  SG_ precharge_ctc_discharge_state : 3|1@1+ (1,0) [0|0] "ON/OFF"  HOST,VCU
- SG_ precharge_state : 8|6@1+ (1,0) [0|0] ""  HOST,VCU
+ SG_ precharge_state : 8|8@1+ (1,0) [0|0] ""  HOST,VCU
 
 BO_ 1320 IVT_Msg_Result_Wh: 6 ISABELLE
  SG_ IVT_Result_Wh_System_Error : 15|1@0+ (1,0) [0|0] ""  HOST,AMS,VCU
@@ -1125,5 +1125,4 @@ VAL_ 1795 fault2_code 0 "FAULT_OVERVOLTAGE" 1 "FAULT_UNDERVOLTAGE" 2 "FAULT_OVER
 VAL_ 1795 fault2_index_type 0 "SLAVE" 1 "CELL" 2 "CHANNEL" 3 "CONTACTORS" 4 "SLAVE_AND_CELL" 5 "THERMISTOR" 6 "SLAVE_AND_THERMISTOR" 7 "NONE" ;
 VAL_ 220 programming_request 1 "JumpToBootloader" ;
 SIG_VALTYPE_ 1797 SOC_Float : 1;
-
 
