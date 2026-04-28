@@ -166,6 +166,12 @@ BO_ 1297 ASF_SIGNALS: 4 ACU
 
 BO_ 1289 VCU_RPM: 2 VCU
  SG_ rpm_actual : 0|16@1- (1,0) [0|6000] "RPM"  JETSON
+ 
+BO_ 1178 VCU_TORQUE_TARGET: 2 JETSON
+ SG_ torque_target : 0|16@1- (1,0) [-100|100] "RPM"  VCU
+
+BO_ 1177 VCU_RPM_TARGET: 2 JETSON
+ SG_ rpm_target : 0|16@1- (1,0) [0|6000] "RPM"  VCU
 
 BO_ 97 JETSON: 4 Vector__XXX
  SG_ AS_STATE : 0|4@1+ (1,0) [0|5] "" Vector__XXX
