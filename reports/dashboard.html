@@ -47,9 +47,9 @@ th { background-color:#e2eaf1; }
 
 <div id="powertrain_t26.dbc" class="tabcontent">
   <div class="summary">
-    <b>Resumo:</b> Nós: 7, Mensagens: 124, Sinais: 698
-    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 1
-    <br>Sinais Adicionados: 1, Removidos: 0, Alterados: 0
+    <b>Resumo:</b> Nós: 7, Mensagens: 125, Sinais: 698
+    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 2
+    <br>Sinais Adicionados: 1, Removidos: 1, Alterados: 0
   </div>
 
   <h2>🟦 Nós</h2>
@@ -88,8 +88,28 @@ th { background-color:#e2eaf1; }
       
       <tr class="changed">
         <td>signals</td>
-        <td class="code">['module_voltage_delta', 'module_ic_voltage', 'module_open_wire', 'module_ic_temperature']</td>
         <td class="code">['module_voltage_delta', 'module_ic_voltage', 'module_open_wire', 'module_ic_temperature', 'modules_detected']</td>
+        <td class="code">['module_voltage_delta', 'module_ic_voltage', 'module_open_wire', 'module_ic_temperature']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1797 : Master_MSC_ID_4</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>name</td>
+        <td class="code">Master_SOC_Accumulator</td>
+        <td class="code">Master_MSC_ID_4</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['SOC_Integer', 'SOC_Float']</td>
+        <td class="code">['slaves_detected']</td>
       </tr>
       
     </table>
@@ -102,13 +122,20 @@ th { background-color:#e2eaf1; }
   <table>
   <tr><th>Message ID</th><th>Signal</th></tr>
   
-    <tr class="added"><td>339</td><td>modules_detected</td></tr>
+    <tr class="added"><td>1797</td><td>slaves_detected</td></tr>
   
   </table>
   
 
   <h2>🟥 Sinais Removidos</h2>
-  <p>Nenhum sinal removido.</p>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="removed"><td>339</td><td>modules_detected</td></tr>
+  
+  </table>
+  
 
   <h2>🟨 Sinais Alterados</h2>
   <p>Nenhuma alteração encontrada.</p>
@@ -203,7 +230,7 @@ th { background-color:#e2eaf1; }
 <div id="autonomous_t26.dbc" class="tabcontent">
   <div class="summary">
     <b>Resumo:</b> Nós: 13, Mensagens: 20, Sinais: 70
-    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 1
+    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
     <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
   </div>
 
@@ -245,23 +272,7 @@ th { background-color:#e2eaf1; }
   <p>Nenhuma mensagem removida.</p>
 
   <h2>📨 Mensagens Alteradas</h2>
-  
-    
-    <button type="button" class="collapsible">1128 : CubeMars_position_loop</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>name</td>
-        <td class="code">CubeMars_possition_loop</td>
-        <td class="code">CubeMars_position_loop</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-  
+  <p>Nenhuma mensagem alterada.</p>
 
   <h2>🟩 Sinais Adicionados</h2>
   <p>Nenhum sinal adicionado.</p>
