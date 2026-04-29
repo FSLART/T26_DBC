@@ -1,5 +1,5 @@
-VERSION " "
- 
+VERSION ""
+
 
 NS_ : 
 	NS_DESC_
@@ -58,6 +58,7 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ overall_maximum_voltage : 16|16@1+ (0.001,0) [0|0] " V" Vector__XXX
  SG_ overall_maximum_temperature : 32|16@1+ (0.01,0) [0|0] "degC" Vector__XXX
  SG_ NewSignal_0007 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ modules_detected : 56|8@1+ (1,0) [0|63] "" Vector__XXX
 
 BO_ 131 Start_PreCharge: 1 VCU
  SG_ Precharge_Request : 0|1@0+ (1,0) [0|0] "ON/OFF" Vector__XXX
@@ -571,7 +572,6 @@ BO_ 339 Slave_12_MSC_ID_2: 8 AMS
  SG_ module_ic_voltage : 16|16@1+ (0.001,0) [0|0] "V"  HOST,VCU
  SG_ module_open_wire : 32|8@1+ (1,0) [0|18] ""  HOST,VCU
  SG_ module_ic_temperature : 40|16@1+ (1,0) [0|0] "degC"  HOST,VCU
- SG_ modules_detected : 56|8@1+ (1,0) [0|63] "" Vector__XXX
 
 BO_ 1793 Master_MSC_ID_1: 8 AMS
  SG_ mcu_vref : 0|8@1+ (0.01,2) [0|0] "V"  HOST,VCU
@@ -1005,12 +1005,16 @@ BO_ 1797 Master_SOC_Accumulator: 8 AMS
  SG_ SOC_Integer : 0|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ SOC_Float : 8|16@1- (0.01,0.01) [0|0] "" Vector__XXX
 
+BO_ 1797 Master_MSC_ID_4: 8 AMS
+ SG_ slaves_detected : 0|8@1+ (1,0) [0|63] "" Vector__XXX
+
 
 
 CM_ BU_ HOST "The commnad sender
 ";
 CM_ BU_ ISABELLE "";
 CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 3221225472 modules_detected "slave counter";
 CM_ BO_ 452 "";
 CM_ SG_ 262 module_open_wire "";
 CM_ SG_ 269 module_open_wire "";
@@ -1024,7 +1028,6 @@ CM_ SG_ 318 module_open_wire "";
 CM_ SG_ 325 module_open_wire "";
 CM_ SG_ 332 module_open_wire "";
 CM_ SG_ 339 module_open_wire "";
-CM_ SG_ 339 modules_detected "slave counter";
 CM_ SG_ 1793 master_state "Master State Machine
 ";
 CM_ SG_ 1793 adbms_pec_error "ADBMS PEC Error  (Error on comms)";
@@ -1098,6 +1101,7 @@ CM_ SG_ 1220 AvailableMinDcCurrent "Available min DC current. This value affecte
 CM_ SG_ 1795 master_runtime "AMS Master Runtime in seconds";
 CM_ SG_ 1797 SOC_Integer "State of Charge";
 CM_ SG_ 1797 SOC_Float "State of Charge";
+CM_ SG_ 1797 slaves_detected "number of detected slaves from isoSPI";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "BusType" "CAN";
 VAL_ 262 module_open_wire 0 "No open wire" 1 "Cell 1" 2 "Cell 2" 3 "Cell 3" 4 "Cell 4" 5 "Cell 5" 6 "Cell 6" 7 "Cell 7" 8 "Cell 8" 9 "Cell 9" 10 "Cell 10" 11 "Cell 11" 12 "Cell 12" 13 "GPIO 1" 14 "GPIO 2" 15 "GPIO 3" 16 "GPIO 4" 17 "GPIO 5" 18 "GPIO 6" ;
