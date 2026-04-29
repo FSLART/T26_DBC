@@ -578,7 +578,7 @@ BO_ 1793 Master_MSC_ID_1: 8 AMS
  SG_ ams_current_draw : 16|16@1+ (0.001,0) [0|65535] "A"  HOST,VCU
  SG_ master_firmware_version : 32|6@1+ (1,0) [0|0] ""  HOST,VCU
  SG_ master_fan_pwm : 40|8@1+ (0.392,0) [0|100] "PWM"  HOST,VCU
- SG_ master_state : 48|6@1+ (1,0) [0|0] ""  HOST,VCU
+ SG_ master_state : 48|8@1+ (1,0) [0|0] ""  HOST,VCU
  SG_ adbms_pec_error : 39|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ fault_counter : 56|8@1+ (1,0) [0|0] "" Vector__XXX
 
