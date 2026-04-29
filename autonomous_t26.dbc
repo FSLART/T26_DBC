@@ -96,7 +96,7 @@ BO_ 2147494248 CubeMars_Feedback: 8 Vector__XXX
  SG_ Driver_Temp : 48|8@1- (1,0) [-20|127] "degC" Vector__XXX
  SG_ Error_Code : 56|8@1+ (1,0) [0|255] "" Vector__XXX
 
-BO_ 2147484776 CubeMars_possition_loop: 4 JETSON
+BO_ 2147484776 CubeMars_position_loop: 4 JETSON
  SG_ POSITION : 7|32@0- (1000,0) [0|0] "�" Vector__XXX
 
 BO_ 1808 AQT1: 3 Aquisition_Board1
