@@ -1,5 +1,5 @@
-VERSION ""
-
+VERSION " "
+ 
 
 NS_ : 
 	NS_DESC_
@@ -571,6 +571,7 @@ BO_ 339 Slave_12_MSC_ID_2: 8 AMS
  SG_ module_ic_voltage : 16|16@1+ (0.001,0) [0|0] "V"  HOST,VCU
  SG_ module_open_wire : 32|8@1+ (1,0) [0|18] ""  HOST,VCU
  SG_ module_ic_temperature : 40|16@1+ (1,0) [0|0] "degC"  HOST,VCU
+ SG_ modules_detected : 56|8@1+ (1,0) [0|63] "" Vector__XXX
 
 BO_ 1793 Master_MSC_ID_1: 8 AMS
  SG_ mcu_vref : 0|8@1+ (0.01,2) [0|0] "V"  HOST,VCU
@@ -1023,6 +1024,7 @@ CM_ SG_ 318 module_open_wire "";
 CM_ SG_ 325 module_open_wire "";
 CM_ SG_ 332 module_open_wire "";
 CM_ SG_ 339 module_open_wire "";
+CM_ SG_ 339 modules_detected "slave counter";
 CM_ SG_ 1793 master_state "Master State Machine
 ";
 CM_ SG_ 1793 adbms_pec_error "ADBMS PEC Error  (Error on comms)";
