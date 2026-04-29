@@ -127,7 +127,7 @@ BO_ 1536 VCU_IGN_R2D: 8 VCU
  SG_ vcu_state : 40|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ R2D_button_raw : 48|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ Ignition_switch_raw : 56|8@1+ (1,0) [0|0] "" Vector__XXX
-BO_ 1280 DV_dynamics_1: 8 ACU
+BO_ 1280 DV_dynamics_1: 8 JETSON
  SG_ Speed_actual : 0|8@1+ (1,0) [0|255] "km/h" Vector__XXX
  SG_ Speed_target : 8|8@1+ (1,0) [0|255] "km/h" Vector__XXX
  SG_ Steering_angle_actual : 16|8@1- (0.5,0) [-64|63.5] "�" Vector__XXX
@@ -137,7 +137,7 @@ BO_ 1280 DV_dynamics_1: 8 ACU
  SG_ Motor_moment_actual : 48|8@1- (1,0) [-128|127] "%" Vector__XXX
  SG_ Motor_moment_target : 56|8@1- (1,0) [-128|127] "%" Vector__XXX
 
-BO_ 1281 DV_dynamics_2: 8 ACU
+BO_ 1281 DV_dynamics_2: 8 JETSON
  SG_ Acceleration_longitudinal : 0|16@1- (0.001953125,0) [0|0] "m/s2" Vector__XXX
  SG_ Acceleration_lateral : 16|16@1- (0.001953125,0) [0|0] "m/s2" Vector__XXX
  SG_ Yaw_rate : 32|16@1- (0.0078125,0) [0|0] "�/s" Vector__XXX
@@ -166,16 +166,27 @@ BO_ 1297 ASF_SIGNALS: 4 ACU
 
 BO_ 1289 VCU_RPM: 2 VCU
  SG_ rpm_actual : 0|16@1- (1,0) [0|6000] "RPM"  JETSON
+ 
+BO_ 1178 VCU_TORQUE_TARGET: 2 JETSON
+ SG_ torque_target : 0|16@1- (1,0) [-100|100] "RPM"  VCU
 
-BO_ 97 JETSON: 4 Vector__XXX
- SG_ AS_STATE : 0|4@1+ (1,0) [0|5] "" Vector__XXX
- SG_ AS_MISSION : 4|4@1+ (1,0) [0|7] "" Vector__XXX
- SG_ TEMPERATURE : 8|8@1+ (1,0) [0|100] "" Vector__XXX
- SG_ CPU : 16|8@1+ (1,0) [0|100] "" Vector__XXX
- SG_ GPU : 24|8@1+ (1,0) [0|100] "" Vector__XXX
+BO_ 1177 VCU_RPM_TARGET: 2 JETSON
+ SG_ rpm_target : 0|16@1- (1,0) [0|6000] "RPM"  VCU
 
-BO_ 401 RES: 8 Vector__XXX
+BO_ 97 JETSON: 4 JETSON
+ SG_ AS_STATE : 0|4@1+ (1,0) [0|5] "" ACU
+ SG_ AS_MISSION : 4|4@1+ (1,0) [0|7] "" ACU
+ SG_ TEMPERATURE : 8|8@1+ (1,0) [0|100] "" ACU
+ SG_ CPU : 16|8@1+ (1,0) [0|100] "" ACU
+ SG_ GPU : 24|8@1+ (1,0) [0|100] "" ACU
+
+BO_ 401 RES: 8 RES
  SG_ SIGNAL : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1285 SLAM_STATS: 4 JETSON
+ SG_ Lap_counter : 0|4@1+ (1,0) [0|0] "" ACU
+ SG_ Cones_count_actual : 4|8@1+ (1,0) [0|0] "" ACU
+ SG_ Cones_count_all : 12|17@1+ (1,0) [0|0] "" ACU
 
 
 
@@ -197,5 +208,6 @@ VAL_ 1282 AS_status 1 "AS_status_off" 2 "AS_status_ready" 3 "AS_status_driving" 
 VAL_ 1282 ASB_EBS_state 1 "ASB_EBS_state_deactivated" 2 "ASB_EBS_state_initial_checkup_passed" 3 "ASB_EBS_state_activated" ;
 VAL_ 1282 AMI_state 1 "AMI_state_acceleration" 2 "AMI_state_skidpad" 3 "AMI_state_trackdrive" 4 "AMI_state_braketest" 5 "AMI_state_inspection" 6 "AMI_state_autocross" ;
 VAL_ 1282 ASB_redundancy_state 1 "ASB_redundancy_state_deactivated" 2 "ASB_redundancy_state_engaged" 3 "ASB_redundancy_state_initial_checkup_passed" ;
+
 
 
