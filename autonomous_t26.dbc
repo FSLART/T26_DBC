@@ -183,7 +183,7 @@ BO_ 97 JETSON: 4 JETSON
 BO_ 401 RES: 8 RES
  SG_ SIGNAL : 0|8@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 1285 SLAM_STATS: 4 JETSON
+BO_ 1285 SLAM_STATS_CAN: 4 JETSON
  SG_ Lap_counter : 0|4@1+ (1,0) [0|0] "" ACU
  SG_ Cones_count_actual : 4|8@1+ (1,0) [0|0] "" ACU
  SG_ Cones_count_all : 12|17@1+ (1,0) [0|0] "" ACU
