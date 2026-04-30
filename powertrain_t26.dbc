@@ -1101,7 +1101,7 @@ CM_ SG_ 1220 AvailableMinDcCurrent "Available min DC current. This value affecte
 CM_ SG_ 1795 master_runtime "AMS Master Runtime in seconds";
 CM_ SG_ 1797 SOC_Integer "State of Charge";
 CM_ SG_ 1797 SOC_Float "State of Charge";
-CM_ SG_ 1797 slaves_detected "number of detected slaves from isoSPI";
+CM_ SG_ 1797 slaves_detected "number of slaves in the daisy chain";
 BA_DEF_  "BusType" STRING ;
 BA_DEF_DEF_  "BusType" "CAN";
 VAL_ 262 module_open_wire 0 "No open wire" 1 "Cell 1" 2 "Cell 2" 3 "Cell 3" 4 "Cell 4" 5 "Cell 5" 6 "Cell 6" 7 "Cell 7" 8 "Cell 8" 9 "Cell 9" 10 "Cell 10" 11 "Cell 11" 12 "Cell 12" 13 "GPIO 1" 14 "GPIO 2" 15 "GPIO 3" 16 "GPIO 4" 17 "GPIO 5" 18 "GPIO 6" ;
