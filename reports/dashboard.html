@@ -48,8 +48,8 @@ th { background-color:#e2eaf1; }
 <div id="powertrain_t26.dbc" class="tabcontent">
   <div class="summary">
     <b>Resumo:</b> Nós: 7, Mensagens: 125, Sinais: 698
-    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
+    <br>Mensagens Adicionadas: 1, Removidas: 0, Alteradas: 1
+    <br>Sinais Adicionados: 1, Removidos: 1, Alterados: 0
   </div>
 
   <h2>🟦 Nós</h2>
@@ -73,19 +73,68 @@ th { background-color:#e2eaf1; }
   </ul>
 
   <h2>📨 Mensagens Adicionadas</h2>
-  <p>Nenhuma mensagem adicionada.</p>
+  
+  <table>
+  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
+  
+    <tr class="added">
+      <td>1798</td>
+      <td>Master_MSC_ID_4</td>
+      <td>8</td>
+      <td>None</td>
+      <td>slaves_detected</td>
+    </tr>
+  
+  </table>
+  
 
   <h2>📨 Mensagens Removidas</h2>
   <p>Nenhuma mensagem removida.</p>
 
   <h2>📨 Mensagens Alteradas</h2>
-  <p>Nenhuma mensagem alterada.</p>
+  
+    
+    <button type="button" class="collapsible">1797 : Master_SOC_Accumulator</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>name</td>
+        <td class="code">Master_MSC_ID_4</td>
+        <td class="code">Master_SOC_Accumulator</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['slaves_detected']</td>
+        <td class="code">['SOC_Integer', 'SOC_Float']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+  
 
   <h2>🟩 Sinais Adicionados</h2>
-  <p>Nenhum sinal adicionado.</p>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="added"><td>1798</td><td>slaves_detected</td></tr>
+  
+  </table>
+  
 
   <h2>🟥 Sinais Removidos</h2>
-  <p>Nenhum sinal removido.</p>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="removed"><td>1797</td><td>slaves_detected</td></tr>
+  
+  </table>
+  
 
   <h2>🟨 Sinais Alterados</h2>
   <p>Nenhuma alteração encontrada.</p>
