@@ -1,4 +1,4 @@
-VERSION ""
+VERSION " "
 
 
 NS_ : 
@@ -725,7 +725,7 @@ BO_ 1317 IVT_Msg_Result_T: 6 ISABELLE
  SG_ IVT_Result_T_Measurement_Error : 14|1@0+ (1,0) [0|0] ""  AMS,VCU,HOST
  SG_ IVT_Result_T_Channel_Error : 13|1@0+ (1,0) [0|0] ""  AMS,VCU,HOST
  SG_ IVT_ID_Result_T : 7|8@0+ (1,0) [4|4] ""  HOST,AMS,VCU
- SG_ IVT_Result_T : 23|32@0- (0.1,0) [-2147483648|2147483647] "°C"  HOST,AMS,VCU
+ SG_ IVT_Result_T : 23|32@0- (0.1,0) [-2147483648|2147483647] "ï¿½C"  HOST,AMS,VCU
  SG_ IVT_MsgCount_Result_T : 11|4@0+ (1,0) [0|0] ""  HOST,AMS,VCU
 
 BO_ 1316 IVT_Msg_Result_U3: 6 ISABELLE
