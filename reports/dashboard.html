@@ -29,14 +29,12 @@ th { background-color:#e2eaf1; }
 <h1>Dashboard DBC Completo</h1>
 
 <h2>📁 Ficheiros DBC</h2>
-<p>Adicionados: eveurope_charger.dbc</p>
-<p>Removidos: Nenhum</p>
+<p>Adicionados: Nenhum</p>
+<p>Removidos: eveurope_charger.dbc</p>
 
 <div class="tab">
 
   <button class="tablinks" onclick="openTab(event, 'powertrain_t26.dbc')">powertrain_t26.dbc</button>
-
-  <button class="tablinks" onclick="openTab(event, 'eveurope_charger.dbc')">eveurope_charger.dbc</button>
 
   <button class="tablinks" onclick="openTab(event, 'data_t26.dbc')">data_t26.dbc</button>
 
@@ -85,165 +83,6 @@ th { background-color:#e2eaf1; }
 
   <h2>🟩 Sinais Adicionados</h2>
   <p>Nenhum sinal adicionado.</p>
-
-  <h2>🟥 Sinais Removidos</h2>
-  <p>Nenhum sinal removido.</p>
-
-  <h2>🟨 Sinais Alterados</h2>
-  <p>Nenhuma alteração encontrada.</p>
-</div>
-
-<div id="eveurope_charger.dbc" class="tabcontent">
-  <div class="summary">
-    <b>Resumo:</b> Nós: 2, Mensagens: 6, Sinais: 33
-    <br>Mensagens Adicionadas: 6, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 33, Removidos: 0, Alterados: 0
-  </div>
-
-  <h2>🟦 Nós</h2>
-  <ul>
-  
-    <li>node('BMS', 'Battery Management System')</li>
-  
-    <li>node('Charger', 'EV Europe AC/DC Charger')</li>
-  
-  </ul>
-
-  <h2>📨 Mensagens Adicionadas</h2>
-  
-  <table>
-  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
-  
-    <tr class="added">
-      <td>403106036</td>
-      <td>BMS_ChargingRequest</td>
-      <td>8</td>
-      <td>1000</td>
-      <td>Max_Charging_Voltage, Max_Charging_Current, Control</td>
-    </tr>
-  
-    <tr class="added">
-      <td>419385576</td>
-      <td>Charger_Status</td>
-      <td>8</td>
-      <td>1000</td>
-      <td>Output_Voltage, Output_Current, HW_Failure, Temp_OTP, Input_Voltage_Fault, Starting_State_Fault, Comm_Timeout, Charger_Temperature</td>
-    </tr>
-  
-    <tr class="added">
-      <td>403105780</td>
-      <td>BMS_ChargingRequest_P998</td>
-      <td>8</td>
-      <td>1000</td>
-      <td>Max_Charging_Voltage, Max_Charging_Current, Control</td>
-    </tr>
-  
-    <tr class="added">
-      <td>419385575</td>
-      <td>Charger_Status_P998</td>
-      <td>8</td>
-      <td>1000</td>
-      <td>Output_Voltage, Output_Current, HW_Failure, Temp_OTP, Input_Voltage_Fault, Starting_State_Fault, Comm_Timeout, Charger_Temperature</td>
-    </tr>
-  
-    <tr class="added">
-      <td>403105268</td>
-      <td>BMS_ChargingRequest_P1000</td>
-      <td>8</td>
-      <td>1000</td>
-      <td>Max_Charging_Voltage, Max_Charging_Current, Control</td>
-    </tr>
-  
-    <tr class="added">
-      <td>419385573</td>
-      <td>Charger_Status_P1000</td>
-      <td>8</td>
-      <td>1000</td>
-      <td>Output_Voltage, Output_Current, HW_Failure, Temp_OTP, Input_Voltage_Fault, Starting_State_Fault, Comm_Timeout, Charger_Temperature</td>
-    </tr>
-  
-  </table>
-  
-
-  <h2>📨 Mensagens Removidas</h2>
-  <p>Nenhuma mensagem removida.</p>
-
-  <h2>📨 Mensagens Alteradas</h2>
-  <p>Nenhuma mensagem alterada.</p>
-
-  <h2>🟩 Sinais Adicionados</h2>
-  
-  <table>
-  <tr><th>Message ID</th><th>Signal</th></tr>
-  
-    <tr class="added"><td>419385576</td><td>Output_Current</td></tr>
-  
-    <tr class="added"><td>419385576</td><td>Temp_OTP</td></tr>
-  
-    <tr class="added"><td>419385575</td><td>Starting_State_Fault</td></tr>
-  
-    <tr class="added"><td>419385573</td><td>Starting_State_Fault</td></tr>
-  
-    <tr class="added"><td>419385576</td><td>Output_Voltage</td></tr>
-  
-    <tr class="added"><td>403106036</td><td>Max_Charging_Current</td></tr>
-  
-    <tr class="added"><td>403105268</td><td>Max_Charging_Current</td></tr>
-  
-    <tr class="added"><td>419385576</td><td>HW_Failure</td></tr>
-  
-    <tr class="added"><td>419385575</td><td>Temp_OTP</td></tr>
-  
-    <tr class="added"><td>419385573</td><td>Output_Current</td></tr>
-  
-    <tr class="added"><td>419385573</td><td>Temp_OTP</td></tr>
-  
-    <tr class="added"><td>419385575</td><td>Output_Current</td></tr>
-  
-    <tr class="added"><td>403106036</td><td>Control</td></tr>
-  
-    <tr class="added"><td>403105268</td><td>Control</td></tr>
-  
-    <tr class="added"><td>419385576</td><td>Input_Voltage_Fault</td></tr>
-  
-    <tr class="added"><td>419385576</td><td>Charger_Temperature</td></tr>
-  
-    <tr class="added"><td>419385573</td><td>Output_Voltage</td></tr>
-  
-    <tr class="added"><td>419385576</td><td>Comm_Timeout</td></tr>
-  
-    <tr class="added"><td>403105780</td><td>Max_Charging_Current</td></tr>
-  
-    <tr class="added"><td>419385575</td><td>Output_Voltage</td></tr>
-  
-    <tr class="added"><td>419385573</td><td>HW_Failure</td></tr>
-  
-    <tr class="added"><td>403106036</td><td>Max_Charging_Voltage</td></tr>
-  
-    <tr class="added"><td>419385575</td><td>HW_Failure</td></tr>
-  
-    <tr class="added"><td>403105268</td><td>Max_Charging_Voltage</td></tr>
-  
-    <tr class="added"><td>403105780</td><td>Control</td></tr>
-  
-    <tr class="added"><td>419385573</td><td>Input_Voltage_Fault</td></tr>
-  
-    <tr class="added"><td>419385573</td><td>Charger_Temperature</td></tr>
-  
-    <tr class="added"><td>419385576</td><td>Starting_State_Fault</td></tr>
-  
-    <tr class="added"><td>419385575</td><td>Input_Voltage_Fault</td></tr>
-  
-    <tr class="added"><td>419385575</td><td>Charger_Temperature</td></tr>
-  
-    <tr class="added"><td>419385573</td><td>Comm_Timeout</td></tr>
-  
-    <tr class="added"><td>419385575</td><td>Comm_Timeout</td></tr>
-  
-    <tr class="added"><td>403105780</td><td>Max_Charging_Voltage</td></tr>
-  
-  </table>
-  
 
   <h2>🟥 Sinais Removidos</h2>
   <p>Nenhum sinal removido.</p>
