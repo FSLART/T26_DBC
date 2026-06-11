@@ -1,4 +1,4 @@
-VERSION " "
+VERSION ""
 
 
 NS_ : 
@@ -33,8 +33,12 @@ NS_ :
 
 BS_:
 
-BU_: JETSON VCU ACU RES DYN_F DYN_R FSG_DATA_LOGGER AK10_9 Aquisition_Board1 Aquisition_Board2 Aquisition_Board3 Aquisition_Board4 Aquisition_Board7
+BU_: JETSON VCU ACU RES DYN_F DYN_R FSG_DATA_LOGGER AK10_9 Acquisition_Board1 Acquisition_Board2 Acquisition_Board3 Acquisition_Board4 Acquisition_Board7
 
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ EMER_BUTTON : 17|1@1+ (1,0) [0|0] ""  JETSON
+ SG_ INERTIA : 16|1@1+ (1,0) [0|0] ""  JETSON
 
 BO_ 81 ACU: 8 ACU
  SG_ IGN : 24|1@1+ (1,0) [0|1] ""  JETSON
@@ -57,24 +61,26 @@ BO_ 2147494248 CubeMars_Feedback: 8 AK10_9
 BO_ 2147484776 CubeMars_position_loop: 4 JETSON
  SG_ POSITION : 7|32@0- (1000,0) [0|0] "ï¿½"  AK10_9
 
-BO_ 1808 AQT1: 3 Aquisition_Board1
- SG_ BRK_PRESS : 0|16@1+ (0.1,0) [0|0] "bar"  ACU
+BO_ 1808 AQT1: 3 Acquisition_Board1
+ SG_ FRT_BRK_PRESS : 0|16@1+ (0.1,0) [0|0] "bar"  ACU
  SG_ RES : 16|1@1+ (1,0) [0|0] ""  JETSON
  SG_ BOTS : 17|1@1+ (1,0) [0|0] ""  JETSON
 
-BO_ 1824 AQT2: 2 Aquisition_Board2
- SG_ WHEEL_ANGLE : 0|16@1- (0.1,0) [0|0] "ï¿½"  JETSON
+BO_ 1824 AQT2: 2 Acquisition_Board2
+ SG_ WHEEL_SPD : 0|16@1- (0.1,0) [0|0] "ï¿½"  JETSON
 
-BO_ 1840 AQT3: 2 Aquisition_Board3
- SG_ WHEEL_ANGLE : 0|16@1- (0.1,0) [0|0] "ï¿½"  JETSON
+BO_ 1840 AQT3: 2 Acquisition_Board3
+ SG_ WHEEL_SPD : 0|16@1- (0.1,0) [0|0] "ï¿½"  JETSON
 
-BO_ 1856 AQT4: 3 Aquisition_Board4
- SG_ ST_ANGLE : 0|16@1- (0.1,0) [0|0] "ï¿½"  JETSON
- SG_ INERTIA : 16|1@1+ (1,0) [0|0] ""  JETSON
- SG_ EMER_BUTTON : 17|1@1+ (1,0) [0|0] ""  JETSON
+BO_ 1856 AQT4: 7 Acquisition_Board4
+ SG_ ST_ANGLE : 0|16@1- (0.1,0) [0|0] "º"  JETSON
+ SG_ SUSP_L : 16|16@1+ (0.1,0) [0|0] "mm" Vector__XXX
+ SG_ SUSP_R : 32|16@1+ (0.1,0) [0|0] "mm" Vector__XXX
+ SG_ INERTIA : 48|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ EMERGENCY : 49|1@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 1904 AQT7: 2 Aquisition_Board7
- SG_ BRK_PRESS : 0|16@1+ (0.1,0) [0|0] "bar"  ACU
+BO_ 1904 AQT7: 2 Acquisition_Board7
+ SG_ REAR_BRK_PRESS : 0|16@1+ (0.1,0) [0|0] "bar"  ACU
 
 BO_ 1536 VCU_IGN_R2D: 8 VCU
  SG_ ignition_manual : 0|8@1+ (1,0) [0|0] ""  ACU
