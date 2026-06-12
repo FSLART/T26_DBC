@@ -123,10 +123,10 @@ BO_ 1282 DV_status: 8 ACU
  SG_ Cones_count_all : 23|17@1+ (1,0) [0|131071] ""  FSG_DATA_LOGGER
 
 BO_ 1297 ASF_SIGNALS: 4 ACU
- SG_ EBS_Pressure_Tank_Front : 0|8@1+ (10,0) [0|0] "bar"  FSG_DATA_LOGGER
- SG_ EBS_Pressure_Tank_Rear : 8|8@1+ (10,0) [0|0] "bar"  FSG_DATA_LOGGER
- SG_ Brake_Pressure_Front : 16|8@1+ (10,0) [0|0] "bar"  FSG_DATA_LOGGER
- SG_ Brake_Pressure_Rear : 24|8@1+ (10,0) [0|0] "bar"  FSG_DATA_LOGGER
+ SG_ EBS_Pressure_Tank_Front : 0|8@1+ (0.1,0) [0|0] "bar"  FSG_DATA_LOGGER
+ SG_ EBS_Pressure_Tank_Rear : 8|8@1+ (0.1,0) [0|0] "bar"  FSG_DATA_LOGGER
+ SG_ Brake_Pressure_Front : 16|8@1+ (0.1,0) [0|0] "bar"  FSG_DATA_LOGGER
+ SG_ Brake_Pressure_Rear : 24|8@1+ (0.1,0) [0|0] "bar"  FSG_DATA_LOGGER
 
 BO_ 1289 VCU_RPM: 2 VCU
  SG_ rpm_actual : 0|16@1- (1,0) [0|6000] "RPM"  JETSON
