@@ -34,16 +34,586 @@ th { background-color:#e2eaf1; }
 
 <div class="tab">
 
-  <button class="tablinks" onclick="openTab(event, 'powertrain_t26.dbc')">powertrain_t26.dbc</button>
-
   <button class="tablinks" onclick="openTab(event, 'data_t26.dbc')">data_t26.dbc</button>
-
-  <button class="tablinks" onclick="openTab(event, 'aquisition_boards.dbc')">aquisition_boards.dbc</button>
 
   <button class="tablinks" onclick="openTab(event, 'autonomous_t26.dbc')">autonomous_t26.dbc</button>
 
+  <button class="tablinks" onclick="openTab(event, 'powertrain_t26.dbc')">powertrain_t26.dbc</button>
+
+  <button class="tablinks" onclick="openTab(event, 'aquisition_boards.dbc')">aquisition_boards.dbc</button>
+
 </div>
 
+
+<div id="data_t26.dbc" class="tabcontent">
+  <div class="summary">
+    <b>Resumo:</b> Nós: 6, Mensagens: 6, Sinais: 13
+    <br>Mensagens Adicionadas: 1, Removidas: 1, Alteradas: 5
+    <br>Sinais Adicionados: 5, Removidos: 9, Alterados: 8
+  </div>
+
+  <h2>🟦 Nós</h2>
+  <ul>
+  
+    <li>node('Acquisition_Board2', None)</li>
+  
+    <li>node('Acquisition_Board3', None)</li>
+  
+    <li>node('Acquisition_Board5', None)</li>
+  
+    <li>node('Acquisition_Board6', None)</li>
+  
+    <li>node('Acquisition_Board7', None)</li>
+  
+    <li>node('Acquisition_Board8', None)</li>
+  
+  </ul>
+
+  <h2>📨 Mensagens Adicionadas</h2>
+  
+  <table>
+  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
+  
+    <tr class="added">
+      <td>1920</td>
+      <td>AQT8</td>
+      <td>6</td>
+      <td>None</td>
+      <td>NTC1, NTC2, NTC3</td>
+    </tr>
+  
+  </table>
+  
+
+  <h2>📨 Mensagens Removidas</h2>
+  
+  <table>
+  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
+  
+    <tr class="removed">
+      <td>1909</td>
+      <td>AQT7_2</td>
+      <td>4</td>
+      <td>None</td>
+      <td>SUSP_R, SUSP_L</td>
+    </tr>
+  
+  </table>
+  
+
+  <h2>📨 Mensagens Alteradas</h2>
+  
+    
+    <button type="button" class="collapsible">1824 : AQT2</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>length</td>
+        <td class="code">6</td>
+        <td class="code">4</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['SPD_WHEEL', 'TIRE_TEMP', 'BRAKE_TEMP']</td>
+        <td class="code">['TIRE_TEMP', 'BRAKE_TEMP']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1840 : AQT3</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>length</td>
+        <td class="code">6</td>
+        <td class="code">4</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['SPD_WHEEL', 'TIRE_TEMP', 'BRAKE_TEMP']</td>
+        <td class="code">['TIRE_TEMP', 'BRAKE_TEMP']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1872 : AQT5</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>length</td>
+        <td class="code">6</td>
+        <td class="code">4</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['SPD_WHEEL', 'TIRE_TEMP', 'BRAKE_TEMP']</td>
+        <td class="code">['TIRE_TEMP', 'BRAKE_TEMP']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1888 : AQT6</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>length</td>
+        <td class="code">6</td>
+        <td class="code">4</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['SPD_WHEEL', 'TIRE_TEMP', 'BRAKE_TEMP']</td>
+        <td class="code">['TIRE_TEMP', 'BRAKE_TEMP']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1904 : AQT7</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>name</td>
+        <td class="code">AQT7_1</td>
+        <td class="code">AQT7</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>length</td>
+        <td class="code">6</td>
+        <td class="code">4</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['NTC_1', 'NTC_2', 'NTC_3']</td>
+        <td class="code">['SUSP_L', 'SUSP_R']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+  
+
+  <h2>🟩 Sinais Adicionados</h2>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="added"><td>1904</td><td>SUSP_R</td></tr>
+  
+    <tr class="added"><td>1920</td><td>NTC2</td></tr>
+  
+    <tr class="added"><td>1904</td><td>SUSP_L</td></tr>
+  
+    <tr class="added"><td>1920</td><td>NTC1</td></tr>
+  
+    <tr class="added"><td>1920</td><td>NTC3</td></tr>
+  
+  </table>
+  
+
+  <h2>🟥 Sinais Removidos</h2>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="removed"><td>1904</td><td>NTC_2</td></tr>
+  
+    <tr class="removed"><td>1840</td><td>SPD_WHEEL</td></tr>
+  
+    <tr class="removed"><td>1909</td><td>SUSP_L</td></tr>
+  
+    <tr class="removed"><td>1904</td><td>NTC_1</td></tr>
+  
+    <tr class="removed"><td>1909</td><td>SUSP_R</td></tr>
+  
+    <tr class="removed"><td>1888</td><td>SPD_WHEEL</td></tr>
+  
+    <tr class="removed"><td>1824</td><td>SPD_WHEEL</td></tr>
+  
+    <tr class="removed"><td>1904</td><td>NTC_3</td></tr>
+  
+    <tr class="removed"><td>1872</td><td>SPD_WHEEL</td></tr>
+  
+  </table>
+  
+
+  <h2>🟨 Sinais Alterados</h2>
+  
+    
+    <button type="button" class="collapsible">1888 : TIRE_TEMP</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>start</td>
+        <td class="code">16</td>
+        <td class="code">0</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1840 : TIRE_TEMP</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>start</td>
+        <td class="code">16</td>
+        <td class="code">0</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1824 : TIRE_TEMP</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>start</td>
+        <td class="code">16</td>
+        <td class="code">0</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1888 : BRAKE_TEMP</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>start</td>
+        <td class="code">32</td>
+        <td class="code">16</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1840 : BRAKE_TEMP</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>start</td>
+        <td class="code">32</td>
+        <td class="code">16</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1824 : BRAKE_TEMP</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>start</td>
+        <td class="code">32</td>
+        <td class="code">16</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1872 : TIRE_TEMP</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>start</td>
+        <td class="code">16</td>
+        <td class="code">0</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1872 : BRAKE_TEMP</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>start</td>
+        <td class="code">32</td>
+        <td class="code">16</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+  
+</div>
+
+<div id="autonomous_t26.dbc" class="tabcontent">
+  <div class="summary">
+    <b>Resumo:</b> Nós: 13, Mensagens: 20, Sinais: 73
+    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 5
+    <br>Sinais Adicionados: 7, Removidos: 5, Alterados: 5
+  </div>
+
+  <h2>🟦 Nós</h2>
+  <ul>
+  
+    <li>node('JETSON', None)</li>
+  
+    <li>node('VCU', None)</li>
+  
+    <li>node('ACU', None)</li>
+  
+    <li>node('RES', None)</li>
+  
+    <li>node('DYN_F', None)</li>
+  
+    <li>node('DYN_R', None)</li>
+  
+    <li>node('FSG_DATA_LOGGER', None)</li>
+  
+    <li>node('AK10_9', 'Atuador direcao')</li>
+  
+    <li>node('Acquisition_Board1', None)</li>
+  
+    <li>node('Acquisition_Board2', None)</li>
+  
+    <li>node('Acquisition_Board3', None)</li>
+  
+    <li>node('Acquisition_Board4', None)</li>
+  
+    <li>node('Acquisition_Board7', None)</li>
+  
+  </ul>
+
+  <h2>📨 Mensagens Adicionadas</h2>
+  <p>Nenhuma mensagem adicionada.</p>
+
+  <h2>📨 Mensagens Removidas</h2>
+  <p>Nenhuma mensagem removida.</p>
+
+  <h2>📨 Mensagens Alteradas</h2>
+  
+    
+    <button type="button" class="collapsible">1808 : AQT1</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['BRK_PRESS', 'RES', 'BOTS']</td>
+        <td class="code">['FRT_BRK_PRESS', 'RES', 'BOTS']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1824 : AQT2</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['WHEEL_ANGLE']</td>
+        <td class="code">['WHEEL_SPD']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1840 : AQT3</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['WHEEL_ANGLE']</td>
+        <td class="code">['WHEEL_SPD']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1856 : AQT4</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>length</td>
+        <td class="code">3</td>
+        <td class="code">7</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['ST_ANGLE', 'INERTIA', 'EMER_BUTTON']</td>
+        <td class="code">['ST_ANGLE', 'SUSP_L', 'SUSP_R', 'INERTIA', 'EMERGENCY']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1904 : AQT7</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['BRK_PRESS']</td>
+        <td class="code">['REAR_BRK_PRESS']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+  
+
+  <h2>🟩 Sinais Adicionados</h2>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="added"><td>1856</td><td>SUSP_R</td></tr>
+  
+    <tr class="added"><td>1856</td><td>EMERGENCY</td></tr>
+  
+    <tr class="added"><td>1808</td><td>FRT_BRK_PRESS</td></tr>
+  
+    <tr class="added"><td>1856</td><td>SUSP_L</td></tr>
+  
+    <tr class="added"><td>1824</td><td>WHEEL_SPD</td></tr>
+  
+    <tr class="added"><td>1904</td><td>REAR_BRK_PRESS</td></tr>
+  
+    <tr class="added"><td>1840</td><td>WHEEL_SPD</td></tr>
+  
+  </table>
+  
+
+  <h2>🟥 Sinais Removidos</h2>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="removed"><td>1840</td><td>WHEEL_ANGLE</td></tr>
+  
+    <tr class="removed"><td>1824</td><td>WHEEL_ANGLE</td></tr>
+  
+    <tr class="removed"><td>1856</td><td>EMER_BUTTON</td></tr>
+  
+    <tr class="removed"><td>1904</td><td>BRK_PRESS</td></tr>
+  
+    <tr class="removed"><td>1808</td><td>BRK_PRESS</td></tr>
+  
+  </table>
+  
+
+  <h2>🟨 Sinais Alterados</h2>
+  
+    
+    <button type="button" class="collapsible">1297 : EBS_Pressure_Tank_Front</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>scale</td>
+        <td class="code">10</td>
+        <td class="code">0.1</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1856 : INERTIA</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>start</td>
+        <td class="code">16</td>
+        <td class="code">48</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1297 : Brake_Pressure_Rear</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>scale</td>
+        <td class="code">10</td>
+        <td class="code">0.1</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1297 : Brake_Pressure_Front</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>scale</td>
+        <td class="code">10</td>
+        <td class="code">0.1</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1297 : EBS_Pressure_Tank_Rear</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>scale</td>
+        <td class="code">10</td>
+        <td class="code">0.1</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+  
+</div>
 
 <div id="powertrain_t26.dbc" class="tabcontent">
   <div class="summary">
@@ -66,50 +636,9 @@ th { background-color:#e2eaf1; }
   
     <li>node('DTI', None)</li>
   
-    <li>node('Aquisition_Board1', None)</li>
+    <li>node('Acquisition_Board1', None)</li>
   
-    <li>node('Aquisition_Board4', None)</li>
-  
-  </ul>
-
-  <h2>📨 Mensagens Adicionadas</h2>
-  <p>Nenhuma mensagem adicionada.</p>
-
-  <h2>📨 Mensagens Removidas</h2>
-  <p>Nenhuma mensagem removida.</p>
-
-  <h2>📨 Mensagens Alteradas</h2>
-  <p>Nenhuma mensagem alterada.</p>
-
-  <h2>🟩 Sinais Adicionados</h2>
-  <p>Nenhum sinal adicionado.</p>
-
-  <h2>🟥 Sinais Removidos</h2>
-  <p>Nenhum sinal removido.</p>
-
-  <h2>🟨 Sinais Alterados</h2>
-  <p>Nenhuma alteração encontrada.</p>
-</div>
-
-<div id="data_t26.dbc" class="tabcontent">
-  <div class="summary">
-    <b>Resumo:</b> Nós: 5, Mensagens: 6, Sinais: 17
-    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
-  </div>
-
-  <h2>🟦 Nós</h2>
-  <ul>
-  
-    <li>node('Aquisition_Board2', None)</li>
-  
-    <li>node('Aquisition_Board3', None)</li>
-  
-    <li>node('Aquisition_Board5', None)</li>
-  
-    <li>node('Aquisition_Board6', None)</li>
-  
-    <li>node('Aquisition_Board7', None)</li>
+    <li>node('Acquisition_Board4', None)</li>
   
   </ul>
 
@@ -153,63 +682,6 @@ th { background-color:#e2eaf1; }
     <li>node('Aquisition_Board5', None)</li>
   
     <li>node('Aquisition_Board6', None)</li>
-  
-    <li>node('Aquisition_Board7', None)</li>
-  
-  </ul>
-
-  <h2>📨 Mensagens Adicionadas</h2>
-  <p>Nenhuma mensagem adicionada.</p>
-
-  <h2>📨 Mensagens Removidas</h2>
-  <p>Nenhuma mensagem removida.</p>
-
-  <h2>📨 Mensagens Alteradas</h2>
-  <p>Nenhuma mensagem alterada.</p>
-
-  <h2>🟩 Sinais Adicionados</h2>
-  <p>Nenhum sinal adicionado.</p>
-
-  <h2>🟥 Sinais Removidos</h2>
-  <p>Nenhum sinal removido.</p>
-
-  <h2>🟨 Sinais Alterados</h2>
-  <p>Nenhuma alteração encontrada.</p>
-</div>
-
-<div id="autonomous_t26.dbc" class="tabcontent">
-  <div class="summary">
-    <b>Resumo:</b> Nós: 13, Mensagens: 20, Sinais: 71
-    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
-  </div>
-
-  <h2>🟦 Nós</h2>
-  <ul>
-  
-    <li>node('JETSON', None)</li>
-  
-    <li>node('VCU', None)</li>
-  
-    <li>node('ACU', None)</li>
-  
-    <li>node('RES', None)</li>
-  
-    <li>node('DYN_F', None)</li>
-  
-    <li>node('DYN_R', None)</li>
-  
-    <li>node('FSG_DATA_LOGGER', None)</li>
-  
-    <li>node('AK10_9', 'Atuador direcao')</li>
-  
-    <li>node('Aquisition_Board1', None)</li>
-  
-    <li>node('Aquisition_Board2', None)</li>
-  
-    <li>node('Aquisition_Board3', None)</li>
-  
-    <li>node('Aquisition_Board4', None)</li>
   
     <li>node('Aquisition_Board7', None)</li>
   
