@@ -128,8 +128,11 @@ BO_ 1297 ASF_SIGNALS: 4 ACU
  SG_ Brake_Pressure_Front : 16|8@1+ (0.1,0) [0|0] "bar"  FSG_DATA_LOGGER
  SG_ Brake_Pressure_Rear : 24|8@1+ (0.1,0) [0|0] "bar"  FSG_DATA_LOGGER
 
-BO_ 1289 VCU_RPM: 2 VCU
- SG_ rpm_actual : 0|16@1- (1,0) [0|6000] "RPM"  JETSON
+BO_ 1289 VCU_RPM: 8 VCU
+ SG_ motor_rpm_left : 0|16@1+ (1,0) [0|6000] "RPM"  JETSON
+ SG_ motor_rpm_right : 16|16@1+ (1,0) [0|0] "RPM" Vector__XXX
+ SG_ motor_current_left : 32|16@1- (1,0) [0|0] "A" Vector__XXX
+ SG_ motor_current_right : 48|16@1- (1,0) [0|0] "A" Vector__XXX
 
 BO_ 1178 VCU_TORQUE_TARGET: 2 JETSON
  SG_ torque_target : 0|16@1- (1,0) [-100|100] "RPM"  VCU
@@ -170,4 +173,5 @@ VAL_ 1282 ASB_EBS_state 1 "ASB_EBS_state_deactivated" 2 "ASB_EBS_state_initial_c
 VAL_ 1282 AMI_state 1 "AMI_state_acceleration" 2 "AMI_state_skidpad" 3 "AMI_state_trackdrive" 4 "AMI_state_braketest" 5 "AMI_state_inspection" 6 "AMI_state_autocross" ;
 VAL_ 1282 ASB_redundancy_state 1 "ASB_redundancy_state_deactivated" 2 "ASB_redundancy_state_engaged" 3 "ASB_redundancy_state_initial_checkup_passed" ;
 VAL_ 97 EMERGENCY_CAUSE 0 "None" 1 "ACU" 2 "ZED" 3 "Steering" 4 "Planner" 5 "SLAM" 6 "P-Puma" 7 "IMU" ;
+
 
