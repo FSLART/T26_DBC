@@ -29,7 +29,7 @@ th { background-color:#e2eaf1; }
 <h1>Dashboard DBC Completo</h1>
 
 <h2>📁 Ficheiros DBC</h2>
-<p>Adicionados: Nenhum</p>
+<p>Adicionados: FSIC.dbc</p>
 <p>Removidos: eveurope_charger.dbc</p>
 
 <div class="tab">
@@ -41,6 +41,8 @@ th { background-color:#e2eaf1; }
   <button class="tablinks" onclick="openTab(event, 'powertrain_t26.dbc')">powertrain_t26.dbc</button>
 
   <button class="tablinks" onclick="openTab(event, 'aquisition_boards.dbc')">aquisition_boards.dbc</button>
+
+  <button class="tablinks" onclick="openTab(event, 'FSIC.dbc')">FSIC.dbc</button>
 
 </div>
 
@@ -91,8 +93,8 @@ th { background-color:#e2eaf1; }
 <div id="autonomous_t26.dbc" class="tabcontent">
   <div class="summary">
     <b>Resumo:</b> Nós: 13, Mensagens: 20, Sinais: 76
-    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 1
-    <br>Sinais Adicionados: 4, Removidos: 1, Alterados: 0
+    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
+    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
   </div>
 
   <h2>🟦 Nós</h2>
@@ -133,55 +135,13 @@ th { background-color:#e2eaf1; }
   <p>Nenhuma mensagem removida.</p>
 
   <h2>📨 Mensagens Alteradas</h2>
-  
-    
-    <button type="button" class="collapsible">1289 : VCU_RPM</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>length</td>
-        <td class="code">2</td>
-        <td class="code">8</td>
-      </tr>
-      
-      <tr class="changed">
-        <td>signals</td>
-        <td class="code">['rpm_actual']</td>
-        <td class="code">['motor_rpm_left', 'motor_rpm_right', 'motor_current_left', 'motor_current_right']</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-  
+  <p>Nenhuma mensagem alterada.</p>
 
   <h2>🟩 Sinais Adicionados</h2>
-  
-  <table>
-  <tr><th>Message ID</th><th>Signal</th></tr>
-  
-    <tr class="added"><td>1289</td><td>motor_current_right</td></tr>
-  
-    <tr class="added"><td>1289</td><td>motor_rpm_left</td></tr>
-  
-    <tr class="added"><td>1289</td><td>motor_rpm_right</td></tr>
-  
-    <tr class="added"><td>1289</td><td>motor_current_left</td></tr>
-  
-  </table>
-  
+  <p>Nenhum sinal adicionado.</p>
 
   <h2>🟥 Sinais Removidos</h2>
-  
-  <table>
-  <tr><th>Message ID</th><th>Signal</th></tr>
-  
-    <tr class="removed"><td>1289</td><td>rpm_actual</td></tr>
-  
-  </table>
-  
+  <p>Nenhum sinal removido.</p>
 
   <h2>🟨 Sinais Alterados</h2>
   <p>Nenhuma alteração encontrada.</p>
@@ -270,6 +230,613 @@ th { background-color:#e2eaf1; }
 
   <h2>🟩 Sinais Adicionados</h2>
   <p>Nenhum sinal adicionado.</p>
+
+  <h2>🟥 Sinais Removidos</h2>
+  <p>Nenhum sinal removido.</p>
+
+  <h2>🟨 Sinais Alterados</h2>
+  <p>Nenhuma alteração encontrada.</p>
+</div>
+
+<div id="FSIC.dbc" class="tabcontent">
+  <div class="summary">
+    <b>Resumo:</b> Nós: 3, Mensagens: 40, Sinais: 120
+    <br>Mensagens Adicionadas: 40, Removidas: 0, Alteradas: 0
+    <br>Sinais Adicionados: 120, Removidos: 0, Alterados: 0
+  </div>
+
+  <h2>🟦 Nós</h2>
+  <ul>
+  
+    <li>node('HV500_INV1', None)</li>
+  
+    <li>node('HV500_INV2', None)</li>
+  
+    <li>node('HV500_commands', None)</li>
+  
+  </ul>
+
+  <h2>📨 Mensagens Adicionadas</h2>
+  
+  <table>
+  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
+  
+    <tr class="added">
+      <td>1028</td>
+      <td>INV1_ERPM_DUTY_VOLTAGE</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV1_Actual_ERPM, INV1_Actual_Duty, INV1_Actual_InputVoltage</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1060</td>
+      <td>INV1_AC_DC_current</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV1_Actual_ACCurrent, INV1_Actual_DCCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1092</td>
+      <td>INV1_Temperatures</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV1_Actual_TempController, INV1_Actual_TempMotor, INV1_Actual_FaultCode</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1124</td>
+      <td>INV1_FOC</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV1_Actual_FOC_id, INV1_Actual_FOC_iq</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1156</td>
+      <td>INV1_MISC</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV1_Actual_Throttle, INV1_Actual_Brake, INV1_Digital_output_4, INV1_Digital_output_3, INV1_Digital_output_2, INV1_Digital_output_1, INV1_Digital_input_4, INV1_Digital_input_3, INV1_Digital_input_2, INV1_Digital_input_1, INV1_Drive_enable, INV1_Motor_temp_limit, INV1_Motor_accel_limit, INV1_Input_voltage_limit, INV1_IGBT_temp_limit, INV1_IGBT_accel_limit, INV1_Drive_enable_limit, INV1_DC_current_limit, INV1_Capacitor_temp_limit, INV1_Power_limit, INV1_RPM_max_limit, INV1_RPM_min_limit, INV1_CAN_map_version</td>
+    </tr>
+  
+    <tr class="added">
+      <td>996</td>
+      <td>INV1_TargetIq</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV1_ControlMode, INV1_TargetIq, INV1_MotorPosition, INV1_isMotorStill</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1188</td>
+      <td>INV1_MinMaxAcCurrent</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV1_MaxAcCurrent, INV1_AvailableMaxAcCurrent, INV1_MinAcCurrent, INV1_AvailableMinAcCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1220</td>
+      <td>INV1_MinMaxDcCurrent</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV1_MaxDcCurrent, INV1_AvailableMaxDcCurrent, INV1_MinDcCurrent, INV1_AvailableMinDcCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>388</td>
+      <td>INV1_SetDriveEnable</td>
+      <td>2</td>
+      <td>100</td>
+      <td>INV1_CMD_DriveEnable</td>
+    </tr>
+  
+    <tr class="added">
+      <td>36</td>
+      <td>INV1_SetAcCurrent</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV1_CMD_TargetAcCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>68</td>
+      <td>INV1_SetBrakeCurrent</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV1_CMD_TargetBrakeCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>100</td>
+      <td>INV1_SetERPM</td>
+      <td>4</td>
+      <td>100</td>
+      <td>INV1_CMD_TargetSpeed</td>
+    </tr>
+  
+    <tr class="added">
+      <td>132</td>
+      <td>INV1_SetPosition</td>
+      <td>2</td>
+      <td>100</td>
+      <td>INV1_CMD_TargetPosition</td>
+    </tr>
+  
+    <tr class="added">
+      <td>164</td>
+      <td>INV1_SetRelCurrent</td>
+      <td>2</td>
+      <td>100</td>
+      <td>INV1_CMD_TargetRelativeCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>196</td>
+      <td>INV1_SetRelBrakeCurrent</td>
+      <td>2</td>
+      <td>100</td>
+      <td>INV1_CMD_TgtRelBrakeCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>228</td>
+      <td>INV1_SetDigOutput</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV1_CMD_SetDigOutput4, INV1_CMD_SetDigOutput3, INV1_CMD_SetDigOutput2, INV1_CMD_SetDigOutput1</td>
+    </tr>
+  
+    <tr class="added">
+      <td>260</td>
+      <td>INV1_SetMaxAcCurrent</td>
+      <td>2</td>
+      <td>100</td>
+      <td>INV1_CMD_MaxAcCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>292</td>
+      <td>INV1_SetMaxAcBrakeCurrent</td>
+      <td>2</td>
+      <td>100</td>
+      <td>INV1_CMD_MaxAcBrakeCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>324</td>
+      <td>INV1_SetMaxDcCurrent</td>
+      <td>2</td>
+      <td>100</td>
+      <td>INV1_CMD_MaxDcCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>356</td>
+      <td>INV1_SetMaxDcBrakeCurrent</td>
+      <td>2</td>
+      <td>100</td>
+      <td>INV1_CMD_MaxDcBrakeCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1029</td>
+      <td>INV2_ERPM_DUTY_VOLTAGE</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV2_Actual_ERPM, INV2_Actual_Duty, INV2_Actual_InputVoltage</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1061</td>
+      <td>INV2_AC_DC_current</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV2_Actual_ACCurrent, INV2_Actual_DCCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1093</td>
+      <td>INV2_Temperatures</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV2_Actual_TempController, INV2_Actual_TempMotor, INV2_Actual_FaultCode</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1125</td>
+      <td>INV2_FOC</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV2_Actual_FOC_id, INV2_Actual_FOC_iq</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1157</td>
+      <td>INV2_MISC</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV2_Actual_Throttle, INV2_Actual_Brake, INV2_Digital_output_4, INV2_Digital_output_3, INV2_Digital_output_2, INV2_Digital_output_1, INV2_Digital_input_4, INV2_Digital_input_3, INV2_Digital_input_2, INV2_Digital_input_1, INV2_Drive_enable, INV2_Motor_temp_limit, INV2_Motor_accel_limit, INV2_Input_voltage_limit, INV2_IGBT_temp_limit, INV2_IGBT_accel_limit, INV2_Drive_enable_limit, INV2_DC_current_limit, INV2_Capacitor_temp_limit, INV2_Power_limit, INV2_RPM_max_limit, INV2_RPM_min_limit, INV2_CAN_map_version</td>
+    </tr>
+  
+    <tr class="added">
+      <td>997</td>
+      <td>INV2_TargetIq</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV2_ControlMode, INV2_TargetIq, INV2_MotorPosition, INV2_isMotorStill</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1189</td>
+      <td>INV2_MinMaxAcCurrent</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV2_MaxAcCurrent, INV2_AvailableMaxAcCurrent, INV2_MinAcCurrent, INV2_AvailableMinAcCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1221</td>
+      <td>INV2_MinMaxDcCurrent</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV2_MaxDcCurrent, INV2_AvailableMaxDcCurrent, INV2_MinDcCurrent, INV2_AvailableMinDcCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>389</td>
+      <td>INV2_SetDriveEnable</td>
+      <td>2</td>
+      <td>100</td>
+      <td>INV2_CMD_DriveEnable</td>
+    </tr>
+  
+    <tr class="added">
+      <td>37</td>
+      <td>INV2_SetAcCurrent</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV2_CMD_TargetAcCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>69</td>
+      <td>INV2_SetBrakeCurrent</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV2_CMD_TargetBrakeCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>101</td>
+      <td>INV2_SetERPM</td>
+      <td>4</td>
+      <td>100</td>
+      <td>INV2_CMD_TargetSpeed</td>
+    </tr>
+  
+    <tr class="added">
+      <td>133</td>
+      <td>INV2_SetPosition</td>
+      <td>2</td>
+      <td>100</td>
+      <td>INV2_CMD_TargetPosition</td>
+    </tr>
+  
+    <tr class="added">
+      <td>165</td>
+      <td>INV2_SetRelCurrent</td>
+      <td>2</td>
+      <td>100</td>
+      <td>INV2_CMD_TargetRelativeCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>197</td>
+      <td>INV2_SetRelBrakeCurrent</td>
+      <td>2</td>
+      <td>100</td>
+      <td>INV2_CMD_TgtRelBrakeCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>229</td>
+      <td>INV2_SetDigOutput</td>
+      <td>8</td>
+      <td>100</td>
+      <td>INV2_CMD_SetDigOutput4, INV2_CMD_SetDigOutput3, INV2_CMD_SetDigOutput2, INV2_CMD_SetDigOutput1</td>
+    </tr>
+  
+    <tr class="added">
+      <td>261</td>
+      <td>INV2_SetMaxAcCurrent</td>
+      <td>2</td>
+      <td>100</td>
+      <td>INV2_CMD_MaxAcCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>293</td>
+      <td>INV2_SetMaxAcBrakeCurrent</td>
+      <td>2</td>
+      <td>100</td>
+      <td>INV2_CMD_MaxAcBrakeCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>325</td>
+      <td>INV2_SetMaxDcCurrent</td>
+      <td>2</td>
+      <td>100</td>
+      <td>INV2_CMD_MaxDcCurrent</td>
+    </tr>
+  
+    <tr class="added">
+      <td>357</td>
+      <td>INV2_SetMaxDcBrakeCurrent</td>
+      <td>2</td>
+      <td>100</td>
+      <td>INV2_CMD_MaxDcBrakeCurrent</td>
+    </tr>
+  
+  </table>
+  
+
+  <h2>📨 Mensagens Removidas</h2>
+  <p>Nenhuma mensagem removida.</p>
+
+  <h2>📨 Mensagens Alteradas</h2>
+  <p>Nenhuma mensagem alterada.</p>
+
+  <h2>🟩 Sinais Adicionados</h2>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="added"><td>1189</td><td>INV2_MinAcCurrent</td></tr>
+  
+    <tr class="added"><td>1188</td><td>INV1_AvailableMaxAcCurrent</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_IGBT_accel_limit</td></tr>
+  
+    <tr class="added"><td>1124</td><td>INV1_Actual_FOC_iq</td></tr>
+  
+    <tr class="added"><td>37</td><td>INV2_CMD_TargetAcCurrent</td></tr>
+  
+    <tr class="added"><td>1221</td><td>INV2_AvailableMaxDcCurrent</td></tr>
+  
+    <tr class="added"><td>164</td><td>INV1_CMD_TargetRelativeCurrent</td></tr>
+  
+    <tr class="added"><td>228</td><td>INV1_CMD_SetDigOutput1</td></tr>
+  
+    <tr class="added"><td>1125</td><td>INV2_Actual_FOC_id</td></tr>
+  
+    <tr class="added"><td>229</td><td>INV2_CMD_SetDigOutput1</td></tr>
+  
+    <tr class="added"><td>357</td><td>INV2_CMD_MaxDcBrakeCurrent</td></tr>
+  
+    <tr class="added"><td>1029</td><td>INV2_Actual_ERPM</td></tr>
+  
+    <tr class="added"><td>324</td><td>INV1_CMD_MaxDcCurrent</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_Actual_Throttle</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_Digital_input_2</td></tr>
+  
+    <tr class="added"><td>68</td><td>INV1_CMD_TargetBrakeCurrent</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_Drive_enable_limit</td></tr>
+  
+    <tr class="added"><td>1189</td><td>INV2_AvailableMinAcCurrent</td></tr>
+  
+    <tr class="added"><td>1221</td><td>INV2_MinDcCurrent</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_RPM_max_limit</td></tr>
+  
+    <tr class="added"><td>292</td><td>INV1_CMD_MaxAcBrakeCurrent</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_RPM_min_limit</td></tr>
+  
+    <tr class="added"><td>100</td><td>INV1_CMD_TargetSpeed</td></tr>
+  
+    <tr class="added"><td>101</td><td>INV2_CMD_TargetSpeed</td></tr>
+  
+    <tr class="added"><td>996</td><td>INV1_ControlMode</td></tr>
+  
+    <tr class="added"><td>996</td><td>INV1_MotorPosition</td></tr>
+  
+    <tr class="added"><td>133</td><td>INV2_CMD_TargetPosition</td></tr>
+  
+    <tr class="added"><td>1092</td><td>INV1_Actual_TempMotor</td></tr>
+  
+    <tr class="added"><td>1221</td><td>INV2_MaxDcCurrent</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_Drive_enable</td></tr>
+  
+    <tr class="added"><td>1060</td><td>INV1_Actual_ACCurrent</td></tr>
+  
+    <tr class="added"><td>36</td><td>INV1_CMD_TargetAcCurrent</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_DC_current_limit</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_Drive_enable_limit</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_Digital_input_3</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_Actual_Throttle</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_Digital_output_2</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_Motor_accel_limit</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_Digital_output_1</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_Power_limit</td></tr>
+  
+    <tr class="added"><td>293</td><td>INV2_CMD_MaxAcBrakeCurrent</td></tr>
+  
+    <tr class="added"><td>228</td><td>INV1_CMD_SetDigOutput3</td></tr>
+  
+    <tr class="added"><td>228</td><td>INV1_CMD_SetDigOutput4</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_Actual_Brake</td></tr>
+  
+    <tr class="added"><td>1188</td><td>INV1_MaxAcCurrent</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_Digital_input_1</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_Digital_output_3</td></tr>
+  
+    <tr class="added"><td>997</td><td>INV2_TargetIq</td></tr>
+  
+    <tr class="added"><td>1093</td><td>INV2_Actual_TempMotor</td></tr>
+  
+    <tr class="added"><td>165</td><td>INV2_CMD_TargetRelativeCurrent</td></tr>
+  
+    <tr class="added"><td>1220</td><td>INV1_MaxDcCurrent</td></tr>
+  
+    <tr class="added"><td>1029</td><td>INV2_Actual_InputVoltage</td></tr>
+  
+    <tr class="added"><td>229</td><td>INV2_CMD_SetDigOutput4</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_Digital_input_4</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_DC_current_limit</td></tr>
+  
+    <tr class="added"><td>356</td><td>INV1_CMD_MaxDcBrakeCurrent</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_Digital_input_2</td></tr>
+  
+    <tr class="added"><td>389</td><td>INV2_CMD_DriveEnable</td></tr>
+  
+    <tr class="added"><td>1092</td><td>INV1_Actual_TempController</td></tr>
+  
+    <tr class="added"><td>196</td><td>INV1_CMD_TgtRelBrakeCurrent</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_IGBT_temp_limit</td></tr>
+  
+    <tr class="added"><td>197</td><td>INV2_CMD_TgtRelBrakeCurrent</td></tr>
+  
+    <tr class="added"><td>997</td><td>INV2_MotorPosition</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_Digital_output_1</td></tr>
+  
+    <tr class="added"><td>229</td><td>INV2_CMD_SetDigOutput3</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_CAN_map_version</td></tr>
+  
+    <tr class="added"><td>1061</td><td>INV2_Actual_ACCurrent</td></tr>
+  
+    <tr class="added"><td>1028</td><td>INV1_Actual_Duty</td></tr>
+  
+    <tr class="added"><td>997</td><td>INV2_isMotorStill</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_Digital_output_2</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_Drive_enable</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_Digital_output_4</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_Digital_output_4</td></tr>
+  
+    <tr class="added"><td>1188</td><td>INV1_MinAcCurrent</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_Power_limit</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_Motor_temp_limit</td></tr>
+  
+    <tr class="added"><td>1093</td><td>INV2_Actual_FaultCode</td></tr>
+  
+    <tr class="added"><td>228</td><td>INV1_CMD_SetDigOutput2</td></tr>
+  
+    <tr class="added"><td>996</td><td>INV1_isMotorStill</td></tr>
+  
+    <tr class="added"><td>388</td><td>INV1_CMD_DriveEnable</td></tr>
+  
+    <tr class="added"><td>1029</td><td>INV2_Actual_Duty</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_Input_voltage_limit</td></tr>
+  
+    <tr class="added"><td>1093</td><td>INV2_Actual_TempController</td></tr>
+  
+    <tr class="added"><td>325</td><td>INV2_CMD_MaxDcCurrent</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_RPM_min_limit</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_Capacitor_temp_limit</td></tr>
+  
+    <tr class="added"><td>1124</td><td>INV1_Actual_FOC_id</td></tr>
+  
+    <tr class="added"><td>132</td><td>INV1_CMD_TargetPosition</td></tr>
+  
+    <tr class="added"><td>229</td><td>INV2_CMD_SetDigOutput2</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_Motor_temp_limit</td></tr>
+  
+    <tr class="added"><td>997</td><td>INV2_ControlMode</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_Digital_input_3</td></tr>
+  
+    <tr class="added"><td>1189</td><td>INV2_MaxAcCurrent</td></tr>
+  
+    <tr class="added"><td>1060</td><td>INV1_Actual_DCCurrent</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_Input_voltage_limit</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_RPM_max_limit</td></tr>
+  
+    <tr class="added"><td>1188</td><td>INV1_AvailableMinAcCurrent</td></tr>
+  
+    <tr class="added"><td>1220</td><td>INV1_AvailableMinDcCurrent</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_IGBT_temp_limit</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_Digital_output_3</td></tr>
+  
+    <tr class="added"><td>996</td><td>INV1_TargetIq</td></tr>
+  
+    <tr class="added"><td>69</td><td>INV2_CMD_TargetBrakeCurrent</td></tr>
+  
+    <tr class="added"><td>1028</td><td>INV1_Actual_ERPM</td></tr>
+  
+    <tr class="added"><td>1125</td><td>INV2_Actual_FOC_iq</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_Motor_accel_limit</td></tr>
+  
+    <tr class="added"><td>1220</td><td>INV1_AvailableMaxDcCurrent</td></tr>
+  
+    <tr class="added"><td>260</td><td>INV1_CMD_MaxAcCurrent</td></tr>
+  
+    <tr class="added"><td>1221</td><td>INV2_AvailableMinDcCurrent</td></tr>
+  
+    <tr class="added"><td>1061</td><td>INV2_Actual_DCCurrent</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_CAN_map_version</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_Capacitor_temp_limit</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_Digital_input_1</td></tr>
+  
+    <tr class="added"><td>261</td><td>INV2_CMD_MaxAcCurrent</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_Digital_input_4</td></tr>
+  
+    <tr class="added"><td>1157</td><td>INV2_Actual_Brake</td></tr>
+  
+    <tr class="added"><td>1092</td><td>INV1_Actual_FaultCode</td></tr>
+  
+    <tr class="added"><td>1156</td><td>INV1_IGBT_accel_limit</td></tr>
+  
+    <tr class="added"><td>1220</td><td>INV1_MinDcCurrent</td></tr>
+  
+    <tr class="added"><td>1028</td><td>INV1_Actual_InputVoltage</td></tr>
+  
+    <tr class="added"><td>1189</td><td>INV2_AvailableMaxAcCurrent</td></tr>
+  
+  </table>
+  
 
   <h2>🟥 Sinais Removidos</h2>
   <p>Nenhum sinal removido.</p>
