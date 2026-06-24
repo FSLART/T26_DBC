@@ -1012,7 +1012,7 @@ BO_ 1798 Master_MSC_ID_4: 8 AMS
 BO_ 129 Start_Charging: 1 HOST
  SG_ Charging_Request : 0|1@1+ (1,0) [0|0] "ON/OFF" Vector__XXX
 
-BO_ 1872 VCU_state: 8 VCU
+BO_ 1872 VCU_states: 8 VCU
  SG_ vcu_state : 7|8@0+ (1,0) [0|0] "" Vector__XXX
 
 
