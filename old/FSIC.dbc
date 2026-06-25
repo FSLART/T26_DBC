@@ -31,10 +31,6 @@ NS_ :
 BS_:
 BU_: HV500_INV1 HV500_INV2 HV500_commands
 
-////////////////////////////////////////////////////////////////////////
-// Inverter 1  (Node ID 4  |  prefix: INV1)
-////////////////////////////////////////////////////////////////////////
-
 BO_ 1028 INV1_ERPM_DUTY_VOLTAGE: 8 HV500_INV1
  SG_ INV1_Actual_ERPM : 7|32@0- (1,0) [-120000|120000] "ERPM"  HV500_commands
  SG_ INV1_Actual_Duty : 39|16@0- (0.1,0) [-100|100] "%"  HV500_commands
@@ -134,10 +130,6 @@ BO_ 324 INV1_SetMaxDcCurrent: 2 HV500_commands
 
 BO_ 356 INV1_SetMaxDcBrakeCurrent: 2 HV500_commands
  SG_ INV1_CMD_MaxDcBrakeCurrent : 7|16@0- (0.1,0) [-850|0] "A"  HV500_INV1
-
-////////////////////////////////////////////////////////////////////////
-// Inverter 2  (Node ID 5  |  prefix: INV2)
-////////////////////////////////////////////////////////////////////////
 
 BO_ 1029 INV2_ERPM_DUTY_VOLTAGE: 8 HV500_INV2
  SG_ INV2_Actual_ERPM : 7|32@0- (1,0) [-120000|120000] "ERPM"  HV500_commands
