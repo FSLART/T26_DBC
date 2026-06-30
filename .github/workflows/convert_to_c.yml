@@ -32,7 +32,7 @@ jobs:
           git pull --rebase
 
           mkdir -p generated
-          find . -type f -name "*.dbc" -not -path "./other_dbcs/*" | while read -r dbcfile; do
+          find . -type f -name "*.dbc" -not -path "./other_dbcs/*" -not -path "./old/*" | while read -r dbcfile; do
             base=$(basename "$dbcfile" .dbc)
             outdir="generated/$base"
             mkdir -p "$outdir"
@@ -43,6 +43,7 @@ jobs:
           git add generated/
           if ! git diff --cached --quiet; then
             git commit -m "Auto-generated C code and Excel export from DBC files"
+            git pull --rebase
             git push
           fi
         env:
