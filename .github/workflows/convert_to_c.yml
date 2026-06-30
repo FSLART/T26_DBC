@@ -23,8 +23,14 @@ jobs:
           # Install latest version of cantools
           pip install --upgrade cantools openpyxl
 
-      - name: Generate C code for all DBC files
+      - name: Generate C code and commit
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Pull latest changes first so generation always uses the current DBC
+          git pull --rebase
+
           mkdir -p generated
           find . -type f -name "*.dbc" -not -path "./other_dbcs/*" | while read -r dbcfile; do
             base=$(basename "$dbcfile" .dbc)
@@ -34,27 +40,10 @@ jobs:
             cantools generate_c_source "$dbcfile" --output "$outdir"
           done
 
-
-
-      - name: Commit and push generated files if changed
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add generated/ 
-
-          # Commit only if changes exist
+          git add generated/
           if ! git diff --cached --quiet; then
             git commit -m "Auto-generated C code and Excel export from DBC files"
+            git push
           fi
-
-          # Clean workspace to avoid unstaged changes blocking pull
-          git reset --hard
-          git clean -fd
-
-          # Pull remote changes with rebase to keep history clean
-          git pull --rebase
-
-          # Push changes
-          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
