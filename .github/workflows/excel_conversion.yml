@@ -5,6 +5,10 @@ on:
     branches:
       - main
 
+concurrency:
+  group: generate-and-push
+  cancel-in-progress: false
+
 jobs:
   export_excel:
     runs-on: ubuntu-latest
