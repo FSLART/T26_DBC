@@ -93,8 +93,8 @@ th { background-color:#e2eaf1; }
 <div id="autonomous_t26.dbc" class="tabcontent">
   <div class="summary">
     <b>Resumo:</b> Nós: 13, Mensagens: 20, Sinais: 76
-    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
+    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 1
+    <br>Sinais Adicionados: 1, Removidos: 1, Alterados: 5
   </div>
 
   <h2>🟦 Nós</h2>
@@ -135,23 +135,185 @@ th { background-color:#e2eaf1; }
   <p>Nenhuma mensagem removida.</p>
 
   <h2>📨 Mensagens Alteradas</h2>
-  <p>Nenhuma mensagem alterada.</p>
+  
+    
+    <button type="button" class="collapsible">10600 : CubeMars_Feedback</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>signals</td>
+        <td class="code">['Position', 'Speed_RPM', 'Current', 'Driver_Temp', 'Error_Code']</td>
+        <td class="code">['Position', 'Speed_RPM', 'Current', 'Motor_Temperature', 'Error_Code']</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+  
 
   <h2>🟩 Sinais Adicionados</h2>
-  <p>Nenhum sinal adicionado.</p>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="added"><td>10600</td><td>Motor_Temperature</td></tr>
+  
+  </table>
+  
 
   <h2>🟥 Sinais Removidos</h2>
-  <p>Nenhum sinal removido.</p>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="removed"><td>10600</td><td>Driver_Temp</td></tr>
+  
+  </table>
+  
 
   <h2>🟨 Sinais Alterados</h2>
-  <p>Nenhuma alteração encontrada.</p>
+  
+    
+    <button type="button" class="collapsible">10600 : Speed_RPM</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>minimum</td>
+        <td class="code">-320000</td>
+        <td class="code">-1693.121693</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>maximum</td>
+        <td class="code">320000</td>
+        <td class="code">1693.121693</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>scale</td>
+        <td class="code">1890</td>
+        <td class="code">0.0529100529</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>start</td>
+        <td class="code">16</td>
+        <td class="code">23</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>byte_order</td>
+        <td class="code">little_endian</td>
+        <td class="code">big_endian</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">10600 : Position</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>start</td>
+        <td class="code">0</td>
+        <td class="code">7</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>byte_order</td>
+        <td class="code">little_endian</td>
+        <td class="code">big_endian</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1128 : POSITION</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>minimum</td>
+        <td class="code">None</td>
+        <td class="code">-36000</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>maximum</td>
+        <td class="code">None</td>
+        <td class="code">36000</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>scale</td>
+        <td class="code">1000</td>
+        <td class="code">0.0001</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">10600 : Error_Code</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>maximum</td>
+        <td class="code">255</td>
+        <td class="code">7</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>start</td>
+        <td class="code">56</td>
+        <td class="code">63</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>byte_order</td>
+        <td class="code">little_endian</td>
+        <td class="code">big_endian</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">10600 : Current</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>start</td>
+        <td class="code">32</td>
+        <td class="code">39</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>byte_order</td>
+        <td class="code">little_endian</td>
+        <td class="code">big_endian</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+  
 </div>
 
 <div id="powertrain_t26.dbc" class="tabcontent">
   <div class="summary">
     <b>Resumo:</b> Nós: 7, Mensagens: 127, Sinais: 700
     <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 1
+    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
   </div>
 
   <h2>🟦 Nós</h2>
@@ -190,23 +352,7 @@ th { background-color:#e2eaf1; }
   <p>Nenhum sinal removido.</p>
 
   <h2>🟨 Sinais Alterados</h2>
-  
-    
-    <button type="button" class="collapsible">1794 : precharge_state</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>choices</td>
-        <td class="code">OrderedDict([(0, 'START'), (1, 'OPEN_ALL'), (2, 'SWITCH_HVNEG'), (3, 'WAIT_FOR_AIR_NEG_TO_CLOSE'), (4, 'CHECKING_AIR_NEG_IS_CLOSED'), (5, 'SWITCH_PRECHARGE'), (6, 'WAIT_FOR_PRECHARGE_TO_CLOSE'), (7, 'CHECKING_PRECHARGE_IS_CLOSED'), (8, 'VERIFY_CURRENT'), (9, 'VERIFY_BUS_VOLT'), (10, 'SWITCH_HVPOS'), (11, 'WAIT_FOR_AIR_POS_TO_CLOSE'), (12, 'CHECKING_AIR_POS_IS_CLOSED'), (13, 'TURN_OFF_PRECHARGE'), (14, 'WAIT_FOR_PRECHARGE_TO_OPEN'), (15, 'CHECKING_PRECHARGE_IS_OPEN'), (16, 'END'), (17, 'WRONG'), (18, 'KILL'), (19, 'RX_CAN')])</td>
-        <td class="code">OrderedDict([(0, 'START'), (1, 'OPEN_ALL'), (2, 'SWITCH_HVNEG'), (3, 'WAIT_FOR_AIR_NEG_TO_CLOSE'), (4, 'CHECKING_AIR_NEG_IS_CLOSED'), (5, 'SWITCH_PRECHARGE'), (6, 'WAIT_FOR_PRECHARGE_TO_CLOSE'), (7, 'CHECKING_PRECHARGE_IS_CLOSED'), (8, 'VERIFY_CURRENT'), (9, 'VERIFY_BUS_VOLT'), (10, 'SWITCH_HVPOS'), (11, 'WAIT_FOR_AIR_POS_TO_CLOSE'), (12, 'CHECKING_AIR_POS_IS_CLOSED'), (13, 'TURN_OFF_PRECHARGE'), (14, 'WAIT_FOR_PRECHARGE_TO_OPEN'), (15, 'CHECKING_PRECHARGE_IS_OPEN'), (16, 'HV-ON'), (17, 'WRONG'), (18, 'KILL'), (19, 'RX_CAN')])</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-  
+  <p>Nenhuma alteração encontrada.</p>
 </div>
 
 <div id="aquisition_boards.dbc" class="tabcontent">
