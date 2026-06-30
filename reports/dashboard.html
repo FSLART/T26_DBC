@@ -149,9 +149,9 @@ th { background-color:#e2eaf1; }
 
 <div id="powertrain_t26.dbc" class="tabcontent">
   <div class="summary">
-    <b>Resumo:</b> Nós: 9, Mensagens: 146, Sinais: 756
-    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
+    <b>Resumo:</b> Nós: 9, Mensagens: 147, Sinais: 760
+    <br>Mensagens Adicionadas: 1, Removidas: 0, Alteradas: 0
+    <br>Sinais Adicionados: 4, Removidos: 0, Alterados: 1
   </div>
 
   <h2>🟦 Nós</h2>
@@ -179,7 +179,20 @@ th { background-color:#e2eaf1; }
   </ul>
 
   <h2>📨 Mensagens Adicionadas</h2>
-  <p>Nenhuma mensagem adicionada.</p>
+  
+  <table>
+  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
+  
+    <tr class="added">
+      <td>1604</td>
+      <td>Slave_10_MSC_ID_1</td>
+      <td>8</td>
+      <td>None</td>
+      <td>module_voltage_sum, module_voltage_avg, module_voltage_min, module_voltage_max</td>
+    </tr>
+  
+  </table>
+  
 
   <h2>📨 Mensagens Removidas</h2>
   <p>Nenhuma mensagem removida.</p>
@@ -188,13 +201,42 @@ th { background-color:#e2eaf1; }
   <p>Nenhuma mensagem alterada.</p>
 
   <h2>🟩 Sinais Adicionados</h2>
-  <p>Nenhum sinal adicionado.</p>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="added"><td>1604</td><td>module_voltage_sum</td></tr>
+  
+    <tr class="added"><td>1604</td><td>module_voltage_avg</td></tr>
+  
+    <tr class="added"><td>1604</td><td>module_voltage_min</td></tr>
+  
+    <tr class="added"><td>1604</td><td>module_voltage_max</td></tr>
+  
+  </table>
+  
 
   <h2>🟥 Sinais Removidos</h2>
   <p>Nenhum sinal removido.</p>
 
   <h2>🟨 Sinais Alterados</h2>
-  <p>Nenhuma alteração encontrada.</p>
+  
+    
+    <button type="button" class="collapsible">1794 : precharge_state</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>choices</td>
+        <td class="code">OrderedDict([(0, 'START'), (1, 'OPEN_ALL'), (2, 'SWITCH_HVNEG'), (3, 'WAIT_FOR_AIR_NEG_TO_CLOSE'), (4, 'CHECKING_AIR_NEG_IS_CLOSED'), (5, 'SWITCH_PRECHARGE'), (6, 'WAIT_FOR_PRECHARGE_TO_CLOSE'), (7, 'CHECKING_PRECHARGE_IS_CLOSED'), (8, 'VERIFY_CURRENT'), (9, 'VERIFY_BUS_VOLT'), (10, 'SWITCH_HVPOS'), (11, 'WAIT_FOR_AIR_POS_TO_CLOSE'), (12, 'CHECKING_AIR_POS_IS_CLOSED'), (13, 'TURN_OFF_PRECHARGE'), (14, 'WAIT_FOR_PRECHARGE_TO_OPEN'), (15, 'CHECKING_PRECHARGE_IS_OPEN'), (16, 'HV-ON'), (17, 'WRONG'), (18, 'KILL'), (19, 'RX_CAN')])</td>
+        <td class="code">OrderedDict([(0, 'START'), (1, 'OPEN_ALL'), (2, 'SWITCH_HVNEG'), (3, 'WAIT_FOR_AIR_NEG_TO_CLOSE'), (4, 'CHECKING_AIR_NEG_IS_CLOSED'), (5, 'SWITCH_PRECHARGE'), (6, 'WAIT_FOR_PRECHARGE_TO_CLOSE'), (7, 'CHECKING_PRECHARGE_IS_CLOSED'), (8, 'VERIFY_CURRENT'), (9, 'VERIFY_BUS_VOLT'), (10, 'SWITCH_HVPOS'), (11, 'WAIT_FOR_AIR_POS_TO_CLOSE'), (12, 'CHECKING_AIR_POS_IS_CLOSED'), (13, 'TURN_OFF_PRECHARGE'), (14, 'WAIT_FOR_PRECHARGE_TO_OPEN'), (15, 'CHECKING_PRECHARGE_IS_OPEN'), (16, 'HV_ON'), (17, 'WRONG'), (18, 'KILL'), (19, 'RX_CAN')])</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+  
 </div>
 
 <div id="aquisition_boards.dbc" class="tabcontent">
