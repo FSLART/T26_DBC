@@ -1,4 +1,4 @@
-VERSION "1.0"
+VERSION " "
 
 
 NS_ : 
@@ -52,7 +52,7 @@ BO_ 2147494248 CubeMars_Feedback: 8 AK10_9
  SG_ Position : 7|16@0- (0.1,0) [-3200|3200] "deg"  JETSON
  SG_ Speed_RPM : 23|16@0- (0.0529100529,0) [-1693.121693|1693.121693] "RPM"  JETSON
  SG_ Current : 39|16@0- (0.01,0) [-60|60] "A"  JETSON
- SG_ Motor_Temperature : 55|8@0- (1,0) [-20|127] "degC"  JETSON
+ SG_ Driver_Temp : 55|8@0- (1,0) [-20|127] "degC"  JETSON
  SG_ Error_Code : 63|8@0+ (1,0) [0|7] ""  JETSON
 
 BO_ 2147484776 CubeMars_position_loop: 4 JETSON
