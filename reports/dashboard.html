@@ -49,9 +49,9 @@ th { background-color:#e2eaf1; }
 
 <div id="data_t26.dbc" class="tabcontent">
   <div class="summary">
-    <b>Resumo:</b> Nós: 9, Mensagens: 10, Sinais: 20
-    <br>Mensagens Adicionadas: 4, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 7, Removidos: 0, Alterados: 0
+    <b>Resumo:</b> Nós: 8, Mensagens: 10, Sinais: 20
+    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 2
+    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
   </div>
 
   <h2>🟦 Nós</h2>
@@ -69,81 +69,53 @@ th { background-color:#e2eaf1; }
   
     <li>node('Acquisition_Board8', None)</li>
   
-    <li>node('FSIC_INV1', None)</li>
-  
-    <li>node('FSIC_INV2', None)</li>
+    <li>node('VCU', None)</li>
   
     <li>node('PDM', None)</li>
   
   </ul>
 
   <h2>📨 Mensagens Adicionadas</h2>
-  
-  <table>
-  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
-  
-    <tr class="added">
-      <td>1092</td>
-      <td>INV1_Temperatures</td>
-      <td>8</td>
-      <td>None</td>
-      <td>INV1_TempInverter, INV1_TempMotor</td>
-    </tr>
-  
-    <tr class="added">
-      <td>1093</td>
-      <td>INV2_Temperatures</td>
-      <td>8</td>
-      <td>None</td>
-      <td>INV2_TempInverter, INV2_TempMotor</td>
-    </tr>
-  
-    <tr class="added">
-      <td>528</td>
-      <td>PDM_LV</td>
-      <td>2</td>
-      <td>None</td>
-      <td>LV_Voltage_mV</td>
-    </tr>
-  
-    <tr class="added">
-      <td>544</td>
-      <td>PDM_Cooling</td>
-      <td>8</td>
-      <td>None</td>
-      <td>WaterPump_PWM, CoolingFan_PWM</td>
-    </tr>
-  
-  </table>
-  
+  <p>Nenhuma mensagem adicionada.</p>
 
   <h2>📨 Mensagens Removidas</h2>
   <p>Nenhuma mensagem removida.</p>
 
   <h2>📨 Mensagens Alteradas</h2>
-  <p>Nenhuma mensagem alterada.</p>
+  
+    
+    <button type="button" class="collapsible">1092 : VCU_INV1_Temperatures</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>name</td>
+        <td class="code">INV1_Temperatures</td>
+        <td class="code">VCU_INV1_Temperatures</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1093 : VCU_INV2_Temperatures</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>name</td>
+        <td class="code">INV2_Temperatures</td>
+        <td class="code">VCU_INV2_Temperatures</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+  
 
   <h2>🟩 Sinais Adicionados</h2>
-  
-  <table>
-  <tr><th>Message ID</th><th>Signal</th></tr>
-  
-    <tr class="added"><td>1093</td><td>INV2_TempInverter</td></tr>
-  
-    <tr class="added"><td>528</td><td>LV_Voltage_mV</td></tr>
-  
-    <tr class="added"><td>1092</td><td>INV1_TempMotor</td></tr>
-  
-    <tr class="added"><td>544</td><td>CoolingFan_PWM</td></tr>
-  
-    <tr class="added"><td>1093</td><td>INV2_TempMotor</td></tr>
-  
-    <tr class="added"><td>544</td><td>WaterPump_PWM</td></tr>
-  
-    <tr class="added"><td>1092</td><td>INV1_TempInverter</td></tr>
-  
-  </table>
-  
+  <p>Nenhum sinal adicionado.</p>
 
   <h2>🟥 Sinais Removidos</h2>
   <p>Nenhum sinal removido.</p>
