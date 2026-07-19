@@ -29,104 +29,29 @@ th { background-color:#e2eaf1; }
 <h1>Dashboard DBC Completo</h1>
 
 <h2>📁 Ficheiros DBC</h2>
-<p>Adicionados: Nenhum</p>
+<p>Adicionados: handcart_t26.dbc</p>
 <p>Removidos: eveurope_charger.dbc</p>
 
 <div class="tab">
 
-  <button class="tablinks" onclick="openTab(event, 'data_t26.dbc')">data_t26.dbc</button>
-
-  <button class="tablinks" onclick="openTab(event, 'autonomous_t26.dbc')">autonomous_t26.dbc</button>
+  <button class="tablinks" onclick="openTab(event, 'aquisition_boards.dbc')">aquisition_boards.dbc</button>
 
   <button class="tablinks" onclick="openTab(event, 'powertrain_t26.dbc')">powertrain_t26.dbc</button>
 
-  <button class="tablinks" onclick="openTab(event, 'aquisition_boards.dbc')">aquisition_boards.dbc</button>
+  <button class="tablinks" onclick="openTab(event, 'autonomous_t26.dbc')">autonomous_t26.dbc</button>
+
+  <button class="tablinks" onclick="openTab(event, 'handcart_t26.dbc')">handcart_t26.dbc</button>
+
+  <button class="tablinks" onclick="openTab(event, 'data_t26.dbc')">data_t26.dbc</button>
 
   <button class="tablinks" onclick="openTab(event, 'FSIC.dbc')">FSIC.dbc</button>
 
 </div>
 
 
-<div id="data_t26.dbc" class="tabcontent">
+<div id="aquisition_boards.dbc" class="tabcontent">
   <div class="summary">
-    <b>Resumo:</b> Nós: 8, Mensagens: 10, Sinais: 20
-    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 2
-    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
-  </div>
-
-  <h2>🟦 Nós</h2>
-  <ul>
-  
-    <li>node('Acquisition_Board2', None)</li>
-  
-    <li>node('Acquisition_Board3', None)</li>
-  
-    <li>node('Acquisition_Board5', None)</li>
-  
-    <li>node('Acquisition_Board6', None)</li>
-  
-    <li>node('Acquisition_Board7', None)</li>
-  
-    <li>node('Acquisition_Board8', None)</li>
-  
-    <li>node('VCU', None)</li>
-  
-    <li>node('PDM', None)</li>
-  
-  </ul>
-
-  <h2>📨 Mensagens Adicionadas</h2>
-  <p>Nenhuma mensagem adicionada.</p>
-
-  <h2>📨 Mensagens Removidas</h2>
-  <p>Nenhuma mensagem removida.</p>
-
-  <h2>📨 Mensagens Alteradas</h2>
-  
-    
-    <button type="button" class="collapsible">1092 : VCU_INV1_Temperatures</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>name</td>
-        <td class="code">INV1_Temperatures</td>
-        <td class="code">VCU_INV1_Temperatures</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-    <button type="button" class="collapsible">1093 : VCU_INV2_Temperatures</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>name</td>
-        <td class="code">INV2_Temperatures</td>
-        <td class="code">VCU_INV2_Temperatures</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-  
-
-  <h2>🟩 Sinais Adicionados</h2>
-  <p>Nenhum sinal adicionado.</p>
-
-  <h2>🟥 Sinais Removidos</h2>
-  <p>Nenhum sinal removido.</p>
-
-  <h2>🟨 Sinais Alterados</h2>
-  <p>Nenhuma alteração encontrada.</p>
-</div>
-
-<div id="autonomous_t26.dbc" class="tabcontent">
-  <div class="summary">
-    <b>Resumo:</b> Nós: 13, Mensagens: 20, Sinais: 76
+    <b>Resumo:</b> Nós: 7, Mensagens: 7, Sinais: 25
     <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
     <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
   </div>
@@ -134,31 +59,19 @@ th { background-color:#e2eaf1; }
   <h2>🟦 Nós</h2>
   <ul>
   
-    <li>node('JETSON', None)</li>
+    <li>node('Aquisition_Board1', None)</li>
   
-    <li>node('VCU', None)</li>
+    <li>node('Aquisition_Board2', None)</li>
   
-    <li>node('ACU', None)</li>
+    <li>node('Aquisition_Board3', None)</li>
   
-    <li>node('RES', None)</li>
+    <li>node('Aquisition_Board4', None)</li>
   
-    <li>node('DYN_F', None)</li>
+    <li>node('Aquisition_Board5', None)</li>
   
-    <li>node('DYN_R', None)</li>
+    <li>node('Aquisition_Board6', None)</li>
   
-    <li>node('FSG_DATA_LOGGER', None)</li>
-  
-    <li>node('AK10_9', 'Atuador direcao')</li>
-  
-    <li>node('Acquisition_Board1', None)</li>
-  
-    <li>node('Acquisition_Board2', None)</li>
-  
-    <li>node('Acquisition_Board3', None)</li>
-  
-    <li>node('Acquisition_Board4', None)</li>
-  
-    <li>node('Acquisition_Board7', None)</li>
+    <li>node('Aquisition_Board7', None)</li>
   
   </ul>
 
@@ -231,9 +144,9 @@ th { background-color:#e2eaf1; }
   <p>Nenhuma alteração encontrada.</p>
 </div>
 
-<div id="aquisition_boards.dbc" class="tabcontent">
+<div id="autonomous_t26.dbc" class="tabcontent">
   <div class="summary">
-    <b>Resumo:</b> Nós: 7, Mensagens: 7, Sinais: 25
+    <b>Resumo:</b> Nós: 13, Mensagens: 20, Sinais: 76
     <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
     <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
   </div>
@@ -241,19 +154,889 @@ th { background-color:#e2eaf1; }
   <h2>🟦 Nós</h2>
   <ul>
   
-    <li>node('Aquisition_Board1', None)</li>
+    <li>node('JETSON', None)</li>
   
-    <li>node('Aquisition_Board2', None)</li>
+    <li>node('VCU', None)</li>
   
-    <li>node('Aquisition_Board3', None)</li>
+    <li>node('ACU', None)</li>
   
-    <li>node('Aquisition_Board4', None)</li>
+    <li>node('RES', None)</li>
   
-    <li>node('Aquisition_Board5', None)</li>
+    <li>node('DYN_F', None)</li>
   
-    <li>node('Aquisition_Board6', None)</li>
+    <li>node('DYN_R', None)</li>
   
-    <li>node('Aquisition_Board7', None)</li>
+    <li>node('FSG_DATA_LOGGER', None)</li>
+  
+    <li>node('AK10_9', 'Atuador direcao')</li>
+  
+    <li>node('Acquisition_Board1', None)</li>
+  
+    <li>node('Acquisition_Board2', None)</li>
+  
+    <li>node('Acquisition_Board3', None)</li>
+  
+    <li>node('Acquisition_Board4', None)</li>
+  
+    <li>node('Acquisition_Board7', None)</li>
+  
+  </ul>
+
+  <h2>📨 Mensagens Adicionadas</h2>
+  <p>Nenhuma mensagem adicionada.</p>
+
+  <h2>📨 Mensagens Removidas</h2>
+  <p>Nenhuma mensagem removida.</p>
+
+  <h2>📨 Mensagens Alteradas</h2>
+  <p>Nenhuma mensagem alterada.</p>
+
+  <h2>🟩 Sinais Adicionados</h2>
+  <p>Nenhum sinal adicionado.</p>
+
+  <h2>🟥 Sinais Removidos</h2>
+  <p>Nenhum sinal removido.</p>
+
+  <h2>🟨 Sinais Alterados</h2>
+  <p>Nenhuma alteração encontrada.</p>
+</div>
+
+<div id="handcart_t26.dbc" class="tabcontent">
+  <div class="summary">
+    <b>Resumo:</b> Nós: 9, Mensagens: 20, Sinais: 300
+    <br>Mensagens Adicionadas: 19, Removidas: 0, Alteradas: 0
+    <br>Sinais Adicionados: 300, Removidos: 0, Alterados: 0
+  </div>
+
+  <h2>🟦 Nós</h2>
+  <ul>
+  
+    <li>node('BMS', 'Battery Management System')</li>
+  
+    <li>node('EV_Europe_Charger', None)</li>
+  
+    <li>node('Handcart_Controller', None)</li>
+  
+    <li>node('IVT_S', None)</li>
+  
+    <li>node('HV500_Inverter', None)</li>
+  
+    <li>node('Host', None)</li>
+  
+    <li>node('IVT_Mod', None)</li>
+  
+    <li>node('BMS', 'Battery Management System')</li>
+  
+    <li>node('Charger', 'EV Europe AC/DC Charger')</li>
+  
+  </ul>
+
+  <h2>📨 Mensagens Adicionadas</h2>
+  
+  <table>
+  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
+  
+    <tr class="added">
+      <td>20</td>
+      <td>HV500_ERPM_Duty_InputVoltage</td>
+      <td>8</td>
+      <td>200</td>
+      <td>Actual_ERPM, Actual_Duty_Raw, Actual_InputVoltage</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1314</td>
+      <td>IVT_Msg_Result_U1</td>
+      <td>6</td>
+      <td>None</td>
+      <td>IVT_ID_Result_U1, IVT_Result_U1_System_Error, IVT_Result_U1_Measurement_Error, IVT_Result_U1_Channel_Error, IVT_Result_U1_OCS, IVT_MsgCount_Result_U1, IVT_Result_U1</td>
+    </tr>
+  
+    <tr class="added">
+      <td>131</td>
+      <td>BMS_Contactor_Command</td>
+      <td>1</td>
+      <td>5</td>
+      <td>ContactorCommand</td>
+    </tr>
+  
+    <tr class="added">
+      <td>132</td>
+      <td>Handcart_Switch_Feedback</td>
+      <td>1</td>
+      <td>100</td>
+      <td>SwitchFeedback</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1320</td>
+      <td>IVT_Msg_Result_Wh</td>
+      <td>6</td>
+      <td>None</td>
+      <td>IVT_ID_Result_Wh, IVT_Result_Wh_System_Error, IVT_Result_Wh_Measurement_Error, IVT_Result_Wh_Channel_Error, IVT_Result_Wh_OCS, IVT_MsgCount_Result_Wh, IVT_Result_Wh</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1319</td>
+      <td>IVT_Msg_Result_As</td>
+      <td>6</td>
+      <td>None</td>
+      <td>IVT_ID_Result_As, IVT_Result_As_System_Error, IVT_Result_As_Measurement_Error, IVT_Result_As_Channel_Error, IVT_Result_As_OCS, IVT_MsgCount_Result_As, IVT_Result_As</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1318</td>
+      <td>IVT_Msg_Result_W</td>
+      <td>6</td>
+      <td>None</td>
+      <td>IVT_ID_Result_W, IVT_Result_W_System_Error, IVT_Result_W_Measurement_Error, IVT_Result_W_Channel_Error, IVT_Result_W_OCS, IVT_MsgCount_Result_W, IVT_Result_W</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1297</td>
+      <td>IVT_Msg_Response</td>
+      <td>8</td>
+      <td>None</td>
+      <td>IVT_ID_Response, _B1_Trigger_spare, _FF_Wrong_Command, _BF_Restart_Alive_Cmd_ID, _80_Resp_MeasError_Item, _81_Resp_SystemError_Item, _82_Resp_AllLogData_Item, _83_Resp_LogData_Item, _90_Resp_Can_ID_val_I, _91_Resp_Can_ID_val_U1, _92_Resp_Can_ID_val_U2, _93_Resp_Can_ID_val_U3, _94_Resp_Can_ID_val_T, _95_Resp_Can_ID_val_W, _96_Resp_Can_ID_val_As, _97_Resp_Can_ID_val_Wh, _9D_Resp_Can_ID_val_Command, _9F_Resp_Can_ID_val_Response, _A0_Resp_Sign_I, _A1_Resp_Sign_U1, _A2_Resp_Sign_U2, _A3_Resp_Sign_U3, _A4_Resp_Sign_T, _A5_Resp_Sign_W, _A6_Resp_Sign_As, _A7_Resp_Sign_WH, _B0_Resp_Reset_Item, _B2_Resp_Store_dummy, _B3_Resp_Oc_Test_Time, _B5_Resp_OC_Pos_Set_Threshold, _B6_Resp_OC_Neg_Set_Threshold, _B9_Resp_Device_type, _BA_Resp_SW_Ver_Major_HW, _BB_Resp_Serien_Nr, _BC_Resp_Art_N, _A0_Resp_Endianess_I, _A1_Resp_Endianess_U1, _A2_Resp_Endianess_U2, _A3_Resp_Endianess_U3, _A4_Resp_Endianess_T, _A5_Resp_Endianess_W, _A6_Resp_Endianess_As, _A7_Resp_Endianess_WH, _A0_Resp_TriggerMode_I, _A1_Resp_TriggerMode_U1, _A2_Resp_TriggerMode_U2, _A3_Resp_TriggerMode_U3, _A4_Resp_TriggerMode_T, _A5_Resp_TriggerMode_W, _A6_Resp_TriggerMode_As, _A7_Resp_TriggerMode_WH, _B4_Resp_Actual_Mode, _B1_07_Trigger_WH, _B2_Resp_Store_Device_SN, _BA_Resp_SW_Ver_Minor, _B9_Resp_Device_current, _80_Resp_MeasError_Count_Mask, _81_Resp_SystemError_Count_Mask, _82_Resp_AllLogData_Counter, _83_Resp_LogData_Counter, _A0_Resp_CycleTime_I, _A1_Resp_CycleTime_U1, _A2_Resp_CycleTime_U2, _A3_Resp_CycleTime_U3, _A4_Resp_CycleTime_T, _A5_Resp_CycleTime_W, _A6_Resp_CycleTime_As, _A7_Resp_CycleTime_WH, _B1_06_Trigger_As, _B1_05_Trigger_W, _B1_04_Trigger_T, _B1_03_Trigger_U3, _B1_02_Trigger_U2, _B1_01_Trigger_U1, _B1_00_Trigger_I, _B4_Resp_Startup_Mode, _BF_Restart_Alive_SN, _BA_Resp_SW_Ver_Revision, _90_Resp_Can_ID_SN_I, _91_Resp_Can_ID_SN_U1, _92_Resp_Can_ID_SN_U2, _93_Resp_Can_ID_SN_U3, _94_Resp_Can_ID_SN_T, _95_Resp_Can_ID_SN_W, _96_Resp_Can_ID_SN_As, _97_Resp_Can_ID_SN_Wh, _9D_Resp_Can_ID_SN_Command, _9F_Resp_Can_ID_SN_Response, _B0_Resp_Reset_Device_SN, _B4_Resp_Code_Level, _B5_Resp_OC_Pos_Reset_Threshold, _B6_Resp_OC_Neg_Reset_Threshold, _B9_Resp_Device_Voltage_chan, _BA_Resp_SW_Ver_Vear, _B9_Resp_Device_TOI, _BA_Resp_SW_Ver_Month, _B9_Resp_Device_Com, _BA_Resp_SW_Ver_Day, _B9_Resp_Device_V_supply, _BA_Resp_SW_Ver_Internal</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1317</td>
+      <td>IVT_Msg_Result_T</td>
+      <td>6</td>
+      <td>None</td>
+      <td>IVT_ID_Result_T, IVT_Result_T_System_Error, IVT_Result_T_Measurement_Error, IVT_Result_T_Channel_Error, IVT_Result_T_OCS, IVT_MsgCount_Result_T, IVT_Result_T</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1316</td>
+      <td>IVT_Msg_Result_U3</td>
+      <td>6</td>
+      <td>None</td>
+      <td>IVT_ID_Result_U3, IVT_Result_U3_System_Error, IVT_Result_U3_Measurement_Error, IVT_Result_U3_Channel_Error, IVT_Result_U3_OCS, IVT_MsgCount_Result_U3, IVT_Result_U3</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1315</td>
+      <td>IVT_Msg_Result_U2</td>
+      <td>6</td>
+      <td>None</td>
+      <td>IVT_ID_Result_U2, IVT_Result_U2_System_Error, IVT_Result_U2_Measurement_Error, IVT_Result_U2_Channel_Error, IVT_Result_U2_OCS, IVT_MsgCount_Result_U2, IVT_Result_U2</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1313</td>
+      <td>IVT_Msg_Result_I</td>
+      <td>6</td>
+      <td>None</td>
+      <td>IVT_ID_Result_I, IVT_Result_I_System_Error, IVT_Result_I_Measurement_Error, IVT_Result_I_Channel_Error, IVT_Result_I_OCS, IVT_MsgCount_Result_I, IVT_Result_I</td>
+    </tr>
+  
+    <tr class="added">
+      <td>1041</td>
+      <td>IVT_Msg_Cmd</td>
+      <td>8</td>
+      <td>None</td>
+      <td>IVT_ID_Cmd, _31_Trigger_spare, _10_Set_Can_ID_val_I, _11_Set_Can_ID_val_U1, _12_Set_Can_ID_val_U2, _13_Set_Can_ID_val_U3, _14_Set_Can_ID_val_T, _15_Set_Can_ID_val_W, _16_Set_Can_ID_val_As, _17_Set_Can_ID_val_Wh, _1D_Set_Can_ID_val_Command, _1F_Set_Can_ID_val_Response, _20_Conf_Sign_I, _21_Conf_Sign_U1, _22_Conf_Sign_U2, _23_Conf_Sign_U3, _24_Conf_Sign_T, _25_Conf_Sign_W, _26_Conf_Sign_As, _27_Conf_Sign_WH, _30_Reset_Item, _32_Store_dummy, _33_Oc_Test_Time, _35_OC_Pos_Set_Threshold, _36_OC_Neg_Set_Threshold, _3A_RESTART_to_Bitrate, _3D_Restart_Default_Dummy, _3F_Restart_Dummy, _40_Get_MeasError_Item, _41_Get_SystemError_Item, _42_Get_AllLogData_Item, _43_Get_LogData_Item, _60_Get_Result_dummy_I, _61_Get_Result_dummy_U1, _62_Get_Result_dummy_U2, _63_Get_Result_dummy_U3, _64_Get_Result_dummy_T, _65_Get_Result_dummy_W, _66_Get_Result_dummy_As, _67_Get_Result_dummy_Wh, _73_Get_OC_Test_dummy, _74_Get_Mode_dummy, _75_Get_OC_Pos_dummy, _76_Get_OC_Neg_dummy, _79_Get_Device_Id_dummy, _7A_Get_SW_Version_dummy, _7B_Get_Serien_Nr_dummy, _7C_Get_Art_Nr_dummy, _20_Conf_Endianess_I, _21_Conf_Endianess_U1, _22_Conf_Endianess_U2, _23_Conf_Endianess_U3, _24_Conf_Endianess_T, _25_Conf_Endianess_W, _26_Conf_Endianess_As, _27_Conf_Endianess_WH, _20_Conf_TriggerMode_I, _21_Conf_TriggerMode_U1, _22_Conf_TriggerMode_U2, _23_Conf_TriggerMode_U3, _24_Conf_TriggerMode_T, _25_Conf_TriggerMode_W, _26_Conf_TriggerMode_As, _27_Conf_TriggerMode_WH, _34_Actual_Mode, _31_07_Trigger_WH, _20_Conf_CycleTime_I, _21_Conf_CycleTime_U1, _22_Conf_CycleTime_U2, _23_Conf_CycleTime_U3, _24_Conf_CycleTime_T, _25_Conf_CycleTime_W, _26_Conf_CycleTime_As, _27_Conf_CycleTime_WH, _31_06_Trigger_As, _31_05_Trigger_W, _31_04_Trigger_T, _31_03_Trigger_U3, _31_02_Trigger_U2, _31_01_Trigger_U1, _31_00_Trigger_I, _34_Startup_Mode, _10_Set_Can_ID_SN_I, _11_Set_Can_ID_SN_U1, _12_Set_Can_ID_SN_U2, _13_Set_Can_ID_SN_U3, _14_Set_Can_ID_SN_T, _15_Set_Can_ID_SN_W, _16_Set_Can_ID_SN_As, _17_Set_Can_ID_SN_Wh, _1D_Set_Can_ID_SN_Command, _1F_Set_Can_ID_SN_Response, _30_Reset_Device_SN, _34_Code_Level, _35_OC_Pos_Reset_Threshold, _36_OC_Neg_Reset_Threshold, _50_Get_Can_ID_SN_I, _51_Get_Can_ID_SN_U1, _52_Get_Can_ID_SN_U2, _53_Get_Can_ID_SN_U3, _54_Get_Can_ID_SN_T, _55_Get_Can_ID_SN_W, _56_Get_Can_ID_SN_As, _57_Get_Can_ID_SN_Wh, _5D_Get_Can_ID_SN_Command, _5F_Get_Can_ID_SN_Response</td>
+    </tr>
+  
+    <tr class="added">
+      <td>403106036</td>
+      <td>BMS_ChargingRequest</td>
+      <td>8</td>
+      <td>1000</td>
+      <td>Max_Charging_Voltage, Max_Charging_Current, Control</td>
+    </tr>
+  
+    <tr class="added">
+      <td>419385576</td>
+      <td>Charger_Status</td>
+      <td>8</td>
+      <td>1000</td>
+      <td>Output_Voltage, Output_Current, HW_Failure, Temp_OTP, Input_Voltage_Fault, Starting_State_Fault, Comm_Timeout, Charger_Temperature</td>
+    </tr>
+  
+    <tr class="added">
+      <td>403105780</td>
+      <td>BMS_ChargingRequest_P998</td>
+      <td>8</td>
+      <td>1000</td>
+      <td>Max_Charging_Voltage, Max_Charging_Current, Control</td>
+    </tr>
+  
+    <tr class="added">
+      <td>419385575</td>
+      <td>Charger_Status_P998</td>
+      <td>8</td>
+      <td>1000</td>
+      <td>Output_Voltage, Output_Current, HW_Failure, Temp_OTP, Input_Voltage_Fault, Starting_State_Fault, Comm_Timeout, Charger_Temperature</td>
+    </tr>
+  
+    <tr class="added">
+      <td>403105268</td>
+      <td>BMS_ChargingRequest_P1000</td>
+      <td>8</td>
+      <td>1000</td>
+      <td>Max_Charging_Voltage, Max_Charging_Current, Control</td>
+    </tr>
+  
+    <tr class="added">
+      <td>419385573</td>
+      <td>Charger_Status_P1000</td>
+      <td>8</td>
+      <td>1000</td>
+      <td>Output_Voltage, Output_Current, HW_Failure, Temp_OTP, Input_Voltage_Fault, Starting_State_Fault, Comm_Timeout, Charger_Temperature</td>
+    </tr>
+  
+  </table>
+  
+
+  <h2>📨 Mensagens Removidas</h2>
+  <p>Nenhuma mensagem removida.</p>
+
+  <h2>📨 Mensagens Alteradas</h2>
+  <p>Nenhuma mensagem alterada.</p>
+
+  <h2>🟩 Sinais Adicionados</h2>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="added"><td>1297</td><td>_B6_Resp_OC_Neg_Reset_Threshold</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A5_Resp_Sign_W</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A0_Resp_Sign_I</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A3_Resp_TriggerMode_U3</td></tr>
+  
+    <tr class="added"><td>1313</td><td>IVT_Result_I_OCS</td></tr>
+  
+    <tr class="added"><td>1316</td><td>IVT_MsgCount_Result_U3</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_62_Get_Result_dummy_U2</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_82_Resp_AllLogData_Item</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_31_03_Trigger_U3</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_24_Conf_TriggerMode_T</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_34_Startup_Mode</td></tr>
+  
+    <tr class="added"><td>419385575</td><td>Starting_State_Fault</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_BF_Restart_Alive_SN</td></tr>
+  
+    <tr class="added"><td>132</td><td>SwitchFeedback</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_90_Resp_Can_ID_SN_I</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_27_Conf_CycleTime_WH</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_13_Set_Can_ID_SN_U3</td></tr>
+  
+    <tr class="added"><td>1317</td><td>IVT_Result_T</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A0_Resp_Endianess_I</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_26_Conf_CycleTime_As</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_94_Resp_Can_ID_val_T</td></tr>
+  
+    <tr class="added"><td>419385576</td><td>Comm_Timeout</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_14_Set_Can_ID_val_T</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B2_Resp_Store_Device_SN</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_41_Get_SystemError_Item</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_12_Set_Can_ID_SN_U2</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A2_Resp_Endianess_U2</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_53_Get_Can_ID_SN_U3</td></tr>
+  
+    <tr class="added"><td>1319</td><td>IVT_MsgCount_Result_As</td></tr>
+  
+    <tr class="added"><td>403106036</td><td>Control</td></tr>
+  
+    <tr class="added"><td>403105268</td><td>Control</td></tr>
+  
+    <tr class="added"><td>419385573</td><td>Input_Voltage_Fault</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B1_Trigger_spare</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A7_Resp_CycleTime_WH</td></tr>
+  
+    <tr class="added"><td>419385573</td><td>Temp_OTP</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_10_Set_Can_ID_SN_I</td></tr>
+  
+    <tr class="added"><td>1317</td><td>IVT_Result_T_Channel_Error</td></tr>
+  
+    <tr class="added"><td>1315</td><td>IVT_Result_U2_OCS</td></tr>
+  
+    <tr class="added"><td>1318</td><td>IVT_Result_W_Measurement_Error</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A1_Resp_TriggerMode_U1</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B4_Resp_Code_Level</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_1D_Set_Can_ID_val_Command</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_24_Conf_Endianess_T</td></tr>
+  
+    <tr class="added"><td>419385573</td><td>Output_Voltage</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_36_OC_Neg_Set_Threshold</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B1_07_Trigger_WH</td></tr>
+  
+    <tr class="added"><td>1316</td><td>IVT_Result_U3_System_Error</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A5_Resp_CycleTime_W</td></tr>
+  
+    <tr class="added"><td>1320</td><td>IVT_Result_Wh_OCS</td></tr>
+  
+    <tr class="added"><td>1316</td><td>IVT_ID_Result_U3</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A6_Resp_TriggerMode_As</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_67_Get_Result_dummy_Wh</td></tr>
+  
+    <tr class="added"><td>1319</td><td>IVT_Result_As_Measurement_Error</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_80_Resp_MeasError_Count_Mask</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_94_Resp_Can_ID_SN_T</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A2_Resp_Sign_U2</td></tr>
+  
+    <tr class="added"><td>403105780</td><td>Max_Charging_Voltage</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_74_Get_Mode_dummy</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_1F_Set_Can_ID_SN_Response</td></tr>
+  
+    <tr class="added"><td>1313</td><td>IVT_MsgCount_Result_I</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_9D_Resp_Can_ID_val_Command</td></tr>
+  
+    <tr class="added"><td>1314</td><td>IVT_Result_U1_Measurement_Error</td></tr>
+  
+    <tr class="added"><td>419385576</td><td>Input_Voltage_Fault</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B5_Resp_OC_Pos_Reset_Threshold</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_22_Conf_Endianess_U2</td></tr>
+  
+    <tr class="added"><td>1315</td><td>IVT_Result_U2_System_Error</td></tr>
+  
+    <tr class="added"><td>1041</td><td>IVT_ID_Cmd</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_50_Get_Can_ID_SN_I</td></tr>
+  
+    <tr class="added"><td>419385576</td><td>Temp_OTP</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_93_Resp_Can_ID_SN_U3</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_91_Resp_Can_ID_val_U1</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B9_Resp_Device_TOI</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_25_Conf_Sign_W</td></tr>
+  
+    <tr class="added"><td>1313</td><td>IVT_ID_Result_I</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_23_Conf_Sign_U3</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_22_Conf_CycleTime_U2</td></tr>
+  
+    <tr class="added"><td>419385576</td><td>Output_Voltage</td></tr>
+  
+    <tr class="added"><td>419385575</td><td>HW_Failure</td></tr>
+  
+    <tr class="added"><td>1319</td><td>IVT_Result_As_OCS</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_83_Resp_LogData_Item</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A6_Resp_Endianess_As</td></tr>
+  
+    <tr class="added"><td>403105268</td><td>Max_Charging_Voltage</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_23_Conf_CycleTime_U3</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_31_06_Trigger_As</td></tr>
+  
+    <tr class="added"><td>1319</td><td>IVT_Result_As</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_10_Set_Can_ID_val_I</td></tr>
+  
+    <tr class="added"><td>419385573</td><td>Output_Current</td></tr>
+  
+    <tr class="added"><td>1320</td><td>IVT_MsgCount_Result_Wh</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_20_Conf_TriggerMode_I</td></tr>
+  
+    <tr class="added"><td>419385575</td><td>Charger_Temperature</td></tr>
+  
+    <tr class="added"><td>1320</td><td>IVT_Result_Wh_System_Error</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B9_Resp_Device_current</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A1_Resp_CycleTime_U1</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_55_Get_Can_ID_SN_W</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_31_00_Trigger_I</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A2_Resp_CycleTime_U2</td></tr>
+  
+    <tr class="added"><td>1317</td><td>IVT_Result_T_OCS</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_96_Resp_Can_ID_SN_As</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_15_Set_Can_ID_SN_W</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_54_Get_Can_ID_SN_T</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_13_Set_Can_ID_val_U3</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B4_Resp_Startup_Mode</td></tr>
+  
+    <tr class="added"><td>1313</td><td>IVT_Result_I_Measurement_Error</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_35_OC_Pos_Reset_Threshold</td></tr>
+  
+    <tr class="added"><td>131</td><td>ContactorCommand</td></tr>
+  
+    <tr class="added"><td>1319</td><td>IVT_Result_As_System_Error</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B4_Resp_Actual_Mode</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A1_Resp_Sign_U1</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B1_02_Trigger_U2</td></tr>
+  
+    <tr class="added"><td>1315</td><td>IVT_ID_Result_U2</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_7C_Get_Art_Nr_dummy</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_31_01_Trigger_U1</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_3D_Restart_Default_Dummy</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_11_Set_Can_ID_SN_U1</td></tr>
+  
+    <tr class="added"><td>20</td><td>Actual_ERPM</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_25_Conf_CycleTime_W</td></tr>
+  
+    <tr class="added"><td>419385576</td><td>Output_Current</td></tr>
+  
+    <tr class="added"><td>1318</td><td>IVT_Result_W</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_20_Conf_Sign_I</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_BA_Resp_SW_Ver_Revision</td></tr>
+  
+    <tr class="added"><td>1315</td><td>IVT_Result_U2_Channel_Error</td></tr>
+  
+    <tr class="added"><td>1313</td><td>IVT_Result_I</td></tr>
+  
+    <tr class="added"><td>1297</td><td>IVT_ID_Response</td></tr>
+  
+    <tr class="added"><td>419385575</td><td>Comm_Timeout</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_5F_Get_Can_ID_SN_Response</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_79_Get_Device_Id_dummy</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_5D_Get_Can_ID_SN_Command</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A0_Resp_CycleTime_I</td></tr>
+  
+    <tr class="added"><td>403105780</td><td>Control</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A2_Resp_TriggerMode_U2</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B1_05_Trigger_W</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_25_Conf_Endianess_W</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_40_Get_MeasError_Item</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A5_Resp_Endianess_W</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A7_Resp_Endianess_WH</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B5_Resp_OC_Pos_Set_Threshold</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_65_Get_Result_dummy_W</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_66_Get_Result_dummy_As</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_73_Get_OC_Test_dummy</td></tr>
+  
+    <tr class="added"><td>1320</td><td>IVT_Result_Wh_Measurement_Error</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_92_Resp_Can_ID_SN_U2</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_83_Resp_LogData_Counter</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_31_02_Trigger_U2</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_61_Get_Result_dummy_U1</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_23_Conf_Endianess_U3</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_FF_Wrong_Command</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A4_Resp_CycleTime_T</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_24_Conf_CycleTime_T</td></tr>
+  
+    <tr class="added"><td>1314</td><td>IVT_Result_U1</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_90_Resp_Can_ID_val_I</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B6_Resp_OC_Neg_Set_Threshold</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_3F_Restart_Dummy</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B1_06_Trigger_As</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_95_Resp_Can_ID_val_W</td></tr>
+  
+    <tr class="added"><td>1313</td><td>IVT_Result_I_System_Error</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_34_Actual_Mode</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_BA_Resp_SW_Ver_Minor</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B0_Resp_Reset_Device_SN</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A6_Resp_Sign_As</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_57_Get_Can_ID_SN_Wh</td></tr>
+  
+    <tr class="added"><td>419385575</td><td>Input_Voltage_Fault</td></tr>
+  
+    <tr class="added"><td>419385575</td><td>Temp_OTP</td></tr>
+  
+    <tr class="added"><td>1314</td><td>IVT_Result_U1_Channel_Error</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B3_Resp_Oc_Test_Time</td></tr>
+  
+    <tr class="added"><td>1317</td><td>IVT_Result_T_Measurement_Error</td></tr>
+  
+    <tr class="added"><td>419385575</td><td>Output_Voltage</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_27_Conf_TriggerMode_WH</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_BA_Resp_SW_Ver_Month</td></tr>
+  
+    <tr class="added"><td>403106036</td><td>Max_Charging_Current</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_81_Resp_SystemError_Count_Mask</td></tr>
+  
+    <tr class="added"><td>403105268</td><td>Max_Charging_Current</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_20_Conf_CycleTime_I</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A0_Resp_TriggerMode_I</td></tr>
+  
+    <tr class="added"><td>1317</td><td>IVT_ID_Result_T</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_20_Conf_Endianess_I</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_BA_Resp_SW_Ver_Day</td></tr>
+  
+    <tr class="added"><td>1318</td><td>IVT_Result_W_OCS</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_34_Code_Level</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_82_Resp_AllLogData_Counter</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_BA_Resp_SW_Ver_Major_HW</td></tr>
+  
+    <tr class="added"><td>1317</td><td>IVT_MsgCount_Result_T</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_26_Conf_Sign_As</td></tr>
+  
+    <tr class="added"><td>1319</td><td>IVT_Result_As_Channel_Error</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_64_Get_Result_dummy_T</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_95_Resp_Can_ID_SN_W</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_96_Resp_Can_ID_val_As</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A5_Resp_TriggerMode_W</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_21_Conf_CycleTime_U1</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_32_Store_dummy</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_43_Get_LogData_Item</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_24_Conf_Sign_T</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_16_Set_Can_ID_val_As</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_21_Conf_TriggerMode_U1</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A7_Resp_TriggerMode_WH</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_14_Set_Can_ID_SN_T</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A4_Resp_Endianess_T</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_21_Conf_Endianess_U1</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_93_Resp_Can_ID_val_U3</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_27_Conf_Endianess_WH</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_97_Resp_Can_ID_val_Wh</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_35_OC_Pos_Set_Threshold</td></tr>
+  
+    <tr class="added"><td>1318</td><td>IVT_ID_Result_W</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_BC_Resp_Art_N</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_9F_Resp_Can_ID_SN_Response</td></tr>
+  
+    <tr class="added"><td>1313</td><td>IVT_Result_I_Channel_Error</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A3_Resp_Endianess_U3</td></tr>
+  
+    <tr class="added"><td>419385575</td><td>Output_Current</td></tr>
+  
+    <tr class="added"><td>1318</td><td>IVT_Result_W_Channel_Error</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_80_Resp_MeasError_Item</td></tr>
+  
+    <tr class="added"><td>1316</td><td>IVT_Result_U3_Channel_Error</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_26_Conf_Endianess_As</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_92_Resp_Can_ID_val_U2</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_25_Conf_TriggerMode_W</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_11_Set_Can_ID_val_U1</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_27_Conf_Sign_WH</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_16_Set_Can_ID_SN_As</td></tr>
+  
+    <tr class="added"><td>1320</td><td>IVT_ID_Result_Wh</td></tr>
+  
+    <tr class="added"><td>1318</td><td>IVT_Result_W_System_Error</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A1_Resp_Endianess_U1</td></tr>
+  
+    <tr class="added"><td>1314</td><td>IVT_Result_U1_System_Error</td></tr>
+  
+    <tr class="added"><td>1314</td><td>IVT_ID_Result_U1</td></tr>
+  
+    <tr class="added"><td>419385573</td><td>Starting_State_Fault</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_BF_Restart_Alive_Cmd_ID</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_17_Set_Can_ID_SN_Wh</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_42_Get_AllLogData_Item</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_31_07_Trigger_WH</td></tr>
+  
+    <tr class="added"><td>1318</td><td>IVT_MsgCount_Result_W</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B0_Resp_Reset_Item</td></tr>
+  
+    <tr class="added"><td>1320</td><td>IVT_Result_Wh_Channel_Error</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A3_Resp_CycleTime_U3</td></tr>
+  
+    <tr class="added"><td>1316</td><td>IVT_Result_U3</td></tr>
+  
+    <tr class="added"><td>1319</td><td>IVT_ID_Result_As</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_23_Conf_TriggerMode_U3</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_97_Resp_Can_ID_SN_Wh</td></tr>
+  
+    <tr class="added"><td>1314</td><td>IVT_Result_U1_OCS</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A6_Resp_CycleTime_As</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_26_Conf_TriggerMode_As</td></tr>
+  
+    <tr class="added"><td>1316</td><td>IVT_Result_U3_OCS</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B2_Resp_Store_dummy</td></tr>
+  
+    <tr class="added"><td>419385576</td><td>Starting_State_Fault</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_76_Get_OC_Neg_dummy</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_51_Get_Can_ID_SN_U1</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B1_01_Trigger_U1</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_7A_Get_SW_Version_dummy</td></tr>
+  
+    <tr class="added"><td>1320</td><td>IVT_Result_Wh</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_36_OC_Neg_Reset_Threshold</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_81_Resp_SystemError_Item</td></tr>
+  
+    <tr class="added"><td>1315</td><td>IVT_Result_U2</td></tr>
+  
+    <tr class="added"><td>1314</td><td>IVT_MsgCount_Result_U1</td></tr>
+  
+    <tr class="added"><td>403105780</td><td>Max_Charging_Current</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_63_Get_Result_dummy_U3</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_22_Conf_TriggerMode_U2</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_31_05_Trigger_W</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A4_Resp_Sign_T</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_9D_Resp_Can_ID_SN_Command</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_56_Get_Can_ID_SN_As</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B1_03_Trigger_U3</td></tr>
+  
+    <tr class="added"><td>1315</td><td>IVT_MsgCount_Result_U2</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A7_Resp_Sign_WH</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_12_Set_Can_ID_val_U2</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_17_Set_Can_ID_val_Wh</td></tr>
+  
+    <tr class="added"><td>20</td><td>Actual_InputVoltage</td></tr>
+  
+    <tr class="added"><td>419385573</td><td>HW_Failure</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_30_Reset_Item</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_BA_Resp_SW_Ver_Vear</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B9_Resp_Device_Com</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_1F_Set_Can_ID_val_Response</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B1_00_Trigger_I</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_60_Get_Result_dummy_I</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_7B_Get_Serien_Nr_dummy</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A3_Resp_Sign_U3</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_21_Conf_Sign_U1</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_3A_RESTART_to_Bitrate</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_BB_Resp_Serien_Nr</td></tr>
+  
+    <tr class="added"><td>403106036</td><td>Max_Charging_Voltage</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_52_Get_Can_ID_SN_U2</td></tr>
+  
+    <tr class="added"><td>419385573</td><td>Charger_Temperature</td></tr>
+  
+    <tr class="added"><td>1315</td><td>IVT_Result_U2_Measurement_Error</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B1_04_Trigger_T</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_31_Trigger_spare</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B9_Resp_Device_Voltage_chan</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_33_Oc_Test_Time</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B9_Resp_Device_V_supply</td></tr>
+  
+    <tr class="added"><td>419385576</td><td>HW_Failure</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_BA_Resp_SW_Ver_Internal</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_30_Reset_Device_SN</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_9F_Resp_Can_ID_val_Response</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_1D_Set_Can_ID_SN_Command</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_31_04_Trigger_T</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_75_Get_OC_Pos_dummy</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_B9_Resp_Device_type</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_91_Resp_Can_ID_SN_U1</td></tr>
+  
+    <tr class="added"><td>419385576</td><td>Charger_Temperature</td></tr>
+  
+    <tr class="added"><td>20</td><td>Actual_Duty_Raw</td></tr>
+  
+    <tr class="added"><td>419385573</td><td>Comm_Timeout</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_15_Set_Can_ID_val_W</td></tr>
+  
+    <tr class="added"><td>1297</td><td>_A4_Resp_TriggerMode_T</td></tr>
+  
+    <tr class="added"><td>1316</td><td>IVT_Result_U3_Measurement_Error</td></tr>
+  
+    <tr class="added"><td>1317</td><td>IVT_Result_T_System_Error</td></tr>
+  
+    <tr class="added"><td>1041</td><td>_22_Conf_Sign_U2</td></tr>
+  
+  </table>
+  
+
+  <h2>🟥 Sinais Removidos</h2>
+  <p>Nenhum sinal removido.</p>
+
+  <h2>🟨 Sinais Alterados</h2>
+  <p>Nenhuma alteração encontrada.</p>
+</div>
+
+<div id="data_t26.dbc" class="tabcontent">
+  <div class="summary">
+    <b>Resumo:</b> Nós: 8, Mensagens: 10, Sinais: 20
+    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
+    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
+  </div>
+
+  <h2>🟦 Nós</h2>
+  <ul>
+  
+    <li>node('Acquisition_Board2', None)</li>
+  
+    <li>node('Acquisition_Board3', None)</li>
+  
+    <li>node('Acquisition_Board5', None)</li>
+  
+    <li>node('Acquisition_Board6', None)</li>
+  
+    <li>node('Acquisition_Board7', None)</li>
+  
+    <li>node('Acquisition_Board8', None)</li>
+  
+    <li>node('VCU', None)</li>
+  
+    <li>node('PDM', None)</li>
   
   </ul>
 
