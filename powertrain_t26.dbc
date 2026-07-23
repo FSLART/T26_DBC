@@ -1179,6 +1179,9 @@ BO_ 1604 Slave_10_MSC_ID_1: 8 AMS
  SG_ module_voltage_min : 16|8@1+ (0.001,0) [0|0] "V" Vector__XXX
  SG_ module_voltage_max : 24|8@1+ (0.001,0) [0|0] "V" Vector__XXX
 
+BO_ 1801 AMS_SDC_Feedback: 1 AMS
+ SG_ SDC_State : 7|8@0+ (1,0) [0|1] ""  HOST,VCU
+
 
 
 CM_ BU_ HOST "The commnad sender
@@ -1441,4 +1444,5 @@ VAL_ 130 Balancing_Request 0 "BALANCING OFF" 1 "BALANCING ON" ;
 VAL_ 220 programming_request 1 "JumpToBootloader" ;
 VAL_ 129 Charging_Request 0 "CHARGING OFF" 1 "CHARGING ON" ;
 VAL_ 1872 vcu_state 0 "STATE_INIT," 1 "STATE_SHUTDOWN" 2 "STATE_STANDBY" 3 "STATE_PRECHARGE" 4 "STATE_WAITING_FOR_R2D_MANUAL" 5 "STATE_WAITING_FOR_R2D_AUTO" 6 "STATE_READY_MANUAL" 7 "STATE_READY_AUTONOMOUS" 8 "STATE_AS_EMERGENCY" ;
+VAL_ 1801 SDC_State 0 "There is no SDC on the AMS" 1 "We have SDC on the AMS" ;
 
