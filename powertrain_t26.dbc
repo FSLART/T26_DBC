@@ -952,11 +952,11 @@ BO_ 130 Start_Balancing: 1 HOST
 BO_ 220 Start_Programmer: 1 HOST
  SG_ programming_request : 0|1@1+ (1,0) [0|1] "ON/OFF"  AMS
 
-BO_ 1808 APPS_ADC_Raw: 4 Acquisition_Board1
+BO_ 80 APPS_ADC_Raw: 4 Acquisition_Board1
  SG_ apps1_raw : 0|16@1+ (0.1,0) [0|0] "bits" Vector__XXX
  SG_ apps2_raw : 16|16@1+ (0.1,0) [0|0] "bits" Vector__XXX
 
-BO_ 1856 DashBoard: 1 Acquisition_Board4
+BO_ 96 DashBoard: 1 Acquisition_Board4
  SG_ ignition_switch_raw : 0|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ r2d_button_raw : 1|1@1+ (1,0) [0|0] "" Vector__XXX
 

@@ -1,0 +1,72 @@
+Conversion Warnings Log
+
+
+MSG_ID: 81 	MSG_TYPE: S 	MSG_NAME: ACU
+	SIG_NAME: AS_STATE, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: ACU_STATE, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: ASSI_STATE, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: Mission_select, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: EMERGENCY_cause, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1808 	MSG_TYPE: S 	MSG_NAME: AQT1
+	SIG_NAME: FRT_BRK_PRESS, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: RES, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: BOTS, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1824 	MSG_TYPE: S 	MSG_NAME: AQT2
+	SIG_NAME: WHEEL_SPD, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1840 	MSG_TYPE: S 	MSG_NAME: AQT3
+	SIG_NAME: WHEEL_SPD, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1856 	MSG_TYPE: S 	MSG_NAME: AQT4
+	SIG_NAME: ST_ANGLE, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: SUSP_L, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: SUSP_R, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: INERTIA, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: EMERGENCY, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1904 	MSG_TYPE: S 	MSG_NAME: AQT7
+	SIG_NAME: REAR_BRK_PRESS, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1536 	MSG_TYPE: S 	MSG_NAME: VCU_IGN_R2D
+	SIG_NAME: ignition_manual, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: r2d_manual, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: ignition_auto, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: r2d_auto, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: shutdown_signal, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: vcu_state, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: R2D_button_raw, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: Ignition_switch_raw, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1281 	MSG_TYPE: S 	MSG_NAME: DV_dynamics_2
+	SIG_NAME: Acceleration_longitudinal, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: Acceleration_lateral, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: Yaw_rate, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 129 	MSG_TYPE: S 	MSG_NAME: VCU_HV
+	SIG_NAME: HV, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: Brake_pressure_Front, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: Brake_pressure_Rear, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1297 	MSG_TYPE: S 	MSG_NAME: ASF_SIGNALS
+	SIG_NAME: EBS_Pressure_Tank_Front, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: EBS_Pressure_Tank_Rear, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: Brake_Pressure_Front, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: Brake_Pressure_Rear, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1289 	MSG_TYPE: S 	MSG_NAME: VCU_RPM
+	SIG_NAME: motor_rpm_right, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: motor_current_left, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: motor_current_right, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 97 	MSG_TYPE: S 	MSG_NAME: JETSON
+	SIG_NAME: EMERGENCY_CAUSE, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 401 	MSG_TYPE: S 	MSG_NAME: RES
+	SIG_NAME: SIGNAL, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1285 	MSG_TYPE: S 	MSG_NAME: SLAM_STATS_CAN
+	SIG_NAME: Lap_counter, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: Cones_count_actual, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: Cones_count_all, STATUS: Invalid Max or Min value., ACTION: Value Set to default

@@ -1,0 +1,34 @@
+Conversion Warnings Log
+
+
+MSG_ID: 1824 	MSG_TYPE: S 	MSG_NAME: AQT2
+	SIG_NAME: TIRE_TEMP, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: BRAKE_TEMP, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1840 	MSG_TYPE: S 	MSG_NAME: AQT3
+	SIG_NAME: TIRE_TEMP, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: BRAKE_TEMP, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1872 	MSG_TYPE: S 	MSG_NAME: AQT5
+	SIG_NAME: TIRE_TEMP, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: BRAKE_TEMP, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1888 	MSG_TYPE: S 	MSG_NAME: AQT6
+	SIG_NAME: TIRE_TEMP, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: BRAKE_TEMP, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1904 	MSG_TYPE: S 	MSG_NAME: AQT7
+	SIG_NAME: SUSP_L, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: SUSP_R, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 1920 	MSG_TYPE: S 	MSG_NAME: AQT8
+	SIG_NAME: NTC1, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: NTC2, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: NTC3, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 528 	MSG_TYPE: S 	MSG_NAME: PDM_LV
+	SIG_NAME: LV_Voltage_mV, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+
+MSG_ID: 544 	MSG_TYPE: S 	MSG_NAME: PDM_Cooling
+	SIG_NAME: WaterPump_PWM, STATUS: Invalid Max or Min value., ACTION: Value Set to default
+	SIG_NAME: CoolingFan_PWM, STATUS: Invalid Max or Min value., ACTION: Value Set to default
