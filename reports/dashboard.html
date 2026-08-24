@@ -34,24 +34,24 @@ th { background-color:#e2eaf1; }
 
 <div class="tab">
 
-  <button class="tablinks" onclick="openTab(event, 'autonomous_t26.dbc')">autonomous_t26.dbc</button>
+  <button class="tablinks" onclick="openTab(event, 'FSIC.dbc')">FSIC.dbc</button>
 
   <button class="tablinks" onclick="openTab(event, 'aquisition_boards.dbc')">aquisition_boards.dbc</button>
-
-  <button class="tablinks" onclick="openTab(event, 'handcart_t26.dbc')">handcart_t26.dbc</button>
-
-  <button class="tablinks" onclick="openTab(event, 'FSIC.dbc')">FSIC.dbc</button>
 
   <button class="tablinks" onclick="openTab(event, 'powertrain_t26.dbc')">powertrain_t26.dbc</button>
 
   <button class="tablinks" onclick="openTab(event, 'data_t26.dbc')">data_t26.dbc</button>
 
+  <button class="tablinks" onclick="openTab(event, 'autonomous_t26.dbc')">autonomous_t26.dbc</button>
+
+  <button class="tablinks" onclick="openTab(event, 'handcart_t26.dbc')">handcart_t26.dbc</button>
+
 </div>
 
 
-<div id="autonomous_t26.dbc" class="tabcontent">
+<div id="FSIC.dbc" class="tabcontent">
   <div class="summary">
-    <b>Resumo:</b> Nós: 13, Mensagens: 20, Sinais: 76
+    <b>Resumo:</b> Nós: 3, Mensagens: 40, Sinais: 120
     <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
     <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
   </div>
@@ -59,31 +59,11 @@ th { background-color:#e2eaf1; }
   <h2>🟦 Nós</h2>
   <ul>
   
-    <li>node('JETSON', None)</li>
+    <li>node('HV500_INV1', None)</li>
   
-    <li>node('VCU', None)</li>
+    <li>node('HV500_INV2', None)</li>
   
-    <li>node('ACU', None)</li>
-  
-    <li>node('RES', None)</li>
-  
-    <li>node('DYN_F', None)</li>
-  
-    <li>node('DYN_R', None)</li>
-  
-    <li>node('FSG_DATA_LOGGER', None)</li>
-  
-    <li>node('AK10_9', 'Atuador direcao')</li>
-  
-    <li>node('Acquisition_Board1', None)</li>
-  
-    <li>node('Acquisition_Board2', None)</li>
-  
-    <li>node('Acquisition_Board3', None)</li>
-  
-    <li>node('Acquisition_Board4', None)</li>
-  
-    <li>node('Acquisition_Board7', None)</li>
+    <li>node('HV500_commands', None)</li>
   
   </ul>
 
@@ -151,113 +131,11 @@ th { background-color:#e2eaf1; }
   <p>Nenhuma alteração encontrada.</p>
 </div>
 
-<div id="handcart_t26.dbc" class="tabcontent">
-  <div class="summary">
-    <b>Resumo:</b> Nós: 9, Mensagens: 20, Sinais: 300
-    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 1
-  </div>
-
-  <h2>🟦 Nós</h2>
-  <ul>
-  
-    <li>node('BMS', 'Battery Management System')</li>
-  
-    <li>node('EV_Europe_Charger', None)</li>
-  
-    <li>node('Handcart_Controller', None)</li>
-  
-    <li>node('IVT_S', None)</li>
-  
-    <li>node('HV500_Inverter', None)</li>
-  
-    <li>node('Host', None)</li>
-  
-    <li>node('IVT_Mod', None)</li>
-  
-    <li>node('BMS', 'Battery Management System')</li>
-  
-    <li>node('Charger', 'EV Europe AC/DC Charger')</li>
-  
-  </ul>
-
-  <h2>📨 Mensagens Adicionadas</h2>
-  <p>Nenhuma mensagem adicionada.</p>
-
-  <h2>📨 Mensagens Removidas</h2>
-  <p>Nenhuma mensagem removida.</p>
-
-  <h2>📨 Mensagens Alteradas</h2>
-  <p>Nenhuma mensagem alterada.</p>
-
-  <h2>🟩 Sinais Adicionados</h2>
-  <p>Nenhum sinal adicionado.</p>
-
-  <h2>🟥 Sinais Removidos</h2>
-  <p>Nenhum sinal removido.</p>
-
-  <h2>🟨 Sinais Alterados</h2>
-  
-    
-    <button type="button" class="collapsible">403106036 : Control</button>
-    <div class="content">
-    <table>
-      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
-      
-      <tr class="changed">
-        <td>choices</td>
-        <td class="code">None</td>
-        <td class="code">OrderedDict([(0, 'Starting to charg'), (1, 'Battery protection, charger close output')])</td>
-      </tr>
-      
-    </table>
-    </div>
-    
-  
-</div>
-
-<div id="FSIC.dbc" class="tabcontent">
-  <div class="summary">
-    <b>Resumo:</b> Nós: 3, Mensagens: 40, Sinais: 120
-    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
-  </div>
-
-  <h2>🟦 Nós</h2>
-  <ul>
-  
-    <li>node('HV500_INV1', None)</li>
-  
-    <li>node('HV500_INV2', None)</li>
-  
-    <li>node('HV500_commands', None)</li>
-  
-  </ul>
-
-  <h2>📨 Mensagens Adicionadas</h2>
-  <p>Nenhuma mensagem adicionada.</p>
-
-  <h2>📨 Mensagens Removidas</h2>
-  <p>Nenhuma mensagem removida.</p>
-
-  <h2>📨 Mensagens Alteradas</h2>
-  <p>Nenhuma mensagem alterada.</p>
-
-  <h2>🟩 Sinais Adicionados</h2>
-  <p>Nenhum sinal adicionado.</p>
-
-  <h2>🟥 Sinais Removidos</h2>
-  <p>Nenhum sinal removido.</p>
-
-  <h2>🟨 Sinais Alterados</h2>
-  <p>Nenhuma alteração encontrada.</p>
-</div>
-
 <div id="powertrain_t26.dbc" class="tabcontent">
   <div class="summary">
     <b>Resumo:</b> Nós: 9, Mensagens: 148, Sinais: 761
     <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
+    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 4
   </div>
 
   <h2>🟦 Nós</h2>
@@ -300,7 +178,83 @@ th { background-color:#e2eaf1; }
   <p>Nenhum sinal removido.</p>
 
   <h2>🟨 Sinais Alterados</h2>
-  <p>Nenhuma alteração encontrada.</p>
+  
+    
+    <button type="button" class="collapsible">1604 : module_voltage_sum</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>length</td>
+        <td class="code">8</td>
+        <td class="code">16</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1604 : module_voltage_avg</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>length</td>
+        <td class="code">8</td>
+        <td class="code">16</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>start</td>
+        <td class="code">8</td>
+        <td class="code">16</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1604 : module_voltage_min</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>length</td>
+        <td class="code">8</td>
+        <td class="code">16</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>start</td>
+        <td class="code">16</td>
+        <td class="code">32</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+    <button type="button" class="collapsible">1604 : module_voltage_max</button>
+    <div class="content">
+    <table>
+      <tr><th>Campo</th><th>Antes</th><th>Depois</th></tr>
+      
+      <tr class="changed">
+        <td>length</td>
+        <td class="code">8</td>
+        <td class="code">16</td>
+      </tr>
+      
+      <tr class="changed">
+        <td>start</td>
+        <td class="code">24</td>
+        <td class="code">48</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+  
 </div>
 
 <div id="data_t26.dbc" class="tabcontent">
@@ -328,6 +282,112 @@ th { background-color:#e2eaf1; }
     <li>node('VCU', None)</li>
   
     <li>node('PDM', None)</li>
+  
+  </ul>
+
+  <h2>📨 Mensagens Adicionadas</h2>
+  <p>Nenhuma mensagem adicionada.</p>
+
+  <h2>📨 Mensagens Removidas</h2>
+  <p>Nenhuma mensagem removida.</p>
+
+  <h2>📨 Mensagens Alteradas</h2>
+  <p>Nenhuma mensagem alterada.</p>
+
+  <h2>🟩 Sinais Adicionados</h2>
+  <p>Nenhum sinal adicionado.</p>
+
+  <h2>🟥 Sinais Removidos</h2>
+  <p>Nenhum sinal removido.</p>
+
+  <h2>🟨 Sinais Alterados</h2>
+  <p>Nenhuma alteração encontrada.</p>
+</div>
+
+<div id="autonomous_t26.dbc" class="tabcontent">
+  <div class="summary">
+    <b>Resumo:</b> Nós: 13, Mensagens: 20, Sinais: 76
+    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
+    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
+  </div>
+
+  <h2>🟦 Nós</h2>
+  <ul>
+  
+    <li>node('JETSON', None)</li>
+  
+    <li>node('VCU', None)</li>
+  
+    <li>node('ACU', None)</li>
+  
+    <li>node('RES', None)</li>
+  
+    <li>node('DYN_F', None)</li>
+  
+    <li>node('DYN_R', None)</li>
+  
+    <li>node('FSG_DATA_LOGGER', None)</li>
+  
+    <li>node('AK10_9', 'Atuador direcao')</li>
+  
+    <li>node('Acquisition_Board1', None)</li>
+  
+    <li>node('Acquisition_Board2', None)</li>
+  
+    <li>node('Acquisition_Board3', None)</li>
+  
+    <li>node('Acquisition_Board4', None)</li>
+  
+    <li>node('Acquisition_Board7', None)</li>
+  
+  </ul>
+
+  <h2>📨 Mensagens Adicionadas</h2>
+  <p>Nenhuma mensagem adicionada.</p>
+
+  <h2>📨 Mensagens Removidas</h2>
+  <p>Nenhuma mensagem removida.</p>
+
+  <h2>📨 Mensagens Alteradas</h2>
+  <p>Nenhuma mensagem alterada.</p>
+
+  <h2>🟩 Sinais Adicionados</h2>
+  <p>Nenhum sinal adicionado.</p>
+
+  <h2>🟥 Sinais Removidos</h2>
+  <p>Nenhum sinal removido.</p>
+
+  <h2>🟨 Sinais Alterados</h2>
+  <p>Nenhuma alteração encontrada.</p>
+</div>
+
+<div id="handcart_t26.dbc" class="tabcontent">
+  <div class="summary">
+    <b>Resumo:</b> Nós: 9, Mensagens: 20, Sinais: 300
+    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
+    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
+  </div>
+
+  <h2>🟦 Nós</h2>
+  <ul>
+  
+    <li>node('BMS', 'Battery Management System')</li>
+  
+    <li>node('EV_Europe_Charger', None)</li>
+  
+    <li>node('Handcart_Controller', None)</li>
+  
+    <li>node('IVT_S', None)</li>
+  
+    <li>node('HV500_Inverter', None)</li>
+  
+    <li>node('Host', None)</li>
+  
+    <li>node('IVT_Mod', None)</li>
+  
+    <li>node('BMS', 'Battery Management System')</li>
+  
+    <li>node('Charger', 'EV Europe AC/DC Charger')</li>
   
   </ul>
 
