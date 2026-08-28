@@ -93,7 +93,7 @@ Para caber numa única **mensagem CAN clássica (máximo 8 bytes)**, o hash é t
 
 Cada ECU pode enviar esta constante numa mensagem CAN (ex.: `memcpy(frame.buf, &DATA_T26_DBC_SHA256, 8)`) e os restantes ECUs comparam-na com a sua própria para verificar que todos utilizam a mesma versão do DBC.
 
-> ⚠️ **O envio/verificação desta constante é obrigatório em todos os ECUs.** Sem ela não existe forma de saber se um ECU corre uma versão desatualizada do DBC. Um ECU com uma versão antiga interpreta as mensagens com bit orders, factors, offsets ou posições de sinais errados, o que pode resultar em leituras incorretas de sensores, atuação errada de sistemas (motor, travões, DC/DC) e falhas de segurança difíceis de diagnosticar — sintomas sem qualquer erro visível em runtime. Com a constante comparada, uma divergência de versão é detetada na primeira mensagem recebida e o sistema pode alertar/rejeitar o ECU em falta.
+> ⚠️ **O envio/verificação desta constante é recomendada em todas as unidades.** Sem ela não existe forma de saber se um ECU corre uma versão desatualizada do DBC. Uma ECU com uma versão antiga interpreta as mensagens com bit orders, factors, offsets ou posições de sinais errados, o que pode resultar em leituras incorretas de sensores, atuação errada de sistemas (motor, travões, DC/DC) e falhas de segurança difíceis de diagnosticar — sintomas sem qualquer erro visível em runtime. Com a constante comparada, uma divergência de versão é detetada na primeira mensagem recebida e o sistema pode alertar/rejeitar o ECU em falta.
 
 #### 📤 Exemplo de envio (STM32 HAL, CAN 2.0)
 
