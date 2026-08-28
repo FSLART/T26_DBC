@@ -40,6 +40,12 @@ extern "C" {
 #include <stdbool.h>
 #include <stddef.h>
 
+/* DBC file integrity. */
+#define HANDCART_T26_DBC_SHA256 0xc8fd829f7dd9c324ULL
+
+
+/* DBC file integrity. */
+
 #ifndef EINVAL
 #    define EINVAL 22
 #endif

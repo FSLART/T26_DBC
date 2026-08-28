@@ -40,6 +40,12 @@ extern "C" {
 #include <stdbool.h>
 #include <stddef.h>
 
+/* DBC file integrity. */
+#define FSIC_DBC_SHA256 0x89b3b63811e11e6fULL
+
+
+/* DBC file integrity. */
+
 #ifndef EINVAL
 #    define EINVAL 22
 #endif

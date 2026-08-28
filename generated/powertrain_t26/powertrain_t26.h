@@ -40,6 +40,12 @@ extern "C" {
 #include <stdbool.h>
 #include <stddef.h>
 
+/* DBC file integrity. */
+#define POWERTRAIN_T26_DBC_SHA256 0x9baf2f9b3e599107ULL
+
+
+/* DBC file integrity. */
+
 #ifndef EINVAL
 #    define EINVAL 22
 #endif

@@ -77,6 +77,65 @@ Este repositório inclui um workflow do GitHub Actions que gera automaticamente 
 Exemplo de comando para compilação:
    python3 -m cantools generate_c_source Autonomous.dbc --output autonomous_c_output
 
+### 🔐 Verificação de Versão do DBC (SHA-256)
+
+O workflow que gere o código C também executa automaticamente o script `embed_dbc_sha256.py`, que calcula o hash **SHA-256** de cada ficheiro `.dbc` e insere o resultado como macro no respetivo cabeçalho gerado:
+
+```c
+#define DATA_T26_DBC_SHA256 0x3ee5339f1dc658c6ULL
+```
+
+Para caber numa única **mensagem CAN clássica (máximo 8 bytes)**, o hash é truncado para os **primeiros 8 bytes (64 bits)** do SHA-256. A decisão de truncar para 64 bits é mais do que suficiente para detetar erros de versão:
+
+- Probabilidade de duas versões diferentes colidirem ≈ 2⁻⁶⁴;
+- Só haveria 50% de probabilidade de colisão ao fim de ~4.3 mil milhões de versões do DBC;
+- Os primeiros 64 bits de um hash criptográfico mantêm efeito avalanche completo — alterar 1 byte do DBC muda o valor.
+
+Cada ECU pode enviar esta constante numa mensagem CAN (ex.: `memcpy(frame.buf, &DATA_T26_DBC_SHA256, 8)`) e os restantes ECUs comparam-na com a sua própria para verificar que todos utilizam a mesma versão do DBC.
+
+> ⚠️ **O envio/verificação desta constante é obrigatório em todos os ECUs.** Sem ela não existe forma de saber se um ECU corre uma versão desatualizada do DBC. Um ECU com uma versão antiga interpreta as mensagens com bit orders, factors, offsets ou posições de sinais errados, o que pode resultar em leituras incorretas de sensores, atuação errada de sistemas (motor, travões, DC/DC) e falhas de segurança difíceis de diagnosticar — sintomas sem qualquer erro visível em runtime. Com a constante comparada, uma divergência de versão é detetada na primeira mensagem recebida e o sistema pode alertar/rejeitar o ECU em falta.
+
+#### 📤 Exemplo de envio (STM32 HAL, CAN 2.0)
+
+Cada ECU envia periodicamente (ex.: a cada 1 s) a sua constante num frame de 8 bytes:
+
+```c
+#include "stm32f4xx_hal.h"
+#include "data_t26/data_t26.h"   /* define DATA_T26_DBC_SHA256 */
+
+#define DBC_VERSION_MSG_ID 0x055 /* ID dedicado apenas ao heartbeat de versão */
+
+CAN_TxHeaderTypeDef tx_header = {
+    .StdId = DBC_VERSION_MSG_ID,
+    .IDE = CAN_ID_STD,
+    .RTR = CAN_RTR_DATA,
+    .DLC = 8,                    /* 64 bits -> uma frame CAN 2.0 completa */
+    .TransmitGlobalTime = DISABLE,
+};
+uint8_t tx_data[8];
+uint32_t tx_mailbox;
+
+memcpy(tx_data, &DATA_T26_DBC_SHA256, 8); /* little-endian / Intel */
+
+HAL_CAN_AddTxMessage(&hcan1, &tx_header, tx_data, &tx_mailbox);
+```
+
+#### 📥 Exemplo de verificação (STM32 HAL, CAN 2.0)
+
+```c
+if (rx_header->IDE == CAN_ID_STD && rx_header->StdId == DBC_VERSION_MSG_ID) {
+    uint64_t received;
+    memcpy(&received, rx_data, 8);
+    if (received != DATA_T26_DBC_SHA256) {
+        /* ECU com DBC desatualizado -> parar/alertar */
+    }
+}
+```
+
+> ⚠️ Todos os ECUs devem usar o **mesmo byte order** (Intel/little-endian conforme acima) ao copiar a constante para a frame.
+
+> Nota: se a rede usar **CAN FD** (frames até 64 bytes), é possível enviar o SHA-256 **completo** (32 bytes) numa única mensagem.
+
 
 ## Exportação para EXCEL
 o workflow do GitHub Actions exporta também para xls, com uma página por ficheiro dbc, e uma tabela por id como se pode ver na figura abaixo
