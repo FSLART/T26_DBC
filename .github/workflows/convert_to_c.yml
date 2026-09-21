@@ -44,6 +44,9 @@ jobs:
             cantools generate_c_source "$dbcfile" --output "$outdir"
           done
 
+          # Embed SHA256 of each DBC into the respective generated header
+          python embed_dbc_sha256.py
+
           git add generated/
           if ! git diff --cached --quiet; then
             git commit -m "Auto-generated C code and Excel export from DBC files"
