@@ -34,7 +34,9 @@ th { background-color:#e2eaf1; }
 
 <div class="tab">
 
-  <button class="tablinks" onclick="openTab(event, 'aquisition_boards.dbc')">aquisition_boards.dbc</button>
+  <button class="tablinks" onclick="openTab(event, 'data_t26.dbc')">data_t26.dbc</button>
+
+  <button class="tablinks" onclick="openTab(event, 'FSIC.dbc')">FSIC.dbc</button>
 
   <button class="tablinks" onclick="openTab(event, 'handcart_t26.dbc')">handcart_t26.dbc</button>
 
@@ -42,16 +44,89 @@ th { background-color:#e2eaf1; }
 
   <button class="tablinks" onclick="openTab(event, 'powertrain_t26.dbc')">powertrain_t26.dbc</button>
 
-  <button class="tablinks" onclick="openTab(event, 'FSIC.dbc')">FSIC.dbc</button>
-
-  <button class="tablinks" onclick="openTab(event, 'data_t26.dbc')">data_t26.dbc</button>
+  <button class="tablinks" onclick="openTab(event, 'aquisition_boards.dbc')">aquisition_boards.dbc</button>
 
 </div>
 
 
-<div id="aquisition_boards.dbc" class="tabcontent">
+<div id="data_t26.dbc" class="tabcontent">
   <div class="summary">
-    <b>Resumo:</b> Nós: 7, Mensagens: 7, Sinais: 25
+    <b>Resumo:</b> Nós: 12, Mensagens: 14, Sinais: 148
+    <br>Mensagens Adicionadas: 1, Removidas: 0, Alteradas: 0
+    <br>Sinais Adicionados: 1, Removidos: 0, Alterados: 0
+  </div>
+
+  <h2>🟦 Nós</h2>
+  <ul>
+  
+    <li>node('Acquisition_Board2', None)</li>
+  
+    <li>node('Acquisition_Board3', None)</li>
+  
+    <li>node('Acquisition_Board5', None)</li>
+  
+    <li>node('Acquisition_Board6', None)</li>
+  
+    <li>node('Acquisition_Board7', None)</li>
+  
+    <li>node('Acquisition_Board8', None)</li>
+  
+    <li>node('VCU', None)</li>
+  
+    <li>node('PDM', None)</li>
+  
+    <li>node('BMS', None)</li>
+  
+    <li>node('ICD', 'Isabellenhuette ISAscale ICD shunt current sensor (datasheet v1.3)')</li>
+  
+    <li>node('Data_Station', 'RPi 5 CAN Shield')</li>
+  
+    <li>node('Acquisition_Board1', None)</li>
+  
+  </ul>
+
+  <h2>📨 Mensagens Adicionadas</h2>
+  
+  <table>
+  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
+  
+    <tr class="added">
+      <td>1792</td>
+      <td>AQT1</td>
+      <td>8</td>
+      <td>None</td>
+      <td>Throtle_Percentage</td>
+    </tr>
+  
+  </table>
+  
+
+  <h2>📨 Mensagens Removidas</h2>
+  <p>Nenhuma mensagem removida.</p>
+
+  <h2>📨 Mensagens Alteradas</h2>
+  <p>Nenhuma mensagem alterada.</p>
+
+  <h2>🟩 Sinais Adicionados</h2>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="added"><td>1792</td><td>Throtle_Percentage</td></tr>
+  
+  </table>
+  
+
+  <h2>🟥 Sinais Removidos</h2>
+  <p>Nenhum sinal removido.</p>
+
+  <h2>🟨 Sinais Alterados</h2>
+  <p>Nenhuma alteração encontrada.</p>
+</div>
+
+<div id="FSIC.dbc" class="tabcontent">
+  <div class="summary">
+    <b>Resumo:</b> Nós: 3, Mensagens: 40, Sinais: 120
     <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
     <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
   </div>
@@ -59,19 +134,11 @@ th { background-color:#e2eaf1; }
   <h2>🟦 Nós</h2>
   <ul>
   
-    <li>node('Aquisition_Board1', None)</li>
+    <li>node('HV500_INV1', None)</li>
   
-    <li>node('Aquisition_Board2', None)</li>
+    <li>node('HV500_INV2', None)</li>
   
-    <li>node('Aquisition_Board3', None)</li>
-  
-    <li>node('Aquisition_Board4', None)</li>
-  
-    <li>node('Aquisition_Board5', None)</li>
-  
-    <li>node('Aquisition_Board6', None)</li>
-  
-    <li>node('Aquisition_Board7', None)</li>
+    <li>node('HV500_commands', None)</li>
   
   </ul>
 
@@ -250,9 +317,9 @@ th { background-color:#e2eaf1; }
   <p>Nenhuma alteração encontrada.</p>
 </div>
 
-<div id="FSIC.dbc" class="tabcontent">
+<div id="aquisition_boards.dbc" class="tabcontent">
   <div class="summary">
-    <b>Resumo:</b> Nós: 3, Mensagens: 40, Sinais: 120
+    <b>Resumo:</b> Nós: 7, Mensagens: 7, Sinais: 25
     <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
     <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
   </div>
@@ -260,11 +327,19 @@ th { background-color:#e2eaf1; }
   <h2>🟦 Nós</h2>
   <ul>
   
-    <li>node('HV500_INV1', None)</li>
+    <li>node('Aquisition_Board1', None)</li>
   
-    <li>node('HV500_INV2', None)</li>
+    <li>node('Aquisition_Board2', None)</li>
   
-    <li>node('HV500_commands', None)</li>
+    <li>node('Aquisition_Board3', None)</li>
+  
+    <li>node('Aquisition_Board4', None)</li>
+  
+    <li>node('Aquisition_Board5', None)</li>
+  
+    <li>node('Aquisition_Board6', None)</li>
+  
+    <li>node('Aquisition_Board7', None)</li>
   
   </ul>
 
@@ -279,345 +354,6 @@ th { background-color:#e2eaf1; }
 
   <h2>🟩 Sinais Adicionados</h2>
   <p>Nenhum sinal adicionado.</p>
-
-  <h2>🟥 Sinais Removidos</h2>
-  <p>Nenhum sinal removido.</p>
-
-  <h2>🟨 Sinais Alterados</h2>
-  <p>Nenhuma alteração encontrada.</p>
-</div>
-
-<div id="data_t26.dbc" class="tabcontent">
-  <div class="summary">
-    <b>Resumo:</b> Nós: 10, Mensagens: 13, Sinais: 147
-    <br>Mensagens Adicionadas: 3, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 127, Removidos: 0, Alterados: 0
-  </div>
-
-  <h2>🟦 Nós</h2>
-  <ul>
-  
-    <li>node('Acquisition_Board2', None)</li>
-  
-    <li>node('Acquisition_Board3', None)</li>
-  
-    <li>node('Acquisition_Board5', None)</li>
-  
-    <li>node('Acquisition_Board6', None)</li>
-  
-    <li>node('Acquisition_Board7', None)</li>
-  
-    <li>node('Acquisition_Board8', None)</li>
-  
-    <li>node('VCU', None)</li>
-  
-    <li>node('PDM', None)</li>
-  
-    <li>node('BMS', None)</li>
-  
-    <li>node('ICD', 'Isabellenhuette ISAscale ICD shunt current sensor (datasheet v1.3)')</li>
-  
-  </ul>
-
-  <h2>📨 Mensagens Adicionadas</h2>
-  
-  <table>
-  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
-  
-    <tr class="added">
-      <td>1282</td>
-      <td>ICD_Result</td>
-      <td>8</td>
-      <td>None</td>
-      <td>ICD_Status_OCS, ICD_Status_MeasError, ICD_Status_SysError, ICD_MsgCounter, ICD_Current, ICD_Ubat</td>
-    </tr>
-  
-    <tr class="added">
-      <td>1280</td>
-      <td>ICD_Request</td>
-      <td>8</td>
-      <td>None</td>
-      <td>Req_MuxID, Req_OpMode, Req_AccessMode, Req_Averaging, Req_OCLimitPos, Req_CanBaudrate, Req_CanIdReq_SN, Req_CanIdResp_SN, Req_CanIdRes_SN, Req_NewPw1, Req_ResetOption, Req_WakeTimer, Req_WakeIThreshold, Req_WakeAhThreshold, Req_OpOutputRate, Req_AccessPw1, Req_CanMode, Req_NewPw2, Req_SleepTimer, Req_AccessPw2, Req_NewPw3, Req_OpInvertCurrent, Req_AccessPw3, Req_OCLimitNeg, Req_CanIdReq_ID, Req_CanIdResp_ID, Req_CanIdRes_ID, Req_NewPw4, Req_SleepIThreshold, Req_AccessPw4, Req_NewPw5, Req_AccessPw5, Req_NewPw6, Req_SleepAhThreshold, Req_AccessPw6</td>
-    </tr>
-  
-    <tr class="added">
-      <td>1281</td>
-      <td>ICD_Response</td>
-      <td>8</td>
-      <td>None</td>
-      <td>Resp_MuxID, Resp_Tchip, Resp_AhCounter, Resp_OpMode, Resp_AccessMode, Resp_Averaging, Resp_OCLimitPos, Resp_CanBaudrate, Resp_CanIdReq_SN, Resp_CanIdResp_SN, Resp_CanIdRes_SN, Resp_Pw1, Resp_ResetOption, Resp_WakeTimer, Resp_DevId_Frame, Resp_FwMajor, Resp_SerialNumber, Resp_HwVer_Frame, Resp_ArticleNumber, Resp_UpTime, Resp_Lifetime, Resp_EvtMeasType, Resp_WakeIThreshold, Resp_WakeAhThreshold, Resp_OpOutputRate, Resp_CanMode, Resp_Pw2, Resp_SleepTimer, Resp_DevId_Char1, Resp_FwMinor, Resp_HwVer_Char1, Resp_EvtSysType, Resp_Text, Resp_Pw3, Resp_DevId_Char2, Resp_FwRelease, Resp_HwVer_Char2, Resp_MS_CalibrationData, Resp_EvtMeasCount, Resp_MS_OCSActive, Resp_OpInvertCurrent, Resp_OCLimitNeg, Resp_CanIdReq_ID, Resp_CanIdResp_ID, Resp_CanIdRes_ID, Resp_Pw4, Resp_SleepIThreshold, Resp_DevId_Char3, Resp_HwVer_Char3, Resp_Rev_Digit1, Resp_MS_AdcInterrupt, Resp_MS_OverflowAdcCh1, Resp_MS_OverflowAdcCh2, Resp_MS_OverflowAdcCh3, Resp_MS_OpenCircuitI, Resp_MS_OpenCircuitU, Resp_MS_OpenCircuitTchip, Resp_MS_OpenCircuitText, Resp_Pw5, Resp_DevId_Char4, Resp_HwVer_Char4, Resp_Rev_Digit2, Resp_SS_SystemInit, Resp_EvtSysCount, Resp_SS_Configuration, Resp_SS_EepromRW, Resp_SS_PowerOnReset, Resp_SS_LowVoltageReset, Resp_SS_ExtPinReset, Resp_SS_ClockMonReset, Resp_SS_CopWdReset, Resp_Pw6, Resp_SleepAhThreshold, Resp_DevId_Char5, Resp_HwVer_Char5, Resp_Rev_Digit3, Resp_SS_CodeCrc, Resp_SS_CalDataCrc, Resp_SS_CanRx, Resp_SS_CanTx, Resp_SS_Overtemp, Resp_SS_Undertemp, Resp_SS_PowerFailure, Resp_SS_SystemClock, Resp_HwVer_Char6, Resp_Rev_Digit4</td>
-    </tr>
-  
-  </table>
-  
-
-  <h2>📨 Mensagens Removidas</h2>
-  <p>Nenhuma mensagem removida.</p>
-
-  <h2>📨 Mensagens Alteradas</h2>
-  <p>Nenhuma mensagem alterada.</p>
-
-  <h2>🟩 Sinais Adicionados</h2>
-  
-  <table>
-  <tr><th>Message ID</th><th>Signal</th></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_DevId_Char4</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_WakeTimer</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_FwMajor</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_Pw1</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_Tchip</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_HwVer_Char5</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_FwRelease</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_MS_OverflowAdcCh3</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_WakeTimer</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_OCLimitPos</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SleepTimer</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_Pw4</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SS_CalDataCrc</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_HwVer_Char2</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_CanIdReq_ID</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_AccessMode</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_MS_OverflowAdcCh2</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_OCLimitPos</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_SleepIThreshold</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_HwVer_Frame</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_MuxID</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_CanIdRes_ID</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_CanIdResp_ID</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SS_SystemClock</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_AccessPw4</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_CanIdRes_ID</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_OpMode</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_EvtMeasCount</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_OpOutputRate</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_AccessPw3</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_CanIdResp_ID</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SerialNumber</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_AccessMode</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SS_EepromRW</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_OCLimitNeg</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SS_LowVoltageReset</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_WakeAhThreshold</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_SleepTimer</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_CanIdRes_SN</td></tr>
-  
-    <tr class="added"><td>1282</td><td>ICD_MsgCounter</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_Lifetime</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_AccessPw6</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_MS_OverflowAdcCh1</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_NewPw1</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_DevId_Char2</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_Rev_Digit1</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_ResetOption</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_CanIdReq_SN</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_AccessPw2</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_AccessPw1</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_Rev_Digit4</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_ArticleNumber</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_HwVer_Char1</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SS_SystemInit</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_OpMode</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_CanBaudrate</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_AhCounter</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_CanMode</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_DevId_Char5</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_MuxID</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_MS_OpenCircuitText</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_OpOutputRate</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SS_PowerFailure</td></tr>
-  
-    <tr class="added"><td>1282</td><td>ICD_Ubat</td></tr>
-  
-    <tr class="added"><td>1282</td><td>ICD_Status_MeasError</td></tr>
-  
-    <tr class="added"><td>1282</td><td>ICD_Current</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_CanIdResp_SN</td></tr>
-  
-    <tr class="added"><td>1282</td><td>ICD_Status_OCS</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_CanIdReq_ID</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_EvtSysCount</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_Pw5</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_MS_OpenCircuitU</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_AccessPw5</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SS_CopWdReset</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_ResetOption</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_Averaging</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_Rev_Digit3</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SS_CanTx</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_UpTime</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SleepAhThreshold</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_WakeIThreshold</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_Pw2</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_MS_AdcInterrupt</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_WakeIThreshold</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_DevId_Frame</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_Pw6</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_HwVer_Char3</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SS_ClockMonReset</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_DevId_Char3</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_MS_OCSActive</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_Text</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_OpInvertCurrent</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_MS_OpenCircuitTchip</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SS_CanRx</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_MS_OpenCircuitI</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_Averaging</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SS_Overtemp</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SS_PowerOnReset</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_CanBaudrate</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_CanIdRes_SN</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_OCLimitNeg</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_EvtSysType</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_HwVer_Char4</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_NewPw6</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_OpInvertCurrent</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_EvtMeasType</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SS_CodeCrc</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_HwVer_Char6</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_Rev_Digit2</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_FwMinor</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_NewPw3</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_DevId_Char1</td></tr>
-  
-    <tr class="added"><td>1282</td><td>ICD_Status_SysError</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SS_Undertemp</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_WakeAhThreshold</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_Pw3</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_NewPw4</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_CanIdReq_SN</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_MS_CalibrationData</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_SleepAhThreshold</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SleepIThreshold</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SS_ExtPinReset</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_SS_Configuration</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_NewPw2</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_CanMode</td></tr>
-  
-    <tr class="added"><td>1281</td><td>Resp_CanIdResp_SN</td></tr>
-  
-    <tr class="added"><td>1280</td><td>Req_NewPw5</td></tr>
-  
-  </table>
-  
 
   <h2>🟥 Sinais Removidos</h2>
   <p>Nenhum sinal removido.</p>
