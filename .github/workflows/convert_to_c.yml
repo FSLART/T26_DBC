@@ -1,9 +1,13 @@
 name: Generate C code 
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
+
+permissions:
+  contents: write
 
 concurrency:
   group: generate-and-push
@@ -55,3 +59,85 @@ jobs:
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Prepare the six shared DBC files
+        run: |
+          mkdir -p /tmp/t26-dbc-bundle
+          for name in data_t26 autonomous_t26 powertrain_t26; do
+            cp "generated/$name/$name.c" "generated/$name/$name.h" /tmp/t26-dbc-bundle/
+          done
+          git rev-parse HEAD > /tmp/t26-dbc-bundle/T26_DBC_COMMIT.txt
+
+      - name: Upload generated files
+        uses: actions/upload-artifact@v4
+        with:
+          name: t26-dbc-bundle
+          path: /tmp/t26-dbc-bundle/
+          if-no-files-found: error
+          retention-days: 7
+
+  sync_consumers:
+    needs: generate_and_export
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        repository:
+          - T26_Acquisition_7
+          - T26_Acquisition_4
+          - T26_Acquisition_2
+          - T26_Acquisition_1
+    steps:
+      - name: Create consumer repository token
+        id: app-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ vars.DBC_SYNC_APP_ID }}
+          private-key: ${{ secrets.DBC_SYNC_APP_PRIVATE_KEY }}
+          owner: FSLART
+          repositories: ${{ matrix.repository }}
+
+      - name: Checkout consumer
+        uses: actions/checkout@v4
+        with:
+          repository: FSLART/${{ matrix.repository }}
+          ref: main
+          token: ${{ steps.app-token.outputs.token }}
+
+      - name: Download generated files
+        uses: actions/download-artifact@v4
+        with:
+          name: t26-dbc-bundle
+          path: ${{ runner.temp }}/t26-dbc-bundle
+
+      - name: Copy six files and read source revision
+        id: source
+        env:
+          BUNDLE: ${{ runner.temp }}/t26-dbc-bundle
+        run: |
+          mkdir -p Core/DBC
+          for name in data_t26 autonomous_t26 powertrain_t26; do
+            cp "$BUNDLE/$name.c" "$BUNDLE/$name.h" Core/DBC/
+          done
+          echo "sha=$(cat "$BUNDLE/T26_DBC_COMMIT.txt")" >> "$GITHUB_OUTPUT"
+
+      - name: Open or update synchronization PR
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+          branch: automation/update-t26-dbc
+          base: main
+          delete-branch: true
+          add-paths: |
+            Core/DBC/data_t26.c
+            Core/DBC/data_t26.h
+            Core/DBC/autonomous_t26.c
+            Core/DBC/autonomous_t26.h
+            Core/DBC/powertrain_t26.c
+            Core/DBC/powertrain_t26.h
+          commit-message: 'chore: update generated T26 DBC files'
+          title: 'chore: update generated T26 DBC files'
+          body: |
+            Updates the six shared CAN source and header files in Core/DBC.
+
+            Source: https://github.com/FSLART/T26_DBC/commit/${{ steps.source.outputs.sha }}
