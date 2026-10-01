@@ -121,23 +121,20 @@ jobs:
           done
           echo "sha=$(cat "$BUNDLE/T26_DBC_COMMIT.txt")" >> "$GITHUB_OUTPUT"
 
-      - name: Open or update synchronization PR
-        uses: peter-evans/create-pull-request@v7
-        with:
-          token: ${{ steps.app-token.outputs.token }}
-          branch: automation/update-t26-dbc
-          base: main
-          delete-branch: true
-          add-paths: |
-            Core/DBC/data_t26.c
-            Core/DBC/data_t26.h
-            Core/DBC/autonomous_t26.c
-            Core/DBC/autonomous_t26.h
-            Core/DBC/powertrain_t26.c
-            Core/DBC/powertrain_t26.h
-          commit-message: 'chore: update generated T26 DBC files'
-          title: 'chore: update generated T26 DBC files'
-          body: |
-            Updates the six shared CAN source and header files in Core/DBC.
-
-            Source: https://github.com/FSLART/T26_DBC/commit/${{ steps.source.outputs.sha }}
+      - name: Commit and push DBC files to main
+        env:
+          SOURCE_SHA: ${{ steps.source.outputs.sha }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- Core/DBC/data_t26.c Core/DBC/data_t26.h \
+            Core/DBC/autonomous_t26.c Core/DBC/autonomous_t26.h \
+            Core/DBC/powertrain_t26.c Core/DBC/powertrain_t26.h
+          if git diff --cached --quiet; then
+            echo "DBC files are already up to date."
+            exit 0
+          fi
+          git commit -m "chore: update generated T26 DBC files" \
+            -m "Source: https://github.com/FSLART/T26_DBC/commit/$SOURCE_SHA"
+          git pull --rebase origin main
+          git push origin HEAD:main
