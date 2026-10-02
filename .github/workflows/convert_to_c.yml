@@ -87,6 +87,8 @@ jobs:
           - T26_Acquisition_4
           - T26_Acquisition_2
           - T26_Acquisition_1
+          - ACU_V3.0
+          - PDM_Firmware_TEK26
     steps:
       - name: Create consumer repository token
         id: app-token
