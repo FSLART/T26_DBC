@@ -103,7 +103,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: FSLART/${{ matrix.repository }}
-          ref: main
           token: ${{ steps.app-token.outputs.token }}
 
       - name: Download generated files
@@ -123,7 +122,7 @@ jobs:
           done
           echo "sha=$(cat "$BUNDLE/T26_DBC_COMMIT.txt")" >> "$GITHUB_OUTPUT"
 
-      - name: Commit and push DBC files to main
+      - name: Commit and push DBC files to the consumer default branch
         env:
           SOURCE_SHA: ${{ steps.source.outputs.sha }}
         run: |
@@ -138,5 +137,7 @@ jobs:
           fi
           git commit -m "chore: update generated T26 DBC files" \
             -m "Source: https://github.com/FSLART/T26_DBC/commit/$SOURCE_SHA"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          branch=$(git branch --show-current)
+          test -n "$branch"
+          git pull --rebase origin "$branch"
+          git push origin "HEAD:$branch"

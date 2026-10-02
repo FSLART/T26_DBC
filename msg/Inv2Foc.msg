@@ -1,4 +1,0 @@
-std_msgs/Header header
-
-float32 inv2_actual_foc_id
-float32 inv2_actual_foc_iq

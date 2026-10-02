@@ -1,6 +1,0 @@
-std_msgs/Header header
-
-float32 cell_voltage_9
-float32 cell_voltage_10
-float32 cell_voltage_11
-float32 cell_voltage_12

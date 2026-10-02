@@ -1,9 +1,0 @@
-std_msgs/Header header
-
-int8 ivt_id_result_i
-int8 ivt_result_i_system_error
-int8 ivt_result_i_measurement_error
-int8 ivt_result_i_channel_error
-int8 ivt_result_i_ocs
-int8 ivt_msgcount_result_i
-int32 ivt_result_i

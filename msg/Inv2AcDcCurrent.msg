@@ -1,4 +1,0 @@
-std_msgs/Header header
-
-float32 inv2_actual_accurrent
-float32 inv2_actual_dccurrent

@@ -1,6 +1,0 @@
-std_msgs/Header header
-
-float32 inv2_maxaccurrent
-float32 inv2_availablemaxaccurrent
-float32 inv2_minaccurrent
-float32 inv2_availableminaccurrent

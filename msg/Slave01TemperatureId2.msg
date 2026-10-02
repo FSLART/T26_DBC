@@ -1,6 +1,0 @@
-std_msgs/Header header
-
-float32 temperature_value_5
-float32 temperature_value_6
-float32 temperature_maximum
-float32 temperature_delta

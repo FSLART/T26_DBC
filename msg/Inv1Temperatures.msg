@@ -1,5 +1,0 @@
-std_msgs/Header header
-
-float32 inv1_actual_tempcontroller
-float32 inv1_actual_tempmotor
-int8 inv1_actual_faultcode

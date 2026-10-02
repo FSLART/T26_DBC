@@ -1,4 +1,0 @@
-std_msgs/Header header
-
-float32 inv2_tempinverter
-float32 inv2_tempmotor
