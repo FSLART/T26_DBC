@@ -1,0 +1,6 @@
+std_msgs/Header header
+
+float32 inv2_maxdccurrent
+float32 inv2_availablemaxdccurrent
+float32 inv2_mindccurrent
+float32 inv2_availablemindccurrent

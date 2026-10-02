@@ -1,0 +1,4 @@
+std_msgs/Header header
+
+float32 inv1_tempinverter
+float32 inv1_tempmotor

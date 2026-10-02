@@ -3,7 +3,7 @@ import re
 import cantools
 
 # Path to your DBC file
-dbc_path = '/home/andre-lopes/Desktop/ros2_ws/src/can_bridge/include/T26_DBC/autonomous_t26.dbc'
+dbc_path = 'powertrain_t26.dbc'
 
 # Get directory of this script
 script_dir = os.path.dirname(os.path.abspath(__file__))

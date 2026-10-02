@@ -1,0 +1,6 @@
+std_msgs/Header header
+
+int8 inv1_cmd_setdigoutput4
+int8 inv1_cmd_setdigoutput3
+int8 inv1_cmd_setdigoutput2
+int8 inv1_cmd_setdigoutput1

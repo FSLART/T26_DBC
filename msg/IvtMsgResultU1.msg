@@ -1,0 +1,9 @@
+std_msgs/Header header
+
+int8 ivt_id_result_u1
+int8 ivt_result_u1_system_error
+int8 ivt_result_u1_measurement_error
+int8 ivt_result_u1_channel_error
+int8 ivt_result_u1_ocs
+int8 ivt_msgcount_result_u1
+int32 ivt_result_u1

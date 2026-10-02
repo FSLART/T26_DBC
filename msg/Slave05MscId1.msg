@@ -1,0 +1,6 @@
+std_msgs/Header header
+
+float32 module_voltage_sum
+float32 module_voltage_avg
+float32 module_voltage_min
+float32 module_voltage_max

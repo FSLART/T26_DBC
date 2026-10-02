@@ -1,0 +1,6 @@
+std_msgs/Header header
+
+float32 overall_maximum_voltage
+float32 overall_maximum_temperature
+float32 overall_minimum_voltage
+float32 overall_minimum_temperature

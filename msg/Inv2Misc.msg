@@ -1,0 +1,25 @@
+std_msgs/Header header
+
+int8 inv2_actual_throttle
+int8 inv2_actual_brake
+int8 inv2_digital_output_4
+int8 inv2_digital_output_3
+int8 inv2_digital_output_2
+int8 inv2_digital_output_1
+int8 inv2_digital_input_4
+int8 inv2_digital_input_3
+int8 inv2_digital_input_2
+int8 inv2_digital_input_1
+int8 inv2_drive_enable
+int8 inv2_motor_temp_limit
+int8 inv2_motor_accel_limit
+int8 inv2_input_voltage_limit
+int8 inv2_igbt_temp_limit
+int8 inv2_igbt_accel_limit
+int8 inv2_drive_enable_limit
+int8 inv2_dc_current_limit
+int8 inv2_capacitor_temp_limit
+int8 inv2_power_limit
+int8 inv2_rpm_max_limit
+int8 inv2_rpm_min_limit
+float32 inv2_can_map_version
