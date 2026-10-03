@@ -1,9 +1,13 @@
 name: Generate C code 
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
+
+permissions:
+  contents: write
 
 concurrency:
   group: generate-and-push
@@ -55,3 +59,85 @@ jobs:
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Prepare the six shared DBC files
+        run: |
+          mkdir -p /tmp/t26-dbc-bundle
+          for name in data_t26 autonomous_t26 powertrain_t26; do
+            cp "generated/$name/$name.c" "generated/$name/$name.h" /tmp/t26-dbc-bundle/
+          done
+          git rev-parse HEAD > /tmp/t26-dbc-bundle/T26_DBC_COMMIT.txt
+
+      - name: Upload generated files
+        uses: actions/upload-artifact@v4
+        with:
+          name: t26-dbc-bundle
+          path: /tmp/t26-dbc-bundle/
+          if-no-files-found: error
+          retention-days: 7
+
+  sync_consumers:
+    needs: generate_and_export
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        repository:
+          - T26_Acquisition_7
+          - T26_Acquisition_4
+          - T26_Acquisition_2
+          - T26_Acquisition_1
+          - ACU_V3.0
+          - PDM_Firmware_TEK26
+    steps:
+      - name: Create consumer repository token
+        id: app-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ vars.DBC_SYNC_APP_ID }}
+          private-key: ${{ secrets.DBC_SYNC_APP_PRIVATE_KEY }}
+          owner: FSLART
+          repositories: ${{ matrix.repository }}
+
+      - name: Checkout consumer
+        uses: actions/checkout@v4
+        with:
+          repository: FSLART/${{ matrix.repository }}
+          token: ${{ steps.app-token.outputs.token }}
+
+      - name: Download generated files
+        uses: actions/download-artifact@v4
+        with:
+          name: t26-dbc-bundle
+          path: ${{ runner.temp }}/t26-dbc-bundle
+
+      - name: Copy six files and read source revision
+        id: source
+        env:
+          BUNDLE: ${{ runner.temp }}/t26-dbc-bundle
+        run: |
+          mkdir -p Core/DBC
+          for name in data_t26 autonomous_t26 powertrain_t26; do
+            cp "$BUNDLE/$name.c" "$BUNDLE/$name.h" Core/DBC/
+          done
+          echo "sha=$(cat "$BUNDLE/T26_DBC_COMMIT.txt")" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push DBC files to the consumer default branch
+        env:
+          SOURCE_SHA: ${{ steps.source.outputs.sha }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- Core/DBC/data_t26.c Core/DBC/data_t26.h \
+            Core/DBC/autonomous_t26.c Core/DBC/autonomous_t26.h \
+            Core/DBC/powertrain_t26.c Core/DBC/powertrain_t26.h
+          if git diff --cached --quiet; then
+            echo "DBC files are already up to date."
+            exit 0
+          fi
+          git commit -m "chore: update generated T26 DBC files" \
+            -m "Source: https://github.com/FSLART/T26_DBC/commit/$SOURCE_SHA"
+          branch=$(git branch --show-current)
+          test -n "$branch"
+          git pull --rebase origin "$branch"
+          git push origin "HEAD:$branch"
