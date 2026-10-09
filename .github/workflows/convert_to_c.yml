@@ -89,6 +89,8 @@ jobs:
           - T26_Acquisition_1
           - ACU_V3.0
           - PDM_Firmware_TEK26
+          - VCU_STM32_Firmware_V1
+          - lart_bms
     steps:
       - name: Create consumer repository token
         id: app-token
