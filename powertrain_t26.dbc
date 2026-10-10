@@ -960,6 +960,13 @@ BO_ 96 DashBoard: 1 Acquisition_Board4
  SG_ ignition_switch_raw : 0|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ r2d_button_raw : 1|1@1+ (1,0) [0|0] "" Vector__XXX
 
+BO_ 1856 AQT4: 7 Acquisition_Board4
+ SG_ ST_ANGLE : 0|16@1- (0.1,0) [0|0] "º"  VCU
+ SG_ SUSP_L : 16|16@1- (0.1,0) [0|0] "mm" Vector__XXX
+ SG_ SUSP_R : 32|16@1- (0.1,0) [0|0] "mm" Vector__XXX
+ SG_ INERTIA : 48|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ EMERGENCY : 49|1@1+ (1,0) [0|0] "" Vector__XXX
+
 BO_ 1797 Master_SOC_Accumulator: 8 AMS
  SG_ SOC_Integer : 0|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ SOC_Float : 8|16@1+ (0.01,0.01) [0|0] "" Vector__XXX
