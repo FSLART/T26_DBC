@@ -53,7 +53,7 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ TIRE_TEMP : 0|16@1- (0.1,0) [0|0] "ºC"  Data_Station
  SG_ BRAKE_TEMP : 16|16@1- (0.1,0) [0|0] "ºC"  Data_Station
 
-BO_ 1824 AQT2: 4 Acquisition_Board2
+BO_ 34 AQT2: 4 Acquisition_Board2
  SG_ FRONT_LEFT_WHEEL_RPM : 0|16@1+ (1,0) [0|0] "RPM"  Data_Station
  SG_ FRONT_RIGHT_WHEEL_RPM : 16|16@1+ (1,0) [0|0] "RPM"  Data_Station
 
