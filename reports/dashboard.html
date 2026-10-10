@@ -52,8 +52,8 @@ th { background-color:#e2eaf1; }
 <div id="data_t26.dbc" class="tabcontent">
   <div class="summary">
     <b>Resumo:</b> Nós: 12, Mensagens: 36, Sinais: 339
-    <br>Mensagens Adicionadas: 0, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 0, Removidos: 0, Alterados: 0
+    <br>Mensagens Adicionadas: 1, Removidas: 1, Alteradas: 0
+    <br>Sinais Adicionados: 2, Removidos: 2, Alterados: 0
   </div>
 
   <h2>🟦 Nós</h2>
@@ -86,19 +86,63 @@ th { background-color:#e2eaf1; }
   </ul>
 
   <h2>📨 Mensagens Adicionadas</h2>
-  <p>Nenhuma mensagem adicionada.</p>
+  
+  <table>
+  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
+  
+    <tr class="added">
+      <td>34</td>
+      <td>AQT2</td>
+      <td>4</td>
+      <td>None</td>
+      <td>FRONT_LEFT_WHEEL_RPM, FRONT_RIGHT_WHEEL_RPM</td>
+    </tr>
+  
+  </table>
+  
 
   <h2>📨 Mensagens Removidas</h2>
-  <p>Nenhuma mensagem removida.</p>
+  
+  <table>
+  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
+  
+    <tr class="removed">
+      <td>1824</td>
+      <td>AQT2</td>
+      <td>4</td>
+      <td>None</td>
+      <td>FRONT_LEFT_WHEEL_RPM, FRONT_RIGHT_WHEEL_RPM</td>
+    </tr>
+  
+  </table>
+  
 
   <h2>📨 Mensagens Alteradas</h2>
   <p>Nenhuma mensagem alterada.</p>
 
   <h2>🟩 Sinais Adicionados</h2>
-  <p>Nenhum sinal adicionado.</p>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="added"><td>34</td><td>FRONT_LEFT_WHEEL_RPM</td></tr>
+  
+    <tr class="added"><td>34</td><td>FRONT_RIGHT_WHEEL_RPM</td></tr>
+  
+  </table>
+  
 
   <h2>🟥 Sinais Removidos</h2>
-  <p>Nenhum sinal removido.</p>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="removed"><td>1824</td><td>FRONT_RIGHT_WHEEL_RPM</td></tr>
+  
+    <tr class="removed"><td>1824</td><td>FRONT_LEFT_WHEEL_RPM</td></tr>
+  
+  </table>
+  
 
   <h2>🟨 Sinais Alterados</h2>
   <p>Nenhuma alteração encontrada.</p>
@@ -250,8 +294,8 @@ th { background-color:#e2eaf1; }
 <div id="powertrain_t26.dbc" class="tabcontent">
   <div class="summary">
     <b>Resumo:</b> Nós: 9, Mensagens: 149, Sinais: 780
-    <br>Mensagens Adicionadas: 1, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 5, Removidos: 0, Alterados: 0
+    <br>Mensagens Adicionadas: 1, Removidas: 1, Alteradas: 0
+    <br>Sinais Adicionados: 5, Removidos: 5, Alterados: 0
   </div>
 
   <h2>🟦 Nós</h2>
@@ -284,7 +328,7 @@ th { background-color:#e2eaf1; }
   <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
   
     <tr class="added">
-      <td>1856</td>
+      <td>112</td>
       <td>AQT4</td>
       <td>7</td>
       <td>None</td>
@@ -295,7 +339,20 @@ th { background-color:#e2eaf1; }
   
 
   <h2>📨 Mensagens Removidas</h2>
-  <p>Nenhuma mensagem removida.</p>
+  
+  <table>
+  <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
+  
+    <tr class="removed">
+      <td>1856</td>
+      <td>AQT4</td>
+      <td>7</td>
+      <td>None</td>
+      <td>ST_ANGLE, SUSP_L, SUSP_R, INERTIA, EMERGENCY</td>
+    </tr>
+  
+  </table>
+  
 
   <h2>📨 Mensagens Alteradas</h2>
   <p>Nenhuma mensagem alterada.</p>
@@ -305,21 +362,36 @@ th { background-color:#e2eaf1; }
   <table>
   <tr><th>Message ID</th><th>Signal</th></tr>
   
-    <tr class="added"><td>1856</td><td>SUSP_R</td></tr>
+    <tr class="added"><td>112</td><td>SUSP_R</td></tr>
   
-    <tr class="added"><td>1856</td><td>INERTIA</td></tr>
+    <tr class="added"><td>112</td><td>SUSP_L</td></tr>
   
-    <tr class="added"><td>1856</td><td>EMERGENCY</td></tr>
+    <tr class="added"><td>112</td><td>ST_ANGLE</td></tr>
   
-    <tr class="added"><td>1856</td><td>SUSP_L</td></tr>
+    <tr class="added"><td>112</td><td>EMERGENCY</td></tr>
   
-    <tr class="added"><td>1856</td><td>ST_ANGLE</td></tr>
+    <tr class="added"><td>112</td><td>INERTIA</td></tr>
   
   </table>
   
 
   <h2>🟥 Sinais Removidos</h2>
-  <p>Nenhum sinal removido.</p>
+  
+  <table>
+  <tr><th>Message ID</th><th>Signal</th></tr>
+  
+    <tr class="removed"><td>1856</td><td>EMERGENCY</td></tr>
+  
+    <tr class="removed"><td>1856</td><td>SUSP_R</td></tr>
+  
+    <tr class="removed"><td>1856</td><td>SUSP_L</td></tr>
+  
+    <tr class="removed"><td>1856</td><td>ST_ANGLE</td></tr>
+  
+    <tr class="removed"><td>1856</td><td>INERTIA</td></tr>
+  
+  </table>
+  
 
   <h2>🟨 Sinais Alterados</h2>
   <p>Nenhuma alteração encontrada.</p>
