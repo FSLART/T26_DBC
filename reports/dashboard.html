@@ -192,9 +192,9 @@ th { background-color:#e2eaf1; }
 
 <div id="autonomous_t26.dbc" class="tabcontent">
   <div class="summary">
-    <b>Resumo:</b> Nós: 13, Mensagens: 26, Sinais: 114
-    <br>Mensagens Adicionadas: 8, Removidas: 0, Alteradas: 0
-    <br>Sinais Adicionados: 40, Removidos: 0, Alterados: 0
+    <b>Resumo:</b> Nós: 13, Mensagens: 29, Sinais: 121
+    <br>Mensagens Adicionadas: 3, Removidas: 0, Alteradas: 0
+    <br>Sinais Adicionados: 7, Removidos: 0, Alterados: 0
   </div>
 
   <h2>🟦 Nós</h2>
@@ -234,67 +234,27 @@ th { background-color:#e2eaf1; }
   <tr><th>ID</th><th>Nome</th><th>DLC</th><th>Ciclo</th><th>Sinais</th></tr>
   
     <tr class="added">
-      <td>1328</td>
-      <td>IMU_Acceleration</td>
-      <td>6</td>
+      <td>1336</td>
+      <td>IMU_Temperature</td>
+      <td>2</td>
       <td>None</td>
-      <td>Acceleration_X, Acceleration_Y, Acceleration_Z</td>
+      <td>Temperature</td>
     </tr>
   
     <tr class="added">
-      <td>1329</td>
-      <td>IMU_Angular_Velocity</td>
-      <td>6</td>
-      <td>None</td>
-      <td>Angular_Velocity_X, Angular_Velocity_Y, Angular_Velocity_Z</td>
-    </tr>
-  
-    <tr class="added">
-      <td>1330</td>
-      <td>IMU_GNSS_Position</td>
-      <td>8</td>
-      <td>None</td>
-      <td>Latitude, Longitude</td>
-    </tr>
-  
-    <tr class="added">
-      <td>1331</td>
-      <td>IMU_GNSS_Altitude</td>
-      <td>4</td>
-      <td>None</td>
-      <td>Altitude</td>
-    </tr>
-  
-    <tr class="added">
-      <td>1332</td>
-      <td>IMU_Orientation</td>
-      <td>8</td>
-      <td>None</td>
-      <td>Quaternion_W, Quaternion_X, Quaternion_Y, Quaternion_Z</td>
-    </tr>
-  
-    <tr class="added">
-      <td>1333</td>
-      <td>IMU_Velocity</td>
+      <td>1337</td>
+      <td>IMU_Filter_Velocity</td>
       <td>6</td>
       <td>None</td>
       <td>Velocity_X, Velocity_Y, Velocity_Z</td>
     </tr>
   
     <tr class="added">
-      <td>1334</td>
-      <td>IMU_Euler</td>
+      <td>1338</td>
+      <td>IMU_Free_Acceleration</td>
       <td>6</td>
       <td>None</td>
-      <td>Roll, Pitch, Yaw</td>
-    </tr>
-  
-    <tr class="added">
-      <td>1335</td>
-      <td>IMU_Status</td>
-      <td>4</td>
-      <td>None</td>
-      <td>Self_Test, Filter_Valid, GNSS_Fix, No_Rotation_Update_Status, Representative_Motion, Clock_Bias_Estimation, Clip_Acc_X, Clip_Acc_Y, Clip_Acc_Z, Clip_Gyr_X, Clip_Gyr_Y, Clip_Gyr_Z, Clip_Mag_X, Clip_Mag_Y, Clip_Mag_Z, Clipping_Indication, SyncIn_Marker, SyncOut_Marker, Filter_Mode, GNSS_Time_Pulse, RTK_Status</td>
+      <td>Free_Acceleration_X, Free_Acceleration_Y, Free_Acceleration_Z</td>
     </tr>
   
   </table>
@@ -311,85 +271,19 @@ th { background-color:#e2eaf1; }
   <table>
   <tr><th>Message ID</th><th>Signal</th></tr>
   
-    <tr class="added"><td>1333</td><td>Velocity_X</td></tr>
+    <tr class="added"><td>1337</td><td>Velocity_Z</td></tr>
   
-    <tr class="added"><td>1335</td><td>No_Rotation_Update_Status</td></tr>
+    <tr class="added"><td>1336</td><td>Temperature</td></tr>
   
-    <tr class="added"><td>1329</td><td>Angular_Velocity_X</td></tr>
+    <tr class="added"><td>1338</td><td>Free_Acceleration_Z</td></tr>
   
-    <tr class="added"><td>1335</td><td>SyncIn_Marker</td></tr>
+    <tr class="added"><td>1337</td><td>Velocity_Y</td></tr>
   
-    <tr class="added"><td>1329</td><td>Angular_Velocity_Z</td></tr>
+    <tr class="added"><td>1338</td><td>Free_Acceleration_X</td></tr>
   
-    <tr class="added"><td>1334</td><td>Yaw</td></tr>
+    <tr class="added"><td>1338</td><td>Free_Acceleration_Y</td></tr>
   
-    <tr class="added"><td>1335</td><td>Clip_Gyr_X</td></tr>
-  
-    <tr class="added"><td>1332</td><td>Quaternion_W</td></tr>
-  
-    <tr class="added"><td>1330</td><td>Latitude</td></tr>
-  
-    <tr class="added"><td>1335</td><td>Clip_Acc_Y</td></tr>
-  
-    <tr class="added"><td>1335</td><td>SyncOut_Marker</td></tr>
-  
-    <tr class="added"><td>1329</td><td>Angular_Velocity_Y</td></tr>
-  
-    <tr class="added"><td>1335</td><td>Clip_Mag_X</td></tr>
-  
-    <tr class="added"><td>1335</td><td>Clip_Acc_Z</td></tr>
-  
-    <tr class="added"><td>1331</td><td>Altitude</td></tr>
-  
-    <tr class="added"><td>1335</td><td>Filter_Valid</td></tr>
-  
-    <tr class="added"><td>1332</td><td>Quaternion_X</td></tr>
-  
-    <tr class="added"><td>1335</td><td>Clip_Gyr_Y</td></tr>
-  
-    <tr class="added"><td>1335</td><td>Clip_Mag_Y</td></tr>
-  
-    <tr class="added"><td>1332</td><td>Quaternion_Z</td></tr>
-  
-    <tr class="added"><td>1335</td><td>GNSS_Fix</td></tr>
-  
-    <tr class="added"><td>1332</td><td>Quaternion_Y</td></tr>
-  
-    <tr class="added"><td>1335</td><td>Representative_Motion</td></tr>
-  
-    <tr class="added"><td>1335</td><td>Clipping_Indication</td></tr>
-  
-    <tr class="added"><td>1335</td><td>Clip_Mag_Z</td></tr>
-  
-    <tr class="added"><td>1328</td><td>Acceleration_Y</td></tr>
-  
-    <tr class="added"><td>1333</td><td>Velocity_Y</td></tr>
-  
-    <tr class="added"><td>1334</td><td>Pitch</td></tr>
-  
-    <tr class="added"><td>1335</td><td>Clock_Bias_Estimation</td></tr>
-  
-    <tr class="added"><td>1335</td><td>GNSS_Time_Pulse</td></tr>
-  
-    <tr class="added"><td>1330</td><td>Longitude</td></tr>
-  
-    <tr class="added"><td>1335</td><td>Clip_Gyr_Z</td></tr>
-  
-    <tr class="added"><td>1328</td><td>Acceleration_Z</td></tr>
-  
-    <tr class="added"><td>1335</td><td>Clip_Acc_X</td></tr>
-  
-    <tr class="added"><td>1333</td><td>Velocity_Z</td></tr>
-  
-    <tr class="added"><td>1335</td><td>Self_Test</td></tr>
-  
-    <tr class="added"><td>1335</td><td>RTK_Status</td></tr>
-  
-    <tr class="added"><td>1335</td><td>Filter_Mode</td></tr>
-  
-    <tr class="added"><td>1328</td><td>Acceleration_X</td></tr>
-  
-    <tr class="added"><td>1334</td><td>Roll</td></tr>
+    <tr class="added"><td>1337</td><td>Velocity_X</td></tr>
   
   </table>
   
