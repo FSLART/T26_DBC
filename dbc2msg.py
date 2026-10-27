@@ -2,11 +2,11 @@ import os
 import re
 import cantools
 
-# Path to your DBC file
-dbc_path = '/home/andre-lopes/Desktop/ros2_ws/src/can_bridge/include/T26_DBC/autonomous_t26.dbc'
-
 # Get directory of this script
 script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Path to your DBC file (next to this script)
+dbc_path = os.path.join(script_dir, 'powertrain_t26.dbc')
 
 # Output folder = ./msg relative to this script
 output_dir = os.path.join(script_dir, "msg")
